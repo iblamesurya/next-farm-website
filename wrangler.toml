@@ -5,6 +5,6 @@ compatibility_flags = ["nodejs_compat"]
 
 [[d1_databases]]
 binding = "DB"
-database_name = "next-farm-d1"
-database_id = "00000000-0000-0000-0000-000000000000"
+database_name = "next-farm-db"
+database_id = "40679735-3689-413b-823c-08a36509960a"
 migrations_dir = "migrations"

@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { PRODUCTS } from '@/lib/catalog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://nextfarm.in';
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://nextfarmbiosciences.app';
   const lastModified = new Date();
 
   const productRoutes: MetadataRoute.Sitemap = PRODUCTS.map((product) => ({

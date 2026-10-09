@@ -214,7 +214,7 @@ export function Footer() {
             </div>
             <div className="flex items-center gap-3 text-sm text-slate-300">
               <Mail className="w-5 h-5 text-[#FFD200] flex-shrink-0" />
-              <span>support@nextfarm.in</span>
+              <span>support@nextfarmbiosciences.app</span>
             </div>
           </div>
         </div>

@@ -303,7 +303,7 @@ export function registerTier2Tests(): void {
         const incompleteRobots = `
 User-agent: Googlebot
 Allow: /
-Sitemap: https://nextfarm.in/sitemap.xml
+Sitemap: https://nextfarmbiosciences.app/sitemap.xml
         `.trim();
 
         const result = validateRobotsTxtContent(incompleteRobots);
@@ -315,8 +315,8 @@ Sitemap: https://nextfarm.in/sitemap.xml
 
       it('R5-B2: Sitemap validator flags missing product PDP paths', () => {
         const partialUrls = [
-          'https://nextfarm.in/',
-          'https://nextfarm.in/products/next-viro-nill'
+          'https://nextfarmbiosciences.app/',
+          'https://nextfarmbiosciences.app/products/next-viro-nill'
         ];
         const result = validateSitemapUrls(partialUrls);
         expect(result.valid).toBe(false);

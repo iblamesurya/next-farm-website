@@ -23,25 +23,70 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Next Farm Bio Sciences | High-Potency Aquaculture Biotechnology',
+  title: 'Next Farm Bio Sciences | High-Potency Aquaculture Biotechnology & Probiotics',
   description:
-    'Commercial aquaculture biotechnology enterprise in New Autonagar, Vijayawada. Formulating 11 targeted biological water treatments, benthic soil conditioners, and gut probiotics. CAA Approved, ISO 9001:2015, 100% Antibiotic-Free.',
+    'Next Farm Bio Sciences (New Autonagar, Vijayawada) - Manufacturer of 11 CAA-approved aquaculture biological formulations, shrimp gut probiotics, benthic soil digesters, and toxic ammonia controllers. 100% Antibiotic-Free, ISO 9001:2015.',
   keywords: [
     'Next Farm Bio Sciences',
+    'NextFarm Bio Sciences',
+    'Next Farm Biosciences Vijayawada',
+    'Next Farm',
     'Aquaculture Probiotics India',
     'Shrimp Farming Vijayawada',
     'Prawn Farming Andhra Pradesh',
     'CAA Approved Probiotics',
     'White Gut Treatment Shrimp',
     'Vibrio Control Aquaculture',
-    'Ammonia Remover Pond'
+    'Ammonia Remover Pond',
+    'Next Gut',
+    'Next Viro Nill',
+    'Next Converter'
   ],
   authors: [{ name: 'Next Farm Bio Sciences' }],
-  metadataBase: new URL('https://nextfarm.in'),
+  creator: 'Next Farm Bio Sciences',
+  publisher: 'Next Farm Bio Sciences',
+  metadataBase: new URL('https://nextfarmbiosciences.app'),
+  alternates: {
+    canonical: 'https://nextfarmbiosciences.app',
+  },
+  openGraph: {
+    title: 'Next Farm Bio Sciences | Commercial Aquaculture Biotechnology',
+    description:
+      'Pioneering sustainable aquaculture biotechnology in Andhra Pradesh. 11 targeted biological water treatments, soil conditioners, and gut probiotics. CAA Approved & 100% Antibiotic-Free.',
+    url: 'https://nextfarmbiosciences.app',
+    siteName: 'Next Farm Bio Sciences',
+    locale: 'en_IN',
+    type: 'website',
+    images: [
+      {
+        url: '/images/branding/logo_primary.png',
+        width: 800,
+        height: 600,
+        alt: 'Next Farm Bio Sciences Logo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Next Farm Bio Sciences | Aquaculture Biotechnology',
+    description: 'CAA-Approved high-potency probiotics and water treatments for shrimp and fish farming.',
+    images: ['/images/branding/logo_primary.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   icons: {
     icon: '/favicon.png',
-    apple: '/favicon.png'
-  }
+    apple: '/favicon.png',
+  },
 };
 
 export default function RootLayout({

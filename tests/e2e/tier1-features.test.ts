@@ -373,7 +373,7 @@ User-agent: ClaudeBot
 Allow: /
 User-agent: *
 Allow: /
-Sitemap: https://nextfarm.in/sitemap.xml
+Sitemap: https://nextfarmbiosciences.app/sitemap.xml
         `.trim();
 
         const result = validateRobotsTxtContent(mockRobots);
@@ -383,9 +383,9 @@ Sitemap: https://nextfarm.in/sitemap.xml
 
       it('R5.2: Validates sitemap contains homepage, pond-doctor, and all 11 formulation URLs', () => {
         const mockUrls = [
-          'https://nextfarm.in/',
-          'https://nextfarm.in/pond-doctor',
-          ...VALID_SLUGS.map(s => `https://nextfarm.in/products/${s}`)
+          'https://nextfarmbiosciences.app/',
+          'https://nextfarmbiosciences.app/pond-doctor',
+          ...VALID_SLUGS.map(s => `https://nextfarmbiosciences.app/products/${s}`)
         ];
 
         const result = validateSitemapUrls(mockUrls);

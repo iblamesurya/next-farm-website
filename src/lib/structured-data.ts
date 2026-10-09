@@ -7,7 +7,7 @@
 import { Product } from '@/types/catalog';
 
 export function getVeterinaryBusinessJsonLd() {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://nextfarm.in';
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://nextfarmbiosciences.app';
 
   return {
     '@context': 'https://schema.org',
@@ -59,7 +59,7 @@ export function getVeterinaryBusinessJsonLd() {
 }
 
 export function getProductJsonLd(product: Product) {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://nextfarm.in';
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://nextfarmbiosciences.app';
   const url = `${baseUrl}/products/${product.slug}`;
 
   return {

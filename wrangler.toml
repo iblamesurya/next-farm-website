@@ -1,0 +1,10 @@
+name = "next-farm-website"
+pages_build_output_dir = ".vercel/output/static"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "next-farm-d1"
+database_id = "00000000-0000-0000-0000-000000000000"
+migrations_dir = "migrations"

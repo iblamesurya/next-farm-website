@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 64" width="200" height="64" fill="none">
+  <rect width="200" height="64" rx="8" fill="#004B50" />
+  <rect x="2" y="2" width="196" height="60" rx="6" stroke="#FFD200" stroke-width="1.5" stroke-dasharray="4 2" />
+  <circle cx="34" cy="32" r="20" fill="#FFD200" />
+  <path d="M34 18L37.5 25.5L45.5 26.5L39.5 32L41 40L34 36L27 40L28.5 32L22.5 26.5L30.5 25.5L34 18Z" fill="#002B5B" />
+  <text x="64" y="28" font-family="Montserrat, sans-serif" font-weight="800" font-size="13" fill="#FFD200" letter-spacing="0.5">CAA APPROVED</text>
+  <text x="64" y="44" font-family="Open Sans, sans-serif" font-weight="600" font-size="10" fill="#FFFFFF">Govt of India Regd</text>
+</svg>

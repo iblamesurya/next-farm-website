@@ -1,0 +1,67 @@
+# Next Farm Bio Sciences - Comprehensive Biotechnology Protocols & Full Technical Monograph
+
+## 1. Enterprise Overview & Quality Standards
+Next Farm Bio Sciences is an Indian aquaculture biotechnology manufacturer headquartered in New Autonagar, Vijayawada, Andhra Pradesh, 520010, India. All biological formulations are manufactured under strict ISO 9001:2015 quality assurance protocols, approved by the Coastal Aquaculture Authority (CAA), Government of India, and guaranteed 100% free from banned antibiotics (Chloramphenicol, Nitrofurans, Tetracyclines free).
+
+- Headquarters: New autonagar, Vijayawada, Andhra Pradesh, 520010, India
+- Technical Hotline & WhatsApp Support: +91 8977656444 (8977656444)
+- Business Model: Pre-paid direct farm delivery (5L Cans @ Rs. 5,000, 1L Bottles @ Rs. 1,199). Cash on Delivery is strictly prohibited to protect live bacterial cold-chains.
+
+---
+
+## 2. Pathogen & Water Parameter Treatment Protocols
+
+### Protocol A: White Gut Syndrome & Enteric Vibrio Infection
+- Etiology: Enteric pathogen colonization (pathogenic Vibrio, microsporidian Enterocytozoon hepatopenaei / EHP), toxic cyanobacterial ingestion, sloughing of midgut microvilli lining.
+- Symptoms: White fecal strands floating on check trays and pond leeward edges, pale hepatopancreas, trailing feces, and sharp feed drop.
+- Targeted Formulations:
+  1. next gut: Multi-strain enteric probiotic (Citrobacter, Lactobacillus sporogenes, Bifidobacteria, S. cerevisiae, 10 Billion CFU/g). Coat 15-20 mL/kg feed across all daily meals for 5 consecutive days.
+  2. next viro nill: Microbial sediment conditioner (Bacillus subtilis, B. licheniformis, Pediococcus acidilactici, 5 Billion CFU/ml). Broadcast 1.0 L/Acre in morning aeration to suppress horizontal reinfection.
+
+### Protocol B: Toxic Ammonia (NH3 / TAN), Nitrite (NO2), & Hydrogen Sulfide
+- Etiology: Nitrogenous waste accumulation from uneaten commercial feed, high stocking density, and anaerobic benthic breakdown.
+- Symptoms: Total Ammonia Nitrogen > 0.5 ppm, Nitrite > 1.0 ppm, nocturnal shrimp piping, black bottom mud, and foul rotten egg H2S odor.
+- Targeted Formulations:
+  1. next converter: Heterotrophic nitrification and sulfide oxidation consortium (Bacillus polymyxa, Candida sp., 4 Billion CFU/ml). Broadcast 2.0-3.0 L/Acre in front of operating aerators.
+  2. next sludge: Fungal-enzymatic consortium (Rhizopus, Cunninghemella, Chrysosporium, Mucor, Aspergillus, Chitinase enzymes). Apply 2.0 kg/Acre directly onto central drainage pits.
+  3. next remedy: Algicidal microbial equilibrium consortium (Candida sp., Rhodococcus, Arthrobacter, 5 Billion CFU/ml). Broadcast 1.0-2.0 L/Acre to digest surface organic scum and stabilize pH swings.
+
+### Protocol C: White Spot Syndrome Virus (WSSV) Biosecurity & Vibrio Red Disease
+- Etiology: Nimaviridae White Spot Syndrome Virus (WSSV) triggered by sudden temperature shifts, and virulent Vibrio parahaemolyticus / V. harveyi strains.
+- Symptoms: White calcified spots (0.5–2.0 mm) inside the carapace, reddish pleopods, discolored hepatopancreas, glowing night water, and rapid mortality.
+- Targeted Formulations:
+  1. next vibriosis: Targeted lactic acid bacteria and actinomycetes (Lactobacillus plantarum, L. curvatus, Pediococcus acidilactici, Streptomyces griseus, 8 Billion CFU/ml). Broadcast 1.5-2.0 L/Acre in pond water and top-dress 10-15 mL/kg onto feed.
+  2. next viro nill: High-potency biological sediment sanitizer (5 Billion CFU/ml). Deprives viral vectors of benthic detritus and breaks horizontal transmission cycles.
+
+### Protocol D: Soft Shell Syndrome & Molting Cramps
+- Etiology: Imbalance in bioavailable ionic Calcium:Magnesium ratios, low salinity water (0-10 ppt), and lunar ecdysis stress.
+- Symptoms: Carapaces remain soft > 4 hours post-molt, white opaque muscle cramps, and cannibalism mortalities.
+- Targeted Formulations:
+  1. next min: 100% bioavailable ionic macromineral supplement (Ca 22%, Mg 11%, P 4.5%, K 3%, Trace Zn, Mn, Fe, Cu, Se). Broadcast 5.0-10.0 kg/Acre during nighttime peak molting (6:00 PM - 2:00 AM).
+  2. next softner: Biological organic acid chelation complex (Acetobacter, Arthrobacter, Azotobacter). Broadcast 2.0 L/Acre in hard borewell water (>300 ppm CaCO3) to unlock bound calcium and magnesium carbonates.
+
+### Protocol E: Growth Acceleration & Live Food Plankton Blooms
+- Targeted Formulations:
+  1. next food pro: Feed-grade bio-nutrition probiotic (Bacillus subtilis, Lactobacillus acidophilus, Enterococcus faecium, Beta-glucans, MOS, B-vitamins, 6 Billion CFU/g). Mix 3-5 g/kg feed for superior FCR.
+  2. next pro plus: Botanical amino acid and selective Bacillus complex (20% active extract, 3 Billion CFU/ml). Multiplies natural rotifers, copepods, and zooplankton in nursery ponds.
+  3. next pro: Dual-action multi-strain beneficial bacteria (Bacillus subtilis, B. licheniformis, L. sporogenes, B. megaterium, 15 Billion CFU/ml). Universal water purification and gut colonization.
+
+---
+
+## 3. Complete 11 Formulations Monograph
+
+1. **next viro nill** — Pond Water & Sediment Conditioner (5 Billion CFU/ml) | 5L: Rs. 5,000, 1L: Rs. 1,199
+2. **next gut** — Digestive & Gut Health Support (10 Billion CFU/g) | 5L: Rs. 5,000, 1L: Rs. 1,199
+3. **next converter** — Water Quality & Gas Remediation (4 Billion CFU/ml) | 5L: Rs. 5,000, 1L: Rs. 1,199
+4. **next sludge** — Benthic Bottom & Sludge Digester (Chitinase enzymatic matrix) | 5L/5kg: Rs. 5,000, 1L/1kg: Rs. 1,199
+5. **next vibriosis** — Vibrio & EMS/AHPND Control (8 Billion CFU/ml) | 5L: Rs. 5,000, 1L: Rs. 1,199
+6. **next min** — Balanced Bio-Mineral Supplement (Ca:Mg 1:3.5 ionic ratio) | 10kg/5L: Rs. 5,000, 2kg/1L: Rs. 1,199
+7. **next food pro** — Feed-Grade Bio-Nutrition Probiotic (6 Billion CFU/g) | 5kg/5L: Rs. 5,000, 1kg/1L: Rs. 1,199
+8. **next softner** — Water Hardness & Carbonate Conditioner (Natural bio-chelators) | 5L: Rs. 5,000, 1L: Rs. 1,199
+9. **next remedy** — Cyanobacteria & Algae Equilibrium (5 Billion CFU/ml) | 5L: Rs. 5,000, 1L: Rs. 1,199
+10. **next pro plus** — Botanical Amino Acid Zooplankton Bloom (3 Billion CFU/ml) | 5L: Rs. 5,000, 1L: Rs. 1,199
+11. **next pro** — Dual-Action Multi-Strain Beneficial Bacteria (15 Billion CFU/ml) | 5L: Rs. 5,000, 1L: Rs. 1,199
+
+Direct Helpline: +91 8977656444 (WhatsApp Enabled)
+Official Portal: https://nextfarm.in
+Pond Doctor Engine: https://nextfarm.in/pond-doctor

@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXT FARM BIOSCIENCES | Sustainable Aquaculture</title>
+    <meta name="description" content="Science-driven leader in sustainable aquaculture, providing advanced biological treatments to help farmers produce high-quality yields.">
+    <meta name="keywords" content="agriculture companies, biotechnology, biotechnology companies in vijayawada, aquaculture, probiotics">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Brand Colors */
+            --primary-yellow: #FFD200;
+            --primary-teal: #004B50;
+            --primary-navy: #002B5B;
+            --primary-white: #FFFFFF;
+            
+            /* Tints & Shades for UI depth */
+            --bg-light: #f4f7f8;
+            --text-dark: #1a1f24;
+            --text-muted: #4a5568;
+            
+            /* Structural */
+            --header-height: 80px;
+            --container-width: 1200px;
+            --spacing-section: 6rem;
+            
+            /* Typography */
+            --font-heading: 'Montserrat', sans-serif;
+            --font-body: 'Open Sans', sans-serif;
+        }
+
+        /* Reset & Base */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: var(--header-height);
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            padding-top: var(--header-height);
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            color: var(--primary-navy);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; text-transform: uppercase; letter-spacing: -1px; }
+        h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; }
+        h3 { font-size: 1.5rem; font-weight: 600; }
+        p { margin-bottom: 1rem; }
+
+        /* Utilities */
+        .container {
+            width: 100%;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .text-center { text-align: center; }
+        .accent-text { color: var(--primary-teal); }
+        
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-yellow);
+            color: var(--primary-navy);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-navy);
+            color: var(--primary-yellow);
+            border-color: var(--primary-yellow);
+        }
+
+        /* Header */
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: var(--header-height);
+            background-color: var(--primary-white);
+            box-shadow: 0 2px 10px rgba(0, 43, 91, 0.1);
+            z-index: 300;
+            display: flex;
+            align-items: center;
+        }
+
+        .site-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+        }
+
+        .logo-container img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .logo-text {
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 1.2rem;
+            color: var(--primary-navy);
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+
+        .logo-text span {
+            color: var(--primary-teal);
+            display: block;
+            font-size: 0.9rem;
+        }
+
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: var(--primary-navy);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .main-nav a:hover {
+            color: var(--primary-teal);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: calc(100vh - var(--header-height));
+            display: flex;
+            align-items: center;
+            color: var(--primary-white);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(0, 43, 91, 0.9) 0%, rgba(0, 75, 80, 0.7) 100%);
+            z-index: 1;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            z-index: 0;
+            animation: subtleZoom 20s infinite alternate linear;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin-left: 0;
+        }
+
+        .hero h1 {
+            color: var(--primary-white);
+            margin-bottom: 1.5rem;
+            text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .hero p.lead {
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            color: var(--bg-light);
+            border-left: 4px solid var(--primary-yellow);
+            padding-left: 1rem;
+        }
+
+        /* Overview / Mission Section */
+        .overview {
+            padding: var(--spacing-section) 0;
+            background-color: var(--primary-white);
+            position: relative;
+        }
+
+        .overview-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .overview-content h2 {
+            position: relative;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .overview-content h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-yellow);
+        }
+
+        .overview-content p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .value-card {
+            background: var(--bg-light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border-bottom: 3px solid var(--primary-teal);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 75, 80, 0.1);
+        }
+
+        .value-card h4 {
+            font-size: 0.9rem;
+            margin: 0;
+            color: var(--primary-navy);
+            text-transform: uppercase;
+        }
+
+        /* Products Section */
+        .products {
+            padding: var(--spacing-section) 0;
+            background-color: var(--primary-navy);
+            color: var(--primary-white);
+        }
+
+        .products-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .products-header h2 {
+            color: var(--primary-white);
+        }
+
+        .products-header h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-yellow);
+            margin: 1rem auto 0;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background-color: var(--primary-white);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-image-wrapper {
+            position: relative;
+            width: 100%;
+            /* 3:4 aspect ratio minimizes cropping of tall product jugs */
+            aspect-ratio: 3/4;
+            background-color: #f0f0f0; 
+            padding: 1rem;
+        }
+
+        .product-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+            /* Ensure watermark area remains visible within padding */
+        }
+
+        .product-content {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .product-content h3 {
+            color: var(--primary-teal);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            font-size: 1.25rem;
+        }
+
+        .product-content p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            flex-grow: 1;
+        }
+
+        /* Info Banner */
+        .info-banner {
+            position: relative;
+            padding: 4rem 0;
+            background-color: var(--primary-teal);
+            color: var(--primary-white);
+            overflow: hidden;
+        }
+
+        .info-banner-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.2;
+            mix-blend-mode: multiply;
+        }
+
+        .info-banner .container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .info-banner h2 {
+            color: var(--primary-white);
+        }
+
+        /* Footer */
+        .site-footer {
+            background-color: #001a38;
+            color: var(--primary-white);
+            padding: 4rem 0 2rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col h4 {
+            color: var(--primary-yellow);
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+
+        .footer-logo img {
+            height: 60px;
+            margin-bottom: 1rem;
+            object-fit: contain;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 0.25rem;
+            border-radius: 4px;
+        }
+
+        .footer-logo-text {
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 1.2rem;
+            line-height: 1.1;
+        }
+
+        .footer-logo-text span {
+            color: var(--primary-yellow);
+            display: block;
+            font-size: 0.9rem;
+        }
+
+        .hours-list {
+            list-style: none;
+        }
+        
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 0.25rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.6);
+        }
+
+        /* Animations */
+        @keyframes subtleZoom {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.05); }
+        }
+
+        /* Media Queries */
+        @media (max-width: 992px) {
+            .overview-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main-nav ul {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .site-header .container {
+                justify-content: center;
+            }
+            .placeholder-cta {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="#" class="logo-container">
+                <img src="resources/a2PSJNLbvFa8wPtoGb-_IB" alt="Next Farm Biosciences Logo" style="object-fit: contain;">
+                <div class="logo-text">
+                    NEXT FARM
+                    <span>BIOSCIENCES</span>
+                </div>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#mission">Mission</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="btn btn-primary placeholder-cta">[Your link here]</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg" data-alt="3D abstract rendering of an aquatic environment with molecular geometric structures floating in clear water. Deep navy blue and vibrant teal tones with subtle glowing primary yellow accents. Professional, scientific, bio-industrial utility, high-end 3D graphics, no text." style="background-image: url('resources/8CTIU6G2Yp20emKjGIvONY');"></div>
+            <div class="container">
+                <h1>Aquaculture is the wave of the future.</h1>
+                <p class="lead">And we must ride it to ensure global food security. NEXT FARM BIOSCIENCES provides science-driven, sustainable solutions for prawn and shrimp farming.</p>
+                <a href="#solutions" class="btn btn-primary">Explore Our Treatments</a>
+            </div>
+        </section>
+
+        <!-- Mission & Overview Section -->
+        <section id="mission" class="overview">
+            <div class="container">
+                <div class="overview-grid">
+                    <div class="overview-content">
+                        <h2>Pioneering Sustainable Aquaculture</h2>
+                        <p>NEXT FARM BIOSCIENCES positions itself as a science-driven leader in sustainable aquaculture, providing advanced biological treatments to help farmers produce high-quality yields without environmental degradation.</p>
+                        <p>We specialize in probiotics, mineral supplements, and water treatments designed to manage diseases, optimize growth rates, and improve water quality while eliminating the need for harmful antibiotics and chemicals.</p>
+                        
+                        <div class="values-grid">
+                            <div class="value-card"><h4>Sustainability</h4></div>
+                            <div class="value-card"><h4>Efficiency</h4></div>
+                            <div class="value-card"><h4>Environmental Responsibility</h4></div>
+                            <div class="value-card"><h4>Innovation</h4></div>
+                            <div class="value-card"><h4>Disease Management</h4></div>
+                        </div>
+                    </div>
+                    <div class="overview-image">
+                        <div data-alt="3D microscopic visualization of healthy aquaculture cells and bio-structures. Deep navy and primary teal color palette with warm golden yellow illumination. Scientific transparency, structured functionalism, glossy 3D molecular aesthetic, depth of field, no text." style="background-image: url('resources/bC9hItNvkILb72rv_FqkKq'); background-size: cover; width: 100%; aspect-ratio: 4/5; border-radius: 8px; box-shadow: 0 20px 40px rgba(0, 43, 91, 0.15);"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="solutions" class="products">
+            <div class="container">
+                <div class="products-header">
+                    <h2>Advanced Biological Treatments</h2>
+                    <p>Functional utilitarian formulations engineered for disease management, water quality, and optimal yield.</p>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Product: next food pro -->
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="resources/bKbKQ7UN7fL4zgaJo-eOPW" alt="next food pro" style="object-fit: cover;">
+                        </div>
+                        <div class="product-content">
+                            <h3>next food pro</h3>
+                            <p><strong>Feed-Grade Probiotic Supplement</strong><br><br>A feed-based probiotic supplement designed to support shrimp health and resilience throughout the production cycle — offering farmers a natural complement to good feed management practices, with reduced reliance on antibiotics.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product: Next Viro Nill -->
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="resources/agOa9wfgpvO0XiGNmJYkyG" alt="Next Viro Nill" style="object-fit: cover;">
+                        </div>
+                        <div class="product-content">
+                            <h3>Next Viro Nill</h3>
+                            <p><strong>Pond Water & Sediment Conditioner</strong><br><br>A Bacillus- and Pediococcus-based blend formulated to help lower water pollution and reduce pathogen/viral load — including bacteria and fungi associated with WSSV — in pond water. Specifically designed to target waste buildup in fecal matter, contaminated water, and on the external shrimp body surface, and to help reduce Salmonella, Vibrio, and E. coli on the pond bottom surface. A cleaner pond environment is especially important given how fast White Spot Syndrome Virus (WSSV) — one of the most prevalent and lethal viral pathogens in Litopenaeus vannamei and other penaeid shrimp — can spread through a farm.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product: Next Gut -->
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="resources/9AzKW6Qsna61V0_ptA5kng" alt="Next Gut" style="object-fit: cover;">
+                        </div>
+                        <div class="product-content">
+                            <h3>Next Gut</h3>
+                            <p><strong>Digestive & Gut Health Support</strong><br><br>A multi-strain probiotic blend (Citrobacter, Lactobacillus, Bacteroides, Pseudomonas, Bifidobacteria, Saccharomyces) formulated to help disrupt the bacterial, fungal, and protozoan organisms that can act as disease hosts in the gut. Designed to help neutralize toxins, support gut acidity, and improve feed intake and digestion for steady prawn growth. Best used at the first signs of stress — reduced activity, shrimp gathering near the surface, or appetite loss</p>
+                        </div>
+                    </div>
+
+                    <!-- Product: Next Converter -->
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="resources/bnE1zX9nli_dFfjCyVakCa" alt="Next Converter" style="object-fit: cover;">
+                        </div>
+                        <div class="product-content">
+                            <h3>Next Converter</h3>
+                            <p><strong>Water Quality Conditioner</strong><br><br>A bacterial blend (Bacillus polymyxa, Candida species, and others) formulated to support the natural breakdown of ammonia, nitrate, methane, and hydrogen sulfide in pond water — helping maintain healthier dissolved oxygen levels.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product: Next Remedy -->
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="resources/aWpIDRS7_vrfjdvSAfrOcJ" alt="Next Remedy" style="object-fit: cover;">
+                        </div>
+                        <div class="product-content">
+                            <h3>Next Remedy</h3>
+                            <p><strong>Microbial Balance Support</strong><br><br>A blend of Candida, Rhodococcus, Arthrobacter, and Rhodotorula species formulated to help manage harmful bacteria and fungi, and support control of Microcystis and algae blooms, for a more balanced pond microbial environment.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product: Next Softner -->
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="resources/8du3AA2PpufaRGAom4fOqw" alt="Next Softner" style="object-fit: cover;">
+                        </div>
+                        <div class="product-content">
+                            <h3>Next Softner</h3>
+                            <p><strong>Water Hardness Conditioner</strong><br><br>A blend of Acetobacter, Arthrobacter, Azotobacter, Azomonas, and Beijerinckia species formulated to help reduce water hardness and convert excess calcium, potassium, and magnesium into more bioavailable forms.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product: Next Pro Plus -->
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="resources/8CcZ--rzTHu5vH73Yi9_Ei" alt="Next Pro Plus" style="object-fit: cover;">
+                        </div>
+                        <div class="product-content">
+                            <h3>Next Pro Plus</h3>
+                            <p><strong>Herbal Water & Bottom Conditioner</strong><br><br>An aqua-based amino acid formula with selective Bacillus species, designed to support zooplankton growth for stable water color, aid sludge degradation, and help maintain a well-oxygenated pond bottom.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product: Next Pro -->
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="resources/bZ7TonfV4hA5zv7HlHeknD" alt="Next Pro" style="object-fit: cover;">
+                        </div>
+                        <div class="product-content">
+                            <h3>Next Pro</h3>
+                            <p><strong>Beneficial Bacteria for Health & Growth</strong><br><br>A multi-strain probiotic (Bacillus subtilis, B. licheniformis, Lactobacillus sporogenes, B. megaterium) designed to work in two stages: first establishing itself in the water column to help reduce pathogen pressure and support vibrio management, then supporting shrimp immune function and improving metabolism and nutrient uptake.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product: Next Vibriosis -->
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="resources/8EDrljwFUAvahjD2W9x_5R" alt="Next Vibriosis" style="object-fit: cover;">
+                        </div>
+                        <div class="product-content">
+                            <h3>Next Vibriosis</h3>
+                            <p><strong>Vibrio Management Support</strong><br><br>A targeted blend of Lactobacillus plantarum, Lactobacillus curvatus, Pediococcus acidilactici, Penicillium roqueforti, and Streptomyces griseus, formulated to support pond conditions that help manage harmful Vibrio species — including Vibrio vulnificus and V. parahaemolyticus, the bacteria most commonly linked to vibriosis (septic hepatopancreatic necrosis, sometimes called "red disease") in post-larval and grow-out shrimp.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product: Next-Min -->
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="resources/agfq8SzVpCh2oeD0XFe_vw" alt="Next-Min" style="object-fit: cover;">
+                        </div>
+                        <div class="product-content">
+                            <h3>Next-Min</h3>
+                            <p><strong>Mineral Supplement</strong><br><br>A balanced mineral blend (calcium, phosphorus, magnesium, zinc, manganese, iron, copper) formulated to support healthy shell molting and immune response, boost phytoplankton growth for a stable bloom, improve feed efficiency and survival rates, and enrich pond soil while correcting mineral deficiencies in the water. Supplied in 10 kg bags.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product: Next Sludge -->
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="resources/82fknGQ22Vu3wZ6v8EekBj" alt="Next Sludge" style="object-fit: cover;">
+                        </div>
+                        <div class="product-content">
+                            <h3>Next Sludge</h3>
+                            <p><strong>Pond Bottom & Sludge Conditioner</strong><br><br>A blend of beneficial fungi (Rhizopus, Cunninghemella, Chrysosporium, Mucor, Pleurotus, and Aspergillus species) formulated to help break down pond sludge and fecal waste into usable nutrients for plankton growth — supporting odor reduction and more stable water color.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product: next min -->
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="resources/buX2ehvs0gg8oq30ysBO7_" alt="next min" style="object-fit: cover;">
+                        </div>
+                        <div class="product-content">
+                            <h3>next min</h3>
+                            <p><strong>Mineral Supplement</strong><br><br>A balanced mineral blend (calcium, phosphorus, magnesium, zinc, manganese, iron, copper) formulated to support healthy shell molting and immune response, boost phytoplankton growth for a stable bloom, improve feed efficiency and survival rates, and enrich pond soil while correcting mineral deficiencies in the water. Supplied in 10 kg bags.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Informational Banner -->
+        <section class="info-banner">
+            <div class="info-banner-bg" data-alt="3D abstract background featuring undulating liquid surfaces intersecting with technical grid lines. Navy blue and teal water ripples reflecting vibrant yellow light. Utilitarian bio-industrial design, high-contrast scientific visualization, no text." style="background-image: url('resources/9kRsDwV95Y-9nCUS7V0klv');"></div>
+            <div class="container">
+                <h2>Evidence-Based Science. Utilitarian Design.</h2>
+                <p style="max-width: 600px; margin: 0 auto; font-size: 1.1rem;">Delivering premium biotechnology solutions to selective markets committed to environmental responsibility.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact" class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="resources/a2PSJNLbvFa8wPtoGb-_IB" alt="Next Farm Biosciences Logo" style="object-fit: contain;">
+                        <div class="footer-logo-text">
+                            NEXT FARM
+                            <span>BIOSCIENCES</span>
+                        </div>
+                    </div>
+                    <p style="color: rgba(255,255,255,0.7); margin-top: 1rem;">Aquaculture biotechnology providing sustainable solutions for prawn and shrimp farming.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Location</h4>
+                    <p>New autonagar<br>Vijayawada<br>Andhra Pradesh, 520010<br>IN</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Operating Hours</h4>
+                    <ul class="hours-list">
+                        <li><span>Monday</span> <span>9:00 AM - 5:00 PM</span></li>
+                        <li><span>Tuesday</span> <span>9:00 AM - 5:00 PM</span></li>
+                        <li><span>Wednesday</span> <span>9:00 AM - 5:00 PM</span></li>
+                        <li><span>Thursday</span> <span>9:00 AM - 5:00 PM</span></li>
+                        <li><span>Friday</span> <span>9:00 AM - 5:00 PM</span></li>
+                        <li><span>Saturday</span> <span>9:00 AM - 5:00 PM</span></li>
+                        <li><span>Sunday</span> <span style="color: var(--primary-yellow);">Closed</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; NEXT FARM BIOSCIENCES. All rights reserved.</p>
+                <p style="font-size: 0.8rem; margin-top: 0.5rem;">Keywords: agriculture companies, biotechnology, biotechnology companies in vijayawada</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

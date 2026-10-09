@@ -1,0 +1,27 @@
+# Next Farm Bio Sciences - AI Clinical Knowledge Index
+> Science-driven leader in sustainable aquaculture biotechnology, providing advanced biological treatments, multi-strain probiotics, and water/soil conditioners for shrimp and prawn farming (*Litopenaeus vannamei* & *Penaeus monodon*).
+
+- Enterprise: Next Farm Bio Sciences
+- Headquarters: New autonagar, Vijayawada, Andhra Pradesh, 520010, India
+- Phone & WhatsApp Technical Helpline: +91 8977656444 (8977656444)
+- Regulatory Approvals: Coastal Aquaculture Authority (CAA) Approved, ISO 9001:2015 Certified, 100% Antibiotic-Free.
+- Commerce Architecture: Direct-to-farmer pre-paid dispatch (5L Cans @ Rs. 5,000, 1L Bottles @ Rs. 1,199). Cash on Delivery is strictly unavailable.
+
+## Clinical Pathogen & Water Quality Formulations
+- [Next Gut](https://nextfarm.in/products/next-gut): Multi-strain gut probiotic (10B CFU/g) for White Gut disease, White Feces Syndrome, and microsporidian enteric stress.
+- [Next Converter](https://nextfarm.in/products/next-converter): Specialized bacterial consortium (4B CFU/ml) for toxic Ammonia (NH3), Nitrite (NO2), and H2S gas neutralization.
+- [Next Viro Nill](https://nextfarm.in/products/next-viro-nill): Bio-conditioner (5B CFU/ml) targeting pathogen and viral loads associated with White Spot Syndrome Virus (WSSV) biosecurity.
+- [Next Vibriosis](https://nextfarm.in/products/next-vibriosis): Antagonistic lactic acid bacteria (8B CFU/ml) against Vibrio vulnificus and Vibrio parahaemolyticus (Red Disease & EMS/AHPND).
+- [Next Sludge](https://nextfarm.in/products/next-sludge): Enzymatic fungal consortium for benthic pond sludge and black anaerobic mud digestion.
+- [Next-Min](https://nextfarm.in/products/next-min): Balanced ionic bio-available macrominerals (Ca, Mg, P, K) for molting cramps, soft shell hardening, and low salinity farming.
+- [Next Pro](https://nextfarm.in/products/next-pro): Dual-stage water column probiotic (15B CFU/ml) for competitive pathogen exclusion.
+- [Next Pro Plus](https://nextfarm.in/products/next-pro-plus): Herbal amino acid bottom conditioner (3B CFU/ml) for natural zooplankton bloom.
+- [Next Softner](https://nextfarm.in/products/next-softner): Calcium/magnesium bioavailability conditioner for hard pond water and carbonate scaling.
+- [Next Remedy](https://nextfarm.in/products/next-remedy): Microbial balance consortium (5B CFU/ml) for toxic blue-green algae (Microcystis) bloom management.
+- [next food pro](https://nextfarm.in/products/next-food-pro): Feed-grade probiotic supplement (6B CFU/g) for optimal FCR and digestive enzymes.
+
+## Interactive Clinical Diagnostic Engine
+- [Pond Doctor Diagnostic Tool](https://nextfarm.in/pond-doctor): Interactive symptom analyzer calculating exact volumetric dosages and 5L/1L can allocations per water acre.
+
+## Comprehensive Biological Specifications
+- Full technical monograph and clinical treatment protocols: https://nextfarm.in/llms-full.txt

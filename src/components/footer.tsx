@@ -153,6 +153,24 @@ export function Footer() {
             </h4>
             <ul className="space-y-2 text-sm text-slate-300">
               <li>
+                <Link href="/solutions" className="hover:text-[#FFD200] transition-colors flex items-center gap-1.5 font-semibold text-emerald-300">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  <span>Disease Treatment Directory</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/solutions/white-gut-treatment-shrimp" className="hover:text-[#FFD200] transition-colors flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#FFD200]"></span>
+                  <span>White Gut Medicine for Shrimp</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/solutions/ammonia-control-shrimp-pond" className="hover:text-[#FFD200] transition-colors flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#FFD200]"></span>
+                  <span>Ammonia Reducer for Ponds</span>
+                </Link>
+              </li>
+              <li>
                 <Link href="/pond-doctor" className="hover:text-[#FFD200] transition-colors flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#FFD200]"></span>
                   <span>Pond Doctor Diagnostic Engine</span>

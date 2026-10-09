@@ -57,6 +57,12 @@ export function Navbar() {
               11 Formulations
             </Link>
             <Link
+              href="/solutions"
+              className="text-sm font-semibold text-slate-700 hover:text-[#004B50] transition-colors"
+            >
+              Disease Treatments
+            </Link>
+            <Link
               href="/pond-doctor"
               className="text-sm font-semibold text-slate-700 hover:text-[#004B50] flex items-center gap-1.5 transition-colors"
             >
@@ -129,6 +135,13 @@ export function Navbar() {
               className="text-base font-semibold text-slate-800 py-2 border-b border-slate-100"
             >
               11 Core Formulations
+            </Link>
+            <Link
+              href="/solutions"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-base font-semibold text-slate-800 py-2 border-b border-slate-100"
+            >
+              Disease Treatments &amp; Solutions
             </Link>
             <Link
               href="/pond-doctor"

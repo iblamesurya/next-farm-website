@@ -21,10 +21,13 @@ export const PRODUCTS: Product[] = [
     ],
     pricing: {
       can5L: 5000,
+      pack2L: 2299,
       bottle1L: 1199,
       mrp5L: 6500,
+      mrp2L: 3200,
       mrp1L: 1600
     },
+    format2L: '2-Liter Twin Field Pack',
     regulatoryBadges: {
       caaApproved: true,
       isoCertified: true,
@@ -65,10 +68,13 @@ export const PRODUCTS: Product[] = [
         }
       ]
     },
-    packshotImage: '/images/products/product_next_viro_nill.png',
+    packshotImage: '/images/products/next-viro-nill/shoot.png',
     galleryImages: [
-      '/images/products/product_next_viro_nill.png',
-      '/images/products/catalog_overview_asset.png'
+      '/images/products/next-viro-nill/shoot.png',
+      '/images/products/next-viro-nill/caa.png',
+      '/images/products/next-viro-nill/farmer.png',
+      '/images/products/next-viro-nill/farm.png',
+      '/images/products/next-viro-nill/pond.png'
     ],
     specSheetPdf: '/docs/TDS_Next_Viro_Nill.pdf'
   },
@@ -92,10 +98,13 @@ export const PRODUCTS: Product[] = [
     ],
     pricing: {
       can5L: 5000,
+      pack2L: 2299,
       bottle1L: 1199,
       mrp5L: 6500,
+      mrp2L: 3200,
       mrp1L: 1600
     },
+    format2L: '2-Liter Twin Field Pack',
     regulatoryBadges: {
       caaApproved: true,
       isoCertified: true,
@@ -139,10 +148,12 @@ export const PRODUCTS: Product[] = [
         }
       ]
     },
-    packshotImage: '/images/products/product_next_gut.png',
+    packshotImage: '/images/products/next-gut/shoot.png',
     galleryImages: [
-      '/images/products/product_next_gut.png',
-      '/images/products/catalog_overview_asset.png'
+      '/images/products/next-gut/shoot.png',
+      '/images/products/next-gut/caa.png',
+      '/images/products/next-gut/farmer.png',
+      '/images/products/next-gut/farm.png'
     ],
     specSheetPdf: '/docs/TDS_Next_Gut.pdf'
   },
@@ -166,10 +177,13 @@ export const PRODUCTS: Product[] = [
     ],
     pricing: {
       can5L: 5000,
+      pack2L: 2299,
       bottle1L: 1199,
       mrp5L: 6500,
+      mrp2L: 3200,
       mrp1L: 1600
     },
+    format2L: '2-Liter Twin Field Pack',
     regulatoryBadges: {
       caaApproved: true,
       isoCertified: true,
@@ -211,10 +225,12 @@ export const PRODUCTS: Product[] = [
         }
       ]
     },
-    packshotImage: '/images/products/product_next_converter.png',
+    packshotImage: '/images/products/next-converter/shoot.png',
     galleryImages: [
-      '/images/products/product_next_converter.png',
-      '/images/products/catalog_overview_asset.png'
+      '/images/products/next-converter/shoot.png',
+      '/images/products/next-converter/caa.png',
+      '/images/products/next-converter/farmer.png',
+      '/images/products/next-converter/farm.png'
     ],
     specSheetPdf: '/docs/TDS_Next_Converter.pdf'
   },
@@ -238,10 +254,13 @@ export const PRODUCTS: Product[] = [
     ],
     pricing: {
       can5L: 5000,
+      pack2L: 2299,
       bottle1L: 1199,
       mrp5L: 6500,
+      mrp2L: 3200,
       mrp1L: 1600
     },
+    format2L: '2-Liter Twin Field Pack',
     regulatoryBadges: {
       caaApproved: true,
       isoCertified: true,
@@ -285,10 +304,12 @@ export const PRODUCTS: Product[] = [
         }
       ]
     },
-    packshotImage: '/images/products/product_next_sludge.png',
+    packshotImage: '/images/products/next-sludge/shoot.png',
     galleryImages: [
-      '/images/products/product_next_sludge.png',
-      '/images/products/catalog_overview_asset.png'
+      '/images/products/next-sludge/shoot.png',
+      '/images/products/next-sludge/caa.png',
+      '/images/products/next-sludge/farmer.png',
+      '/images/products/next-sludge/farm.png'
     ],
     specSheetPdf: '/docs/TDS_Next_Sludge.pdf'
   },
@@ -312,10 +333,13 @@ export const PRODUCTS: Product[] = [
     ],
     pricing: {
       can5L: 5000,
+      pack2L: 2299,
       bottle1L: 1199,
       mrp5L: 6500,
+      mrp2L: 3200,
       mrp1L: 1600
     },
+    format2L: '2-Liter Twin Field Pack',
     regulatoryBadges: {
       caaApproved: true,
       isoCertified: true,
@@ -358,10 +382,12 @@ export const PRODUCTS: Product[] = [
         }
       ]
     },
-    packshotImage: '/images/products/product_next_vibriosis.png',
+    packshotImage: '/images/products/next-vibriosis/shoot.png',
     galleryImages: [
-      '/images/products/product_next_vibriosis.png',
-      '/images/products/catalog_overview_asset.png'
+      '/images/products/next-vibriosis/shoot.png',
+      '/images/products/next-vibriosis/caa.png',
+      '/images/products/next-vibriosis/farmer.png',
+      '/images/products/next-vibriosis/farm.png'
     ],
     specSheetPdf: '/docs/TDS_Next_Vibriosis.pdf'
   },
@@ -386,10 +412,13 @@ export const PRODUCTS: Product[] = [
     ],
     pricing: {
       can5L: 5000,
+      pack2L: 2299,
       bottle1L: 1199,
       mrp5L: 6500,
+      mrp2L: 3200,
       mrp1L: 1600
     },
+    format2L: '2-Liter Twin Field Pack',
     regulatoryBadges: {
       caaApproved: true,
       isoCertified: true,
@@ -432,10 +461,10 @@ export const PRODUCTS: Product[] = [
         }
       ]
     },
-    packshotImage: '/images/products/product_next_min.png',
+    packshotImage: '/images/products/next-min/shoot.png',
     galleryImages: [
-      '/images/products/product_next_min.png',
-      '/images/products/product_next_min_variant.png'
+      '/images/products/next-min/shoot.png',
+      '/images/products/next-min/farm.png'
     ],
     specSheetPdf: '/docs/TDS_Next_Min.pdf'
   },
@@ -459,10 +488,13 @@ export const PRODUCTS: Product[] = [
     ],
     pricing: {
       can5L: 5000,
+      pack2L: 2299,
       bottle1L: 1199,
       mrp5L: 6500,
+      mrp2L: 3200,
       mrp1L: 1600
     },
+    format2L: '2-Liter Twin Field Pack',
     regulatoryBadges: {
       caaApproved: true,
       isoCertified: true,
@@ -506,10 +538,12 @@ export const PRODUCTS: Product[] = [
         }
       ]
     },
-    packshotImage: '/images/products/product_next_food_pro.png',
+    packshotImage: '/images/products/next-food-pro/shoot.png',
     galleryImages: [
-      '/images/products/product_next_food_pro.png',
-      '/images/products/catalog_overview_asset.png'
+      '/images/products/next-food-pro/shoot.png',
+      '/images/products/next-food-pro/caa.png',
+      '/images/products/next-food-pro/farmer.png',
+      '/images/products/next-food-pro/farm.png'
     ],
     specSheetPdf: '/docs/TDS_Next_Food_Pro.pdf'
   },
@@ -533,10 +567,13 @@ export const PRODUCTS: Product[] = [
     ],
     pricing: {
       can5L: 5000,
+      pack2L: 2299,
       bottle1L: 1199,
       mrp5L: 6500,
+      mrp2L: 3200,
       mrp1L: 1600
     },
+    format2L: '2-Liter Twin Field Pack',
     regulatoryBadges: {
       caaApproved: true,
       isoCertified: true,
@@ -580,10 +617,12 @@ export const PRODUCTS: Product[] = [
         }
       ]
     },
-    packshotImage: '/images/products/product_next_softner.png',
+    packshotImage: '/images/products/next-softner/shoot.png',
     galleryImages: [
-      '/images/products/product_next_softner.png',
-      '/images/products/catalog_overview_asset.png'
+      '/images/products/next-softner/shoot.png',
+      '/images/products/next-softner/caa.png',
+      '/images/products/next-softner/farmer.png',
+      '/images/products/next-softner/farm.png'
     ],
     specSheetPdf: '/docs/TDS_Next_Softner.pdf'
   },
@@ -607,10 +646,13 @@ export const PRODUCTS: Product[] = [
     ],
     pricing: {
       can5L: 5000,
+      pack2L: 2299,
       bottle1L: 1199,
       mrp5L: 6500,
+      mrp2L: 3200,
       mrp1L: 1600
     },
+    format2L: '2-Liter Twin Field Pack',
     regulatoryBadges: {
       caaApproved: true,
       isoCertified: true,
@@ -652,10 +694,12 @@ export const PRODUCTS: Product[] = [
         }
       ]
     },
-    packshotImage: '/images/products/product_next_remedy.png',
+    packshotImage: '/images/products/next-remedy/shoot.png',
     galleryImages: [
-      '/images/products/product_next_remedy.png',
-      '/images/products/catalog_overview_asset.png'
+      '/images/products/next-remedy/shoot.png',
+      '/images/products/next-remedy/caa.png',
+      '/images/products/next-remedy/farmer.png',
+      '/images/products/next-remedy/farm.png'
     ],
     specSheetPdf: '/docs/TDS_Next_Remedy.pdf'
   },
@@ -679,10 +723,13 @@ export const PRODUCTS: Product[] = [
     ],
     pricing: {
       can5L: 5000,
+      pack2L: 2299,
       bottle1L: 1199,
       mrp5L: 6500,
+      mrp2L: 3200,
       mrp1L: 1600
     },
+    format2L: '2-Liter Twin Field Pack',
     regulatoryBadges: {
       caaApproved: true,
       isoCertified: true,
@@ -723,10 +770,12 @@ export const PRODUCTS: Product[] = [
         }
       ]
     },
-    packshotImage: '/images/products/product_next_pro_plus.png',
+    packshotImage: '/images/products/next-pro-plus/shoot.png',
     galleryImages: [
-      '/images/products/product_next_pro_plus.png',
-      '/images/products/catalog_overview_asset.png'
+      '/images/products/next-pro-plus/shoot.png',
+      '/images/products/next-pro-plus/caa.png',
+      '/images/products/next-pro-plus/farmer.png',
+      '/images/products/next-pro-plus/farm.png'
     ],
     specSheetPdf: '/docs/TDS_Next_Pro_Plus.pdf'
   },
@@ -750,10 +799,13 @@ export const PRODUCTS: Product[] = [
     ],
     pricing: {
       can5L: 5000,
+      pack2L: 2299,
       bottle1L: 1199,
       mrp5L: 6500,
+      mrp2L: 3200,
       mrp1L: 1600
     },
+    format2L: '2-Liter Twin Field Pack',
     regulatoryBadges: {
       caaApproved: true,
       isoCertified: true,
@@ -795,10 +847,12 @@ export const PRODUCTS: Product[] = [
         }
       ]
     },
-    packshotImage: '/images/products/product_next_pro.png',
+    packshotImage: '/images/products/next-pro/shoot.png',
     galleryImages: [
-      '/images/products/product_next_pro.png',
-      '/images/products/catalog_overview_asset.png'
+      '/images/products/next-pro/shoot.png',
+      '/images/products/next-pro/caa.png',
+      '/images/products/next-pro/farmer.png',
+      '/images/products/next-pro/farm.png'
     ],
     specSheetPdf: '/docs/TDS_Next_Pro.pdf'
   }

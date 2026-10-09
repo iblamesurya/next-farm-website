@@ -12,6 +12,7 @@
 
 # Production
 /build
+/deploy/
 
 # Cloudflare
 /.wrangler/

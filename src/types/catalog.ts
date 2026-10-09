@@ -5,6 +5,8 @@ export type ProductCategory =
   | 'organic-digestion'
   | 'mineral-supplement';
 
+export type PackSize = '5L' | '2L' | '1L';
+
 export interface DosageScheduleItem {
   stage: string;
   dosage: string;
@@ -13,8 +15,10 @@ export interface DosageScheduleItem {
 
 export interface ProductPricing {
   can5L: number;    // Standard: 5000
-  bottle1L: number; // Standard: 1199
+  pack2L?: number;  // Standard: 2299 (Save 28%)
+  bottle1L: number; // Standard: 1199 (Save 25%)
   mrp5L?: number;   // MRP: 6500
+  mrp2L?: number;   // MRP: 3200
   mrp1L?: number;   // MRP: 1600
 }
 
@@ -42,6 +46,7 @@ export interface Product {
   indications: string[];
   pricing: ProductPricing;
   format5L?: string;
+  format2L?: string;
   format1L?: string;
   regulatoryBadges: RegulatoryBadges;
   strains: string[];

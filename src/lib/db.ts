@@ -28,7 +28,7 @@ export interface CustomerPayload {
 export interface CartItemPayload {
   productId: string;
   productName: string;
-  packSize: '5L' | '1L' | '10kg' | '5kg' | '1kg';
+  packSize: '5L' | '2L' | '1L' | '10kg' | '5kg' | '1kg';
   unitPrice: number;
   quantity: number;
 }

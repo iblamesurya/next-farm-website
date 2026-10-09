@@ -1,7 +1,9 @@
+export type CartPackSize = '5L' | '2L' | '1L';
+
 export interface CartItem {
   productId: string;
   slug: string;
-  packSize: '5L' | '1L';
+  packSize: CartPackSize;
   quantity: number;
   unitPrice: number;
   title: string;

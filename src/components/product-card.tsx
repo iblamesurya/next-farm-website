@@ -3,8 +3,8 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ShieldCheck, ShoppingBag, Eye, Check } from 'lucide-react';
-import { Product } from '@/types/catalog';
+import { ShieldCheck, ShoppingBag, Eye, Check, Sparkles } from 'lucide-react';
+import { Product, PackSize } from '@/types/catalog';
 import { useCart } from '@/context/cart-context';
 import { formatInr } from '@/lib/catalog';
 
@@ -14,11 +14,23 @@ interface ProductCardProps {
 
 export function ProductCard({ product }: ProductCardProps) {
   const { addItem } = useCart();
-  const [selectedPack, setSelectedPack] = useState<'5L' | '1L'>('5L');
+  const [selectedPack, setSelectedPack] = useState<PackSize>('5L');
   const [addedAnimation, setAddedAnimation] = useState(false);
 
-  const price = selectedPack === '5L' ? product.pricing.can5L : product.pricing.bottle1L;
-  const mrp = selectedPack === '5L' ? product.pricing.mrp5L || 6500 : product.pricing.mrp1L || 1600;
+  const price =
+    selectedPack === '5L'
+      ? product.pricing.can5L
+      : selectedPack === '2L'
+      ? product.pricing.pack2L || 2299
+      : product.pricing.bottle1L;
+
+  const mrp =
+    selectedPack === '5L'
+      ? product.pricing.mrp5L || 6500
+      : selectedPack === '2L'
+      ? product.pricing.mrp2L || 3200
+      : product.pricing.mrp1L || 1600;
+
   const savingsPct = Math.round(((mrp - price) / mrp) * 100);
 
   const handleAddToCart = (e: React.MouseEvent) => {
@@ -88,31 +100,42 @@ export function ProductCard({ product }: ProductCardProps) {
           </div>
         </div>
 
-        {/* Pricing & Pack Selector */}
+        {/* Pricing & 3-Variant Pack Selector */}
         <div className="space-y-3 pt-2">
-          {/* Pack Size Switcher */}
-          <div className="grid grid-cols-2 gap-1.5 p-1 bg-slate-100 rounded-lg">
-            <button
-              type="button"
-              onClick={() => setSelectedPack('5L')}
-              className={`py-1.5 px-2 text-xs font-bold rounded-md transition-all ${
-                selectedPack === '5L'
-                  ? 'bg-white text-[#002B5B] shadow-sm'
-                  : 'text-slate-600 hover:text-slate-900'
-              }`}
-            >
-              5-Liter Can
-            </button>
+          {/* 3-Variant Switcher: 1L, 2L, 5L */}
+          <div className="grid grid-cols-3 gap-1 p-1 bg-slate-100 rounded-lg">
             <button
               type="button"
               onClick={() => setSelectedPack('1L')}
-              className={`py-1.5 px-2 text-xs font-bold rounded-md transition-all ${
+              className={`py-1.5 px-1 text-center text-xs font-bold rounded-md transition-all ${
                 selectedPack === '1L'
-                  ? 'bg-white text-[#002B5B] shadow-sm'
+                  ? 'bg-white text-[#002B5B] shadow-sm ring-1 ring-slate-200'
                   : 'text-slate-600 hover:text-slate-900'
               }`}
             >
-              1-Liter Bottle
+              1L Bottle
+            </button>
+            <button
+              type="button"
+              onClick={() => setSelectedPack('2L')}
+              className={`py-1.5 px-1 text-center text-xs font-bold rounded-md transition-all ${
+                selectedPack === '2L'
+                  ? 'bg-white text-[#002B5B] shadow-sm ring-1 ring-slate-200'
+                  : 'text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              2L Pack
+            </button>
+            <button
+              type="button"
+              onClick={() => setSelectedPack('5L')}
+              className={`py-1.5 px-1 text-center text-xs font-bold rounded-md transition-all ${
+                selectedPack === '5L'
+                  ? 'bg-white text-[#002B5B] shadow-sm ring-1 ring-slate-200'
+                  : 'text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              5L Can
             </button>
           </div>
 

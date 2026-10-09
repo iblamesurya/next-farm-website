@@ -116,7 +116,11 @@ export function CartDrawer() {
 
                       <div className="flex items-center gap-2 mt-0.5">
                         <span className="inline-block text-[11px] font-bold px-2 py-0.5 bg-slate-100 text-slate-700 rounded">
-                          {item.packSize === '5L' ? '5-Liter Industrial Can' : '1-Liter Precision Bottle'}
+                          {item.packSize === '5L'
+                            ? '5-Liter Industrial Can'
+                            : item.packSize === '2L'
+                            ? '2-Liter Twin Pack'
+                            : '1-Liter Precision Bottle'}
                         </span>
                         {item.formatLabel && (
                           <span className="text-[10px] text-slate-500 hidden sm:inline">

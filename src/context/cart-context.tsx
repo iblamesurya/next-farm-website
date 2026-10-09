@@ -1,20 +1,20 @@
 'use client';
 
-import React, { createContext, useContext, useEffect, useState, useMemo } from 'react';
-import { CartItem } from '@/types/cart';
+import React, { createContext, useContext, useEffect, useState, useMemo, useCallback } from 'react';
+import { CartItem, CartPackSize } from '@/types/cart';
 import { Product } from '@/types/catalog';
 
 interface AddItemInput {
   product: Product;
-  packSize: '5L' | '1L';
+  packSize: CartPackSize;
   quantity?: number;
 }
 
 interface CartContextValue {
   items: CartItem[];
   addItem: (input: AddItemInput) => void;
-  removeItem: (productId: string, packSize: '5L' | '1L') => void;
-  updateQuantity: (productId: string, packSize: '5L' | '1L', quantity: number) => void;
+  removeItem: (productId: string, packSize: CartPackSize) => void;
+  updateQuantity: (productId: string, packSize: CartPackSize, quantity: number) => void;
   clearCart: () => void;
   isOpen: boolean;
   openCart: () => void;
@@ -59,14 +59,25 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     }
   }, [items, isMounted]);
 
-  const addItem = ({ product, packSize, quantity = 1 }: AddItemInput) => {
+  const addItem = useCallback(({ product, packSize, quantity = 1 }: AddItemInput) => {
     setItems((prev) => {
       const existingIndex = prev.findIndex(
         (item) => item.productId === product.id && item.packSize === packSize
       );
 
-      const unitPrice = packSize === '5L' ? product.pricing.can5L : product.pricing.bottle1L;
-      const formatLabel = packSize === '5L' ? product.format5L || '5L Canister' : product.format1L || '1L Bottle';
+      const unitPrice =
+        packSize === '5L'
+          ? product.pricing.can5L
+          : packSize === '2L'
+          ? product.pricing.pack2L || 2299
+          : product.pricing.bottle1L;
+
+      const formatLabel =
+        packSize === '5L'
+          ? product.format5L || '5L Canister'
+          : packSize === '2L'
+          ? product.format2L || '2L Twin Pack'
+          : product.format1L || '1L Bottle';
 
       if (existingIndex > -1) {
         const updated = [...prev];
@@ -91,15 +102,15 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
       return [...prev, newItem];
     });
     setIsOpen(true);
-  };
+  }, []);
 
-  const removeItem = (productId: string, packSize: '5L' | '1L') => {
+  const removeItem = useCallback((productId: string, packSize: CartPackSize) => {
     setItems((prev) =>
       prev.filter((item) => !(item.productId === productId && item.packSize === packSize))
     );
-  };
+  }, []);
 
-  const updateQuantity = (productId: string, packSize: '5L' | '1L', quantity: number) => {
+  const updateQuantity = useCallback((productId: string, packSize: CartPackSize, quantity: number) => {
     if (quantity <= 0) {
       removeItem(productId, packSize);
       return;
@@ -112,15 +123,15 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
         return item;
       })
     );
-  };
+  }, [removeItem]);
 
-  const clearCart = () => {
+  const clearCart = useCallback(() => {
     setItems([]);
-  };
+  }, []);
 
-  const openCart = () => setIsOpen(true);
-  const closeCart = () => setIsOpen(false);
-  const toggleCart = () => setIsOpen((prev) => !prev);
+  const openCart = useCallback(() => setIsOpen(true), []);
+  const closeCart = useCallback(() => setIsOpen(false), []);
+  const toggleCart = useCallback(() => setIsOpen((prev) => !prev), []);
 
   const totalItems = useMemo(
     () => items.reduce((sum, item) => sum + item.quantity, 0),
@@ -132,25 +143,24 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     [items]
   );
 
-  return (
-    <CartContext.Provider
-      value={{
-        items,
-        addItem,
-        removeItem,
-        updateQuantity,
-        clearCart,
-        isOpen,
-        openCart,
-        closeCart,
-        toggleCart,
-        totalItems,
-        totalAmount
-      }}
-    >
-      {children}
-    </CartContext.Provider>
+  const value = useMemo(
+    () => ({
+      items,
+      addItem,
+      removeItem,
+      updateQuantity,
+      clearCart,
+      isOpen,
+      openCart,
+      closeCart,
+      toggleCart,
+      totalItems,
+      totalAmount
+    }),
+    [items, isOpen, totalItems, totalAmount, addItem, removeItem, updateQuantity, clearCart, openCart, closeCart, toggleCart]
   );
+
+  return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 }
 
 export function useCart() {

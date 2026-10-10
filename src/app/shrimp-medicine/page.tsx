@@ -576,7 +576,7 @@ export default function ShrimpMedicineGuidePage() {
             Andhra Pradesh Prawn Farming Hubs: Regional Soil &amp; Water Management Guide
           </h2>
           <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
-            Andhra Pradesh accounts for over 70% of India's commercial <em>Litopenaeus vannamei</em> production. Different coastal districts present distinct soil, salinity, and disease pressures requiring tailored biological protocols:
+            Andhra Pradesh accounts for over 70% of India&apos;s commercial <em>Litopenaeus vannamei</em> production. Different coastal districts present distinct soil, salinity, and disease pressures requiring tailored biological protocols:
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 text-xs text-slate-700">

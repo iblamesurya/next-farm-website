@@ -169,6 +169,54 @@ const MEDICINE_CATALOG = [
     dosage: '1.5 to 2.0 Liters per Acre during water intake',
     price: '₹1,199 / 1L | ₹5,000 / 5L',
     turnaround: '24 hours'
+  },
+  {
+    disease: 'Enterocytozoon hepatopenaei (EHP) Spore Suppression',
+    symptoms: 'Severe growth stunting, size disparity in check trays, soft shell, white gut co-infection, microsporidian spores in hepatopancreas.',
+    medicine: 'Next Gut + Next Viro Nill',
+    slug: 'next-gut',
+    solutionSlug: 'white-gut-treatment-shrimp',
+    category: 'Spore Exclusion & Enteric Mucosal Defense',
+    strains: 'Synergistic spore-forming Bacillus, lactic acid bacteria, and beta-glucan immune activators',
+    dosage: '20 mL/kg feed (Next Gut) + 1.5 L/Acre pond broadcast (Next Viro Nill)',
+    price: '₹5,000 / 5L Canister',
+    turnaround: '3 to 5 days'
+  },
+  {
+    disease: 'Shrimp Hepatopancreas Atrophy & Lipid Depletion',
+    symptoms: 'Shrinking pale or yellowish hepatopancreas, lack of oil globules under 100x microscope, lethargic feeding.',
+    medicine: 'Next Immuno Boost + Next Gut',
+    slug: 'next-immuno-boost',
+    solutionSlug: 'loose-shell-slow-growth-shrimp',
+    category: 'Herbal Hepato-Protective & Lipid Regeneration',
+    strains: 'Phospholipids, betaine, purified 1,3-1,6 beta-glucans, and biological digestive catalysts',
+    dosage: '10 to 15 mL per kg feed mixed with Next Bind Plus',
+    price: '₹1,199 / 1L | ₹5,000 / 5L',
+    turnaround: '48 to 72 hours'
+  },
+  {
+    disease: 'Biological Water Sanitization (Safe Alternative to BKC 50)',
+    symptoms: 'Pathogenic bacterial blooms, surface biofilm, organic scum without burning sensitive shrimp gills or crashing diatoms.',
+    medicine: 'Next Viro Nill',
+    slug: 'next-viro-nill',
+    solutionSlug: 'running-mortality-syndrome-shrimp',
+    category: 'Gentle Biological Pond Water Sanitizer',
+    strains: 'Antagonistic Bacillus subtilis & Pediococcus consortia (5 Billion CFU/ml)',
+    dosage: '1.0 to 1.5 Liters per Acre in morning aeration (zero gill irritation)',
+    price: '₹1,199 / 1L | ₹5,000 / 5L',
+    turnaround: '24 to 48 hours'
+  },
+  {
+    disease: 'Emergency Dissolved Oxygen (DO) & Night Hypoxia Defense',
+    symptoms: 'Pre-dawn surface gasping near paddlewheel aerators, cloudy water, sudden power cuts, high biological oxygen demand (BOD).',
+    medicine: 'Next Converter & Aeration Protocol',
+    slug: 'next-converter',
+    solutionSlug: 'ammonia-control-shrimp-pond',
+    category: 'BOD Reduction & Oxygen Demand Stabilization',
+    strains: 'Autotrophic nitrifying consortium reducing organic chemical oxygen demand',
+    dosage: '2.0 Liters per Acre during aeration + immediate supplemental oxygen tablet broadcast',
+    price: '₹1,199 / 1L | ₹5,000 / 5L',
+    turnaround: 'Immediate to 12 hours'
   }
 ];
 

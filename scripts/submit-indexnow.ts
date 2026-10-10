@@ -12,6 +12,8 @@ const STATIC_ROUTES = [
   '/shrimp-medicine',
   '/calculators',
   '/pond-doctor',
+  '/research',
+  '/certifications',
   '/products',
   '/solutions',
   '/solutions/white-gut-treatment-shrimp',

@@ -49,6 +49,8 @@ const urls = [
   { loc: `${baseUrl}/shrimp-medicine`, priority: '0.99', changefreq: 'daily' },
   { loc: `${baseUrl}/calculators`, priority: '0.98', changefreq: 'daily' },
   { loc: `${baseUrl}/pond-doctor`, priority: '0.98', changefreq: 'daily' },
+  { loc: `${baseUrl}/research`, priority: '0.97', changefreq: 'weekly' },
+  { loc: `${baseUrl}/certifications`, priority: '0.97', changefreq: 'weekly' },
   { loc: `${baseUrl}/products`, priority: '0.96', changefreq: 'daily' },
   { loc: `${baseUrl}/solutions`, priority: '0.96', changefreq: 'daily' },
   { loc: `${baseUrl}/blog`, priority: '0.96', changefreq: 'daily' },

@@ -19,6 +19,12 @@
     <priority>0.99</priority>
   </url>
   <url>
+    <loc>https://nextfarmbiosciences.app/diseases</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.99</priority>
+  </url>
+  <url>
     <loc>https://nextfarmbiosciences.app/calculators</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>daily</changefreq>
@@ -59,6 +65,78 @@
     <lastmod>2026-10-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.96</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/diseases/white-gut-white-feces-syndrome</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.97</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/diseases/enterocytozoon-hepatopenaei-ehp</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.97</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/diseases/acute-hepatopancreatic-necrosis-ahpnd-ems</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.97</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/diseases/toxic-ammonia-nitrite-asphyxia</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.97</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/diseases/luminescent-vibriosis-vibrio-harveyi</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.97</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/diseases/running-mortality-syndrome-rms</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.97</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/diseases/black-gill-melanization-disease</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.97</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/diseases/loose-shell-soft-shell-syndrome</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.97</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/diseases/benthic-sludge-h2s-black-soil-toxicity</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.97</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/diseases/white-spot-syndrome-virus-wssv</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.97</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/diseases/infectious-myonecrosis-virus-imnv</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.97</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/diseases/zoothamnium-ciliate-fouling</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.97</priority>
   </url>
   <url>
     <loc>https://nextfarmbiosciences.app/blog/vannamei-white-gut-white-feces-ehp-treatment-protocol</loc>
@@ -116,6 +194,42 @@
   </url>
   <url>
     <loc>https://nextfarmbiosciences.app/blog/doc-1-to-120-shrimp-probiotic-master-schedule-fcr-guide</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/blog/black-gill-disease-vannamei-shrimp-prevention-cure</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/blog/cyanobacteria-blue-green-algae-microcystis-pond-crash-remedy</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/blog/shrimp-pond-preparation-chlorination-liming-biosecurity-guide</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/blog/vannamei-feed-management-abw-check-tray-fcr-optimization</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/blog/luminescent-vibrio-harveyi-red-disease-shrimp-cure-protocol</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/blog/andhra-pradesh-district-aquaculture-directory-bhimavaram-nellore</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>

@@ -40,13 +40,35 @@ const blogSlugs = [
   'vannamei-mineral-ionic-ratios-molting-soft-shell-cure',
   'running-mortality-syndrome-rms-andhra-pradesh-field-guide',
   'freshwater-low-salinity-vannamei-farming-mineral-guide',
-  'doc-1-to-120-shrimp-probiotic-master-schedule-fcr-guide'
+  'doc-1-to-120-shrimp-probiotic-master-schedule-fcr-guide',
+  'black-gill-disease-vannamei-shrimp-prevention-cure',
+  'cyanobacteria-blue-green-algae-microcystis-pond-crash-remedy',
+  'shrimp-pond-preparation-chlorination-liming-biosecurity-guide',
+  'vannamei-feed-management-abw-check-tray-fcr-optimization',
+  'luminescent-vibrio-harveyi-red-disease-shrimp-cure-protocol',
+  'andhra-pradesh-district-aquaculture-directory-bhimavaram-nellore'
+];
+
+const diseaseSlugs = [
+  'white-gut-white-feces-syndrome',
+  'enterocytozoon-hepatopenaei-ehp',
+  'acute-hepatopancreatic-necrosis-ahpnd-ems',
+  'toxic-ammonia-nitrite-asphyxia',
+  'luminescent-vibriosis-vibrio-harveyi',
+  'running-mortality-syndrome-rms',
+  'black-gill-melanization-disease',
+  'loose-shell-soft-shell-syndrome',
+  'benthic-sludge-h2s-black-soil-toxicity',
+  'white-spot-syndrome-virus-wssv',
+  'infectious-myonecrosis-virus-imnv',
+  'zoothamnium-ciliate-fouling'
 ];
 
 const urls = [
   { loc: `${baseUrl}/`, priority: '1.0', changefreq: 'daily' },
   { loc: `${baseUrl}/aquaculture`, priority: '0.99', changefreq: 'daily' },
   { loc: `${baseUrl}/shrimp-medicine`, priority: '0.99', changefreq: 'daily' },
+  { loc: `${baseUrl}/diseases`, priority: '0.99', changefreq: 'daily' },
   { loc: `${baseUrl}/calculators`, priority: '0.98', changefreq: 'daily' },
   { loc: `${baseUrl}/pond-doctor`, priority: '0.98', changefreq: 'daily' },
   { loc: `${baseUrl}/research`, priority: '0.97', changefreq: 'weekly' },
@@ -54,6 +76,11 @@ const urls = [
   { loc: `${baseUrl}/products`, priority: '0.96', changefreq: 'daily' },
   { loc: `${baseUrl}/solutions`, priority: '0.96', changefreq: 'daily' },
   { loc: `${baseUrl}/blog`, priority: '0.96', changefreq: 'daily' },
+  ...diseaseSlugs.map((slug) => ({
+    loc: `${baseUrl}/diseases/${slug}`,
+    priority: '0.97',
+    changefreq: 'weekly'
+  })),
   ...blogSlugs.map((slug) => ({
     loc: `${baseUrl}/blog/${slug}`,
     priority: '0.95',

@@ -17,10 +17,18 @@ import {
   Bookmark,
   Share2,
   Sparkles,
-  Calculator
+  Calculator,
+  Microscope,
+  Award,
+  ChevronRight,
+  ExternalLink
 } from 'lucide-react';
 import { BLOG_ARTICLES, BlogArticle } from '@/lib/blog-data';
 import { getBreadcrumbJsonLd } from '@/lib/structured-data';
+import { InteractiveInPostCalculator } from '@/components/blog/interactive-in-post-calculator';
+import { InstitutionalComparisonCard } from '@/components/blog/institutional-comparison-card';
+import { TeluguClinicalCard } from '@/components/blog/telugu-clinical-card';
+import { PrintableFieldProtocol } from '@/components/blog/printable-field-protocol';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -117,6 +125,21 @@ export default async function BlogPostPage({ params }: Props) {
     }))
   };
 
+  const howToJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: `Biological Clinical Protocol for ${article.targetCondition || article.title}`,
+    description: article.excerpt,
+    step: article.contentSections
+      .filter((s) => s.bulletPoints && s.bulletPoints.length > 0)
+      .flatMap((s) => s.bulletPoints || [])
+      .map((stepText, idx) => ({
+        '@type': 'HowToStep',
+        position: idx + 1,
+        text: stepText
+      }))
+  };
+
   return (
     <div className="bg-[#F8FAFC] min-h-screen pb-24 text-slate-900">
       {/* Schema Injection */}
@@ -131,6 +154,10 @@ export default async function BlogPostPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
       />
 
       {/* Header Banner */}
@@ -147,6 +174,18 @@ export default async function BlogPostPage({ params }: Props) {
             <span className="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">
               {article.category}
             </span>
+            {article.relatedDiseaseSlug && (
+              <>
+                <span className="text-slate-400 text-xs">•</span>
+                <Link
+                  href={`/diseases/${article.relatedDiseaseSlug}`}
+                  className="px-2.5 py-0.5 rounded-full text-xs font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-400/30 hover:bg-cyan-500/30 transition-colors flex items-center gap-1"
+                >
+                  <Microscope className="w-3 h-3" />
+                  <span>Clinical Disease Monograph →</span>
+                </Link>
+              </>
+            )}
           </div>
 
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black font-display tracking-tight text-white mb-4 leading-tight">
@@ -169,6 +208,10 @@ export default async function BlogPostPage({ params }: Props) {
               <ShieldCheck className="w-3.5 h-3.5" />
               <span>CAA Certified • ISO 9001:2015</span>
             </div>
+            <div className="flex items-center gap-1.5 font-semibold text-[#FFD200]">
+              <Award className="w-3.5 h-3.5" />
+              <span>100% Antibiotic-Free</span>
+            </div>
           </div>
         </div>
       </header>
@@ -178,7 +221,7 @@ export default async function BlogPostPage({ params }: Props) {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
           {/* Table of Contents Sticky Sidebar */}
           <aside className="lg:col-span-1 hidden lg:block">
-            <div className="sticky top-28 bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-3 text-xs">
+            <div className="sticky top-28 bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-4 text-xs">
               <div className="flex items-center gap-1.5 font-bold text-[#002D3A] uppercase tracking-wider text-[11px]">
                 <Bookmark className="w-3.5 h-3.5 text-emerald-600" />
                 <span>Table of Contents</span>
@@ -195,26 +238,69 @@ export default async function BlogPostPage({ params }: Props) {
                 ))}
               </nav>
 
-              <div className="pt-4 border-t border-slate-100">
-                <span className="text-[10px] text-slate-400 block mb-1">Recommended Bio-Input:</span>
+              <div className="pt-4 border-t border-slate-100 space-y-2">
+                <span className="text-[10px] text-slate-400 block font-medium">Recommended Bio-Input:</span>
                 <Link
                   href={`/products/${article.recommendedProductSlug}`}
                   className="font-bold text-emerald-700 hover:underline block text-xs"
                 >
                   {article.recommendedProductName} →
                 </Link>
+                <Link
+                  href="/calculators"
+                  className="font-semibold text-cyan-700 hover:underline block text-xs"
+                >
+                  Aqua Calculators Suite →
+                </Link>
+                <Link
+                  href="/pond-doctor"
+                  className="font-semibold text-purple-700 hover:underline block text-xs"
+                >
+                  Pond Doctor Diagnostic Tool →
+                </Link>
               </div>
             </div>
           </aside>
 
           {/* Article Main Body */}
-          <main className="lg:col-span-3 space-y-10">
+          <main className="lg:col-span-3 space-y-8">
             {/* Lead Callout */}
             <div className="bg-white rounded-2xl p-6 border-l-4 border-emerald-500 shadow-sm text-sm text-slate-700 leading-relaxed">
               <strong>Clinical Executive Summary:</strong> {article.excerpt}
             </div>
 
-            {/* Sections */}
+            {/* Print Protocol Button */}
+            <PrintableFieldProtocol
+              articleTitle={article.title}
+              recommendedProductName={article.recommendedProductName}
+              dosageSummary={article.dosageSummary || 'Refer to article clinical protocol.'}
+            />
+
+            {/* Telugu Regional Advisory Panel */}
+            {article.teluguSummary && (
+              <TeluguClinicalCard
+                conditionNameTe={article.teluguSummary.conditionNameTe}
+                conditionNameEn={article.targetCondition || article.title}
+                symptomsTe={article.teluguSummary.symptomsTe}
+                treatmentProtocolTe={article.teluguSummary.treatmentProtocolTe}
+                recommendedProductTe={article.teluguSummary.recommendedProductTe}
+                productSlug={article.recommendedProductSlug}
+              />
+            )}
+
+            {/* Interactive Dosage Calculator Embedded into Article */}
+            <InteractiveInPostCalculator
+              defaultProductSlug={article.recommendedProductSlug}
+              defaultProductName={article.recommendedProductName}
+              targetCondition={article.targetCondition || article.title}
+            />
+
+            {/* Institutional Comparison Benchmark Card */}
+            <InstitutionalComparisonCard
+              conditionName={article.targetCondition || article.title}
+            />
+
+            {/* Content Sections */}
             {article.contentSections.map((section) => (
               <section key={section.id} id={section.id} className="space-y-4">
                 <h2 className="text-xl sm:text-2xl font-black text-[#002D3A] font-display border-b border-slate-200 pb-2">
@@ -322,6 +408,48 @@ export default async function BlogPostPage({ params }: Props) {
                     <span>Calculate Pond Dosage</span>
                   </Link>
                 </div>
+              </div>
+            </section>
+
+            {/* Companion Internal Links Grid (Diseases, Calculators & Solutions) */}
+            <section className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+              <div className="flex items-center gap-2 text-[#002D3A] font-bold text-base">
+                <Microscope className="w-5 h-5 text-emerald-600" />
+                <span>Related Knowledge Assets &amp; Diagnostic Engines</span>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+                {article.relatedDiseaseSlug && (
+                  <Link
+                    href={`/diseases/${article.relatedDiseaseSlug}`}
+                    className="p-3 rounded-xl border border-slate-200 hover:border-emerald-500 bg-slate-50 hover:bg-white transition-all group block"
+                  >
+                    <span className="text-[10px] text-emerald-700 font-bold block mb-1">Pathology Monograph:</span>
+                    <strong className="text-slate-900 group-hover:text-emerald-700 block mb-1">
+                      {article.targetCondition || 'Clinical Monograph'}
+                    </strong>
+                    <span className="text-slate-500 text-[11px]">View full PCR targets &amp; histology →</span>
+                  </Link>
+                )}
+                <Link
+                  href="/calculators"
+                  className="p-3 rounded-xl border border-slate-200 hover:border-cyan-500 bg-slate-50 hover:bg-white transition-all group block"
+                >
+                  <span className="text-[10px] text-cyan-700 font-bold block mb-1">Clinical Tools:</span>
+                  <strong className="text-slate-900 group-hover:text-cyan-700 block mb-1">
+                    Aqua Calculators Suite
+                  </strong>
+                  <span className="text-slate-500 text-[11px]">Ammonia TAN, Biomass, Aeration math →</span>
+                </Link>
+                <Link
+                  href="/pond-doctor"
+                  className="p-3 rounded-xl border border-slate-200 hover:border-purple-500 bg-slate-50 hover:bg-white transition-all group block"
+                >
+                  <span className="text-[10px] text-purple-700 font-bold block mb-1">Diagnostic AI:</span>
+                  <strong className="text-slate-900 group-hover:text-purple-700 block mb-1">
+                    Pond Doctor Engine
+                  </strong>
+                  <span className="text-slate-500 text-[11px]">Interactive symptom prescription →</span>
+                </Link>
               </div>
             </section>
 

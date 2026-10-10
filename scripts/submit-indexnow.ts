@@ -1,5 +1,6 @@
 import { PRODUCTS } from '../src/lib/catalog';
 import { BLOG_ARTICLES } from '../src/lib/blog-data';
+import { DISEASE_MONOGRAPHS } from '../src/lib/diseases-data';
 
 const HOST = 'nextfarmbiosciences.app';
 const BASE_URL = `https://${HOST}`;
@@ -10,6 +11,7 @@ const STATIC_ROUTES = [
   '/',
   '/aquaculture',
   '/shrimp-medicine',
+  '/diseases',
   '/calculators',
   '/pond-doctor',
   '/research',
@@ -39,8 +41,9 @@ const STATIC_ROUTES = [
 async function submitIndexNow() {
   const productUrls = PRODUCTS.map((p) => `${BASE_URL}/products/${p.slug}`);
   const blogUrls = BLOG_ARTICLES.map((b) => `${BASE_URL}/blog/${b.slug}`);
+  const diseaseUrls = DISEASE_MONOGRAPHS.map((d) => `${BASE_URL}/diseases/${d.slug}`);
   const staticUrls = STATIC_ROUTES.map((r) => `${BASE_URL}${r}`);
-  const urlList = [...staticUrls, ...productUrls, ...blogUrls];
+  const urlList = [...staticUrls, ...productUrls, ...blogUrls, ...diseaseUrls];
 
   const payload = {
     host: HOST,

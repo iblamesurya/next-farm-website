@@ -1,14 +1,28 @@
 import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { ShieldCheck, ArrowRight, BookOpen, Clock, Calendar, Microscope, Award, Sparkles, MessageSquare, Phone } from 'lucide-react';
+import {
+  ShieldCheck,
+  ArrowRight,
+  BookOpen,
+  Clock,
+  Calendar,
+  Microscope,
+  Award,
+  Sparkles,
+  MessageSquare,
+  Phone,
+  Calculator,
+  Compass
+} from 'lucide-react';
 import { BLOG_ARTICLES } from '@/lib/blog-data';
 import { getBreadcrumbJsonLd } from '@/lib/structured-data';
+import { BlogExplorer } from '@/components/blog/blog-explorer';
 
 export const metadata: Metadata = {
   title: 'Aquaculture Pathology & Prawn Farming Clinical Blog | Next Farm Bio Sciences',
   description:
-    'Comprehensive scientific articles, diagnostic manuals, and biological protocols for commercial Litopenaeus vannamei and Penaeus monodon aquaculture in India. 100% antibiotic-free CAA-approved guidance.',
+    'Comprehensive scientific articles, diagnostic manuals, and biological protocols for commercial Litopenaeus vannamei and Penaeus monodon aquaculture in India. 100% antibiotic-free CAA-approved guidance across 16 exhaustive pillar guides.',
   keywords: [
     'Aquaculture blog India',
     'Shrimp disease management guide',
@@ -17,6 +31,9 @@ export const metadata: Metadata = {
     'CAA approved probiotics Andhra Pradesh',
     'Bhimavaram aqua medicine',
     'Nellore prawn culture',
+    'Black gill disease vannamei',
+    'Cyanobacteria blue green algae shrimp',
+    'Shrimp feed management check tray',
     'రొయ్యల సాగు బ్లాగ్',
     'Next Farm Bio Sciences blog'
   ],
@@ -26,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Aquaculture Pathology & Prawn Farming Clinical Blog | Next Farm Bio Sciences',
     description:
-      'Scientific articles on White Gut, Ammonia TAN, Luminescent Vibrio, CAA 20 Banned Antibiotics, and Andhra Pradesh regional pond management.',
+      'Scientific articles on White Gut, Ammonia TAN, Luminescent Vibrio, Black Gill, Blue-Green Algae, CAA 20 Banned Antibiotics, and Andhra Pradesh regional pond management.',
     url: 'https://nextfarmbiosciences.app/blog',
     siteName: 'Next Farm Bio Sciences',
     locale: 'en_IN',
@@ -45,7 +62,8 @@ export default function BlogIndexPage() {
     '@type': 'CollectionPage',
     '@id': 'https://nextfarmbiosciences.app/blog#collection',
     name: 'Aquaculture Pathology & Prawn Farming Clinical Blog',
-    description: 'Scientific articles, diagnostic manuals, and biological protocols for commercial shrimp culture in India.',
+    description:
+      'Scientific articles, diagnostic manuals, and biological protocols for commercial shrimp culture in India across 16 exhaustive pillar monographs.',
     url: 'https://nextfarmbiosciences.app/blog',
     mainEntity: {
       '@type': 'ItemList',
@@ -60,7 +78,7 @@ export default function BlogIndexPage() {
   };
 
   return (
-    <div className="bg-[#F8FAFC] min-h-screen pb-24">
+    <div className="bg-[#F8FAFC] min-h-screen pb-24 text-slate-900">
       {/* Structured Data */}
       <script
         type="application/ld+json"
@@ -81,6 +99,9 @@ export default function BlogIndexPage() {
             </span>
             <span className="px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-slate-200">
               CAA Certified • ISO 9001:2015
+            </span>
+            <span className="px-3 py-1 rounded-full text-xs font-bold bg-[#FFD200]/20 text-[#FFD200] border border-[#FFD200]/30">
+              16 Comprehensive Pillar Guides
             </span>
           </div>
 
@@ -104,69 +125,20 @@ export default function BlogIndexPage() {
               <BookOpen className="w-4 h-4 text-cyan-300" />
               <span>Bilingual Telugu &amp; English Guidance</span>
             </div>
+            <Link
+              href="/diseases"
+              className="flex items-center gap-1.5 bg-emerald-500 text-slate-950 px-3.5 py-2 rounded-xl hover:bg-emerald-400 transition shadow"
+            >
+              <Microscope className="w-4 h-4" />
+              <span>Explore Pathology Compendium →</span>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Article Grid */}
+      {/* Main Interactive Blog Explorer Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {BLOG_ARTICLES.map((article) => (
-            <article
-              key={article.slug}
-              className="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200 shadow-sm flex flex-col justify-between hover:border-emerald-500/50 hover:shadow-md transition-all group"
-            >
-              <div>
-                <div className="flex items-center justify-between text-xs text-slate-500 mb-3">
-                  <span className="px-2.5 py-1 rounded-full font-bold bg-emerald-50 text-emerald-700 border border-emerald-100">
-                    {article.category}
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Clock className="w-3.5 h-3.5" />
-                    {article.readingTime}
-                  </span>
-                </div>
-
-                <Link href={`/blog/${article.slug}`} className="block">
-                  <h2 className="text-xl font-black text-[#002D3A] font-display mb-2 group-hover:text-emerald-700 transition-colors leading-snug">
-                    {article.title}
-                  </h2>
-                </Link>
-
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4 line-clamp-3">
-                  {article.excerpt}
-                </p>
-
-                {article.teluguKeywords && article.teluguKeywords.length > 0 && (
-                  <div className="mb-4 flex flex-wrap gap-1.5">
-                    {article.teluguKeywords.slice(0, 3).map((kw, i) => (
-                      <span key={i} className="text-[10px] bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-slate-200 font-medium">
-                        {kw}
-                      </span>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              <div className="pt-4 border-t border-slate-100">
-                <div className="flex items-center justify-between">
-                  <div className="text-[11px] text-slate-500">
-                    <span className="block font-semibold text-slate-700">{article.author.name}</span>
-                    <span>Vijayawada, India</span>
-                  </div>
-
-                  <Link
-                    href={`/blog/${article.slug}`}
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 hover:text-emerald-900 group-hover:translate-x-1 transition-all"
-                  >
-                    <span>Read Guide</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </Link>
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
+        <BlogExplorer initialArticles={BLOG_ARTICLES} />
       </section>
 
       {/* Clinical Consultation Banner */}

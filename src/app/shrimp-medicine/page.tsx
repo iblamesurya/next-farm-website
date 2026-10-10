@@ -30,6 +30,13 @@ export const metadata: Metadata = {
     'Vannamei shrimp disease medicine',
     'Aqua medicine for prawn',
     'CAA approved shrimp probiotics',
+    'Bhimavaram aqua medicine',
+    'Nellore prawn probiotics',
+    'రొయ్యల మందులు',
+    'రొయ్యల తెల్ల పేగు మందు',
+    'అమోనియా నివారణ రొయ్యలు',
+    'NFDB aquaculture guidelines',
+    'CIBA shrimp disease management',
     'Next Farm Bio Sciences'
   ],
   alternates: {
@@ -498,6 +505,128 @@ export default function ShrimpMedicineGuidePage() {
                 <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ICAR-CIBA & NFDB Regulatory Standard Section */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div className="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-slate-200">
+          <div className="flex flex-wrap items-center gap-2 mb-3">
+            <span className="px-3 py-1 rounded-full text-xs font-bold bg-blue-100 text-blue-900 border border-blue-200">
+              Regulatory Biosecurity Framework
+            </span>
+            <span className="px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700">
+              Reference: CAA Gazette Notification S.O. 1827(E) &amp; MPEDA Directives
+            </span>
+          </div>
+
+          <h2 className="text-2xl sm:text-3xl font-black text-[#002D3A] font-display mb-4">
+            ICAR-CIBA &amp; NFDB Standards: Why Biological Probiotics Outperform Banned Chemical Antibiotics
+          </h2>
+          <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
+            Both the <strong>National Fisheries Development Board (NFDB)</strong> and the <strong>Central Institute of Brackishwater Aquaculture (ICAR-CIBA)</strong> strongly advocate for biological disease intervention over chemical antimicrobials in commercial shrimp culture. Under the Coastal Aquaculture Authority Act and MPEDA export guidelines, the use of <strong>20 specific veterinary antibiotics</strong> is strictly prohibited in commercial aquaculture in India:
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-rose-50 border border-rose-200 rounded-2xl p-6">
+              <div className="flex items-center gap-2 text-rose-800 font-bold text-base mb-3">
+                <AlertTriangle className="w-5 h-5 text-rose-600" />
+                <span>The 20 Banned Chemical Antibiotics in Indian Aquaculture</span>
+              </div>
+              <ul className="text-xs text-rose-950 space-y-1.5 list-disc list-inside">
+                <li><strong>Chloramphenicol &amp; Nitrofurans:</strong> (Furazolidone, Nitrofurazone, Furaltadone) — Zero-tolerance export rejection.</li>
+                <li><strong>Fluoroquinolones:</strong> (Enrofloxacin, Ciprofloxacin, Nalidixic Acid) — Banned due to severe hepatopancreatic atrophy.</li>
+                <li><strong>Tetracyclines &amp; Aminoglycosides:</strong> (Oxytetracycline, Neomycin, Gentamicin, Kanamycin) — Prohibited in commercial ponds.</li>
+                <li><strong>Sulphonamides &amp; Others:</strong> (Sulphamethoxazole, Streptomycin, Colistin) — Triggers rapid microsporidian (EHP) proliferation.</li>
+              </ul>
+              <p className="text-[11px] text-rose-800 mt-4 font-medium italic">
+                Scientific Reality: Intracellular microsporidian spores (EHP) are completely immune to chemical antibiotics. Using them destroys protective gut villi, causing 100% loss.
+              </p>
+            </div>
+
+            <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-6">
+              <div className="flex items-center gap-2 text-emerald-900 font-bold text-base mb-3">
+                <ShieldCheck className="w-5 h-5 text-emerald-700" />
+                <span>Next Farm Bio Sciences Biological Advantage</span>
+              </div>
+              <ul className="text-xs text-emerald-950 space-y-1.5 list-disc list-inside">
+                <li><strong>100% Certified Antibiotic-Free:</strong> Fully compliant with CAA, MPEDA, and ISO 9001:2015 biosecurity standards.</li>
+                <li><strong>Targeted Antagonistic Strains:</strong> Living <em>Citrobacter freundii</em> and <em>Bacillus subtilis</em> produce natural lipopeptides that outcompete pathogenic <em>Vibrio</em>.</li>
+                <li><strong>Zero Export Rejection Risk:</strong> Guaranteed 100% residue-free for US FDA, EU, and Japanese export consignments.</li>
+                <li><strong>Active Intestinal Healing:</strong> Rapidly repairs damaged hepatopancreatic tubules and re-establishes firm feeding within 72 hours.</li>
+              </ul>
+              <div className="mt-4 pt-3 border-t border-emerald-200 flex items-center justify-between">
+                <span className="text-xs font-bold text-emerald-900">CAA Approved Facility: Vijayawada, AP</span>
+                <Link href="/certifications" className="text-xs font-bold text-emerald-700 underline">View Certifications →</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Andhra Pradesh Regional Aquaculture Hubs & Bilingual Telugu Keywords */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-slate-200">
+          <div className="inline-flex items-center gap-1.5 text-xs font-bold text-cyan-800 bg-cyan-100 px-3 py-1 rounded-full mb-3">
+            <span>ఆంధ్రప్రదేశ్ రొయ్యల సాగు మరియు మందుల మార్గదర్శిని • Regional Aqua Hub Directory</span>
+          </div>
+
+          <h2 className="text-2xl sm:text-3xl font-black text-[#002D3A] font-display mb-4">
+            Andhra Pradesh Prawn Farming Hubs: Regional Soil &amp; Water Management Guide
+          </h2>
+          <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
+            Andhra Pradesh accounts for over 70% of India's commercial <em>Litopenaeus vannamei</em> production. Different coastal districts present distinct soil, salinity, and disease pressures requiring tailored biological protocols:
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 text-xs text-slate-700">
+            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5">
+              <strong className="text-sm text-[#002D3A] block mb-1">Bhimavaram &amp; West Godavari (భీమవరం)</strong>
+              <p className="text-[11px] text-emerald-700 font-semibold mb-2">రొయ్యల తెల్ల పేగు వ్యాధి (White Gut) &amp; అమోనియా సమస్యలు</p>
+              <p className="leading-relaxed mb-3">
+                Heavy black cotton soils lead to intense bottom sludge fermentation. High EHP spore loads trigger severe White Gut between DOC 35 and 60.
+              </p>
+              <div className="bg-white p-2.5 rounded-lg border border-slate-200 font-medium">
+                <strong>Recommended:</strong> Next Gut (15–20 mL/kg feed) + Next Converter for TAN spikes.
+              </div>
+            </div>
+
+            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5">
+              <strong className="text-sm text-[#002D3A] block mb-1">Nellore &amp; Gudur (నెల్లూరు)</strong>
+              <p className="text-[11px] text-cyan-700 font-semibold mb-2">విబ్రియో ఎరుపు వ్యాధి (Luminescent Vibriosis) &amp; హై శాలినటీ</p>
+              <p className="leading-relaxed mb-3">
+                High sea salinities (28–38 ppt) and summer heat spike virulent <em>Vibrio harveyi</em> counts, resulting in luminous water and red swimmerets.
+              </p>
+              <div className="bg-white p-2.5 rounded-lg border border-slate-200 font-medium">
+                <strong>Recommended:</strong> Next Vibriosis (1.5–2.0 L/acre) + Next Viro Nill water bio-sanitizer.
+              </div>
+            </div>
+
+            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5">
+              <strong className="text-sm text-[#002D3A] block mb-1">Gudivada &amp; Krishna District (గుడివాడ)</strong>
+              <p className="text-[11px] text-amber-700 font-semibold mb-2">లూజ్ షెల్ (Soft Shell) &amp; తక్కువ లవణీయత (Low Salinity)</p>
+              <p className="leading-relaxed mb-3">
+                Freshwater to low-salinity ponds (0–8 ppt) experience severe ionic Calcium:Magnesium ratio imbalances, causing molting cramps.
+              </p>
+              <div className="bg-white p-2.5 rounded-lg border border-slate-200 font-medium">
+                <strong>Recommended:</strong> Next Min (chelated ionic minerals) at 5L/acre during molting runs.
+              </div>
+            </div>
+          </div>
+
+          <div className="p-4 rounded-xl bg-slate-100 border border-slate-200 text-xs text-slate-700 flex flex-wrap items-center justify-between gap-3">
+            <div>
+              <strong>Telugu Technical Consultation:</strong> మా నిపుణులతో మాట్లాడి మీ చెరువు నీటి పరీక్షలు మరియు రొయ్యల వ్యాధులకు సరైన బయోలాజికల్ మందులను ఆర్డర్ చేయండి.
+            </div>
+            <a
+              href="https://wa.me/918977656444?text=Hello%20Next%20Farm,%20I%20need%20medicine%20in%20Telugu%20for%20my%20shrimp%20pond"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#25D366] text-white font-bold py-2 px-3.5 rounded-xl shadow flex items-center gap-1.5 whitespace-nowrap"
+            >
+              <MessageSquare className="w-3.5 h-3.5" />
+              <span>వాట్సాప్ ద్వారా సంప్రదించండి (+91 8977656444)</span>
+            </a>
           </div>
         </div>
       </section>

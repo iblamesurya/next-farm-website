@@ -59,10 +59,10 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/images/branding/logo_primary.png',
-        width: 800,
-        height: 600,
-        alt: 'Next Farm Bio Sciences Logo',
+        url: '/images/branding/og_image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Next Farm Bio Sciences Aquaculture Biotechnology',
       },
     ],
   },
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Next Farm Bio Sciences | Aquaculture Biotechnology',
     description: 'CAA-Approved high-potency probiotics and water treatments for shrimp and fish farming.',
-    images: ['/images/branding/logo_primary.png'],
+    images: ['/images/branding/og_image.png'],
   },
   robots: {
     index: true,
@@ -84,8 +84,14 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/favicon.png',
-    apple: '/favicon.png',
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-48x48.png', type: 'image/png', sizes: '48x48' },
+      { url: '/favicon.png', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
   },
 };
 

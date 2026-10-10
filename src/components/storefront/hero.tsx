@@ -70,9 +70,18 @@ export function Hero() {
           
           {/* Left Column: Value Proposition & High-Impact Copy */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-            {/* Live Trust Pill */}
-            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-cyan-400/30 text-white text-xs font-heading font-extrabold tracking-wide shadow-lg">
-              <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse flex-shrink-0" />
+            {/* Live Trust Pill with Official Brand Emblem */}
+            <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-cyan-400/30 text-white text-xs font-heading font-extrabold tracking-wide shadow-lg">
+              <div className="relative w-6 h-6 flex-shrink-0">
+                <Image
+                  src="/images/branding/logo_primary.png"
+                  alt="Next Farm Bio Sciences Emblem"
+                  fill
+                  sizes="24px"
+                  className="object-contain"
+                />
+              </div>
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse flex-shrink-0" />
               <span className="text-[#FFD200]">CAA CERTIFIED</span>
               <span className="text-slate-400">|</span>
               <span className="text-slate-200">100% ANTIBIOTIC-FREE BIO-INPUTS</span>

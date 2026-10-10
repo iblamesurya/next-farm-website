@@ -75,18 +75,19 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Column 1: Company Profile */}
           <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="relative w-12 h-12 bg-white rounded-lg p-1.5 flex-shrink-0">
+            <div className="flex items-center gap-3.5">
+              <div className="relative w-14 h-14 bg-white rounded-xl p-1.5 shadow-md flex-shrink-0">
                 <Image
                   src="/images/branding/logo_primary.png"
                   alt="Next Farm Logo"
                   fill
+                  sizes="56px"
                   className="object-contain"
                 />
               </div>
               <div>
-                <h3 className="font-heading font-black text-lg text-white">NEXT FARM</h3>
-                <span className="text-xs font-semibold text-[#FFD200] tracking-widest uppercase">
+                <h3 className="font-heading font-black text-xl text-white">NEXT FARM</h3>
+                <span className="text-xs font-bold text-[#FFD200] tracking-widest uppercase">
                   Bio Sciences
                 </span>
               </div>

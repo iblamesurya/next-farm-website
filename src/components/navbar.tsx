@@ -27,22 +27,22 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-12 h-12 flex-shrink-0">
+          <Link href="/" className="flex items-center gap-3 sm:gap-3.5 group">
+            <div className="relative w-12 h-12 sm:w-14 sm:h-14 flex-shrink-0 drop-shadow-sm transition-transform duration-200 group-hover:scale-105">
               <Image
                 src="/images/branding/logo_primary.png"
                 alt="Next Farm Bio Sciences Logo"
                 fill
-                sizes="48px"
+                sizes="(max-width: 640px) 48px, 56px"
                 className="object-contain"
                 priority
               />
             </div>
             <div className="flex flex-col">
-              <span className="font-heading font-extrabold text-lg sm:text-xl text-[#002B5B] tracking-tight group-hover:text-[#004B50] transition-colors">
+              <span className="font-heading font-extrabold text-lg sm:text-2xl text-[#002B5B] tracking-tight group-hover:text-[#004B50] transition-colors leading-tight">
                 NEXT FARM
               </span>
-              <span className="text-[10px] sm:text-xs font-semibold tracking-widest text-[#004B50] uppercase">
+              <span className="text-[10px] sm:text-xs font-bold tracking-widest text-[#004B50] uppercase">
                 Bio Sciences
               </span>
             </div>

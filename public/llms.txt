@@ -33,3 +33,5 @@
 ## Optional
 - [Full Technical Protocols](https://nextfarmbiosciences.app/llms-full.txt): Complete 11-product technical monograph, CFU metrics, and clinical biological dosages.
 - [Agent Resource Catalog](https://nextfarmbiosciences.app/.well-known/ai-catalog.json): ARD 1.0 machine discovery manifest.
+- [OpenAI Commerce Product Feed (JSONL)](https://nextfarmbiosciences.app/openai-products.jsonl): Official 33-SKU OpenAI Agentic Commerce product feed (5L, 2L, 1L variants).
+- [OpenAI Commerce Product Feed (CSV)](https://nextfarmbiosciences.app/openai-products.csv): Official 33-SKU CSV product feed for merchant ingestion.

@@ -57,6 +57,12 @@ export function Navbar() {
               11 Formulations
             </Link>
             <Link
+              href="/aquaculture"
+              className="text-sm font-semibold text-slate-700 hover:text-[#004B50] transition-colors"
+            >
+              Aquaculture Hub
+            </Link>
+            <Link
               href="/shrimp-medicine"
               className="text-sm font-semibold text-slate-700 hover:text-[#004B50] transition-colors"
             >
@@ -141,6 +147,13 @@ export function Navbar() {
               className="text-base font-semibold text-slate-800 py-2 border-b border-slate-100"
             >
               11 Core Formulations
+            </Link>
+            <Link
+              href="/aquaculture"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-base font-semibold text-slate-800 py-2 border-b border-slate-100 text-[#004B50]"
+            >
+              Aquaculture Medicines &amp; Probiotics
             </Link>
             <Link
               href="/shrimp-medicine"

@@ -20,6 +20,10 @@
 - [Next Remedy](https://nextfarmbiosciences.app/products/next-remedy): Microbial balance consortium (5B CFU/ml) for toxic blue-green algae (Microcystis) bloom management.
 - [next food pro](https://nextfarmbiosciences.app/products/next-food-pro): Feed-grade probiotic supplement (6B CFU/g) for optimal FCR and digestive enzymes.
 
+## Master Technical Guides
+- [Aquaculture Biotechnology Hub](https://nextfarmbiosciences.app/aquaculture): Complete authoritative guide to commercial aquaculture medicine, probiotics, benthic sludge remediation, and CAA-approved biosecurity inputs.
+- [Shrimp Medicine Master Guide](https://nextfarmbiosciences.app/shrimp-medicine): Comprehensive clinical manual for Litopenaeus vannamei and Penaeus monodon disease management.
+
 ## Interactive Clinical Diagnostic Engine
 - [Pond Doctor Diagnostic Tool](https://nextfarmbiosciences.app/pond-doctor): Interactive symptom analyzer calculating exact volumetric dosages and 5L/1L can allocations per water acre.
 

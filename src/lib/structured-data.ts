@@ -21,7 +21,13 @@ export function getVeterinaryBusinessJsonLd() {
     description:
       'Pioneering sustainable aquaculture biotechnology, providing CAA-approved, antibiotic-free probiotics, mineral supplements, and water conditioners for shrimp and prawn farming.',
     telephone: '+91-8977656444',
-    email: 'info@nextfarm.in',
+    email: 'info@nextfarmbiosciences.app',
+    alternateName: [
+      'NextFarm Bio Sciences',
+      'Next Farm Biosciences',
+      'Next Farm Biosciences Vijayawada',
+      'Next Farm'
+    ],
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'New Autonagar',
@@ -156,5 +162,29 @@ export function getFaqPageJsonLd() {
         }
       }
     ]
+  };
+}
+
+export function getWebSiteJsonLd() {
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://nextfarmbiosciences.app';
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${baseUrl}/#website`,
+    url: baseUrl,
+    name: 'Next Farm Bio Sciences',
+    alternateName: [
+      'NextFarm Biosciences',
+      'Next Farm Biosciences',
+      'Next Farm Biosciences Vijayawada',
+      'Next Farm'
+    ],
+    description:
+      'Official commercial aquaculture biotechnology portal in New Autonagar, Vijayawada, Andhra Pradesh.',
+    publisher: {
+      '@id': `${baseUrl}/#organization`
+    },
+    inLanguage: 'en-IN'
   };
 }

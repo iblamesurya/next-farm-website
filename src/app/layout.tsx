@@ -6,7 +6,7 @@ import { CartProvider } from '@/context/cart-context';
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
 import { CartDrawer } from '@/components/cart-drawer';
-import { getVeterinaryBusinessJsonLd, getFaqPageJsonLd } from '@/lib/structured-data';
+import { getVeterinaryBusinessJsonLd, getFaqPageJsonLd, getWebSiteJsonLd } from '@/lib/structured-data';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -98,6 +98,12 @@ export default function RootLayout({
     <html lang="en" className={`${montserrat.variable} ${openSans.variable} scroll-smooth`}>
       <head>
         <link rel="icon" href="/favicon.png" type="image/png" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(getWebSiteJsonLd())
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

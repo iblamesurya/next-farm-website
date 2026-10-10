@@ -78,11 +78,11 @@ export function Hero() {
               <span className="text-slate-200">100% ANTIBIOTIC-FREE BIO-INPUTS</span>
             </div>
 
-            {/* Main Punchy Headline */}
+            {/* Main Punchy Headline with Exact Brand Entity */}
             <h1 className="font-heading font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.08]">
-              Advanced Aquaculture <br className="hidden sm:inline" />
+              Next Farm Bio Sciences <br className="hidden sm:inline" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFD200] via-emerald-300 to-cyan-300">
-                Biotechnology &amp; Probiotics
+                Aquaculture Biotechnology &amp; Probiotics
               </span>
             </h1>
 

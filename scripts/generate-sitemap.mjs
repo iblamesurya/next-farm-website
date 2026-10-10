@@ -32,6 +32,7 @@ const solutionSlugs = [
 
 const urls = [
   { loc: `${baseUrl}/`, priority: '1.0', changefreq: 'daily' },
+  { loc: `${baseUrl}/shrimp-medicine`, priority: '0.98', changefreq: 'daily' },
   { loc: `${baseUrl}/solutions`, priority: '0.95', changefreq: 'daily' },
   { loc: `${baseUrl}/pond-doctor`, priority: '0.95', changefreq: 'weekly' },
   ...solutionSlugs.map((slug) => ({

@@ -28,6 +28,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0
     },
     {
+      url: `${baseUrl}/shrimp-medicine`,
+      lastModified,
+      changeFrequency: 'daily',
+      priority: 0.98
+    },
+    {
       url: `${baseUrl}/solutions`,
       lastModified,
       changeFrequency: 'daily',

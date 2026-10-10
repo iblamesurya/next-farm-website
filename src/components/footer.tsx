@@ -153,6 +153,12 @@ export function Footer() {
             </h4>
             <ul className="space-y-2 text-sm text-slate-300">
               <li>
+                <Link href="/shrimp-medicine" className="hover:text-[#FFD200] transition-colors flex items-center gap-1.5 font-bold text-[#FFD200]">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#FFD200]"></span>
+                  <span>Shrimp Medicine Master Guide</span>
+                </Link>
+              </li>
+              <li>
                 <Link href="/solutions" className="hover:text-[#FFD200] transition-colors flex items-center gap-1.5 font-semibold text-emerald-300">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
                   <span>Disease Treatment Directory</span>

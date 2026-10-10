@@ -57,6 +57,12 @@ export function Navbar() {
               11 Formulations
             </Link>
             <Link
+              href="/shrimp-medicine"
+              className="text-sm font-semibold text-slate-700 hover:text-[#004B50] transition-colors"
+            >
+              Shrimp Medicine
+            </Link>
+            <Link
               href="/solutions"
               className="text-sm font-semibold text-slate-700 hover:text-[#004B50] transition-colors"
             >
@@ -135,6 +141,13 @@ export function Navbar() {
               className="text-base font-semibold text-slate-800 py-2 border-b border-slate-100"
             >
               11 Core Formulations
+            </Link>
+            <Link
+              href="/shrimp-medicine"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-base font-semibold text-slate-800 py-2 border-b border-slate-100"
+            >
+              Shrimp Medicine &amp; Treatments
             </Link>
             <Link
               href="/solutions"

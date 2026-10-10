@@ -29,3 +29,7 @@
 
 ## Comprehensive Biological Specifications
 - Full technical monograph and clinical treatment protocols: https://nextfarmbiosciences.app/llms-full.txt
+
+## Optional
+- [Full Technical Protocols](https://nextfarmbiosciences.app/llms-full.txt): Complete 11-product technical monograph, CFU metrics, and clinical biological dosages.
+- [Agent Resource Catalog](https://nextfarmbiosciences.app/.well-known/ai-catalog.json): ARD 1.0 machine discovery manifest.

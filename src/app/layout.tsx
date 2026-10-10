@@ -23,15 +23,16 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Next Farm Bio Sciences | High-Potency Aquaculture Biotechnology & Probiotics',
+  title: 'Next Farm Bio Sciences | Aquaculture Bio-Inputs in India - Probiotics & Disease Treatments',
   description:
-    'Next Farm Bio Sciences (New Autonagar, Vijayawada) - Manufacturer of 11 CAA-approved aquaculture biological formulations, shrimp gut probiotics, benthic soil digesters, and toxic ammonia controllers. 100% Antibiotic-Free, ISO 9001:2015.',
+    'Next Farm Bio Sciences (New Autonagar, Vijayawada, Andhra Pradesh) - Manufacturer of 11 CAA-approved aquaculture biological formulations, shrimp gut probiotics, benthic soil digesters, and toxic ammonia controllers. 100% Antibiotic-Free, ISO 9001:2015.',
   keywords: [
     'Next Farm Bio Sciences',
     'NextFarm Bio Sciences',
     'Next Farm Biosciences Vijayawada',
     'Next Farm',
     'Aquaculture Probiotics India',
+    'Aquaculture Bio-Inputs in India',
     'Shrimp Farming Vijayawada',
     'Prawn Farming Andhra Pradesh',
     'CAA Approved Probiotics',
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
     canonical: 'https://nextfarmbiosciences.app',
   },
   openGraph: {
-    title: 'Next Farm Bio Sciences | Commercial Aquaculture Biotechnology',
+    title: 'Next Farm Bio Sciences | Aquaculture Bio-Inputs in India',
     description:
       'Pioneering sustainable aquaculture biotechnology in Andhra Pradesh. 11 targeted biological water treatments, soil conditioners, and gut probiotics. CAA Approved & 100% Antibiotic-Free.',
     url: 'https://nextfarmbiosciences.app',
@@ -104,6 +105,35 @@ export default function RootLayout({
     <html lang="en" className={`${montserrat.variable} ${openSans.variable} scroll-smooth`}>
       <head>
         <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="ai-catalog" href="/.well-known/ai-catalog.json" />
+        <link rel="alternate" type="text/markdown" href="/llms.txt" />
+        <link rel="preconnect" href="https://checkout.razorpay.com" />
+        <link rel="dns-prefetch" href="https://checkout.razorpay.com" />
+        <script
+          type="speculationrules"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              prerender: [
+                {
+                  source: 'list',
+                  urls: ['/pond-doctor', '/solutions', '/aquaculture', '/shrimp-medicine']
+                }
+              ],
+              prefetch: [
+                {
+                  source: 'list',
+                  urls: [
+                    '/products/next-gut',
+                    '/products/next-converter',
+                    '/products/next-viro-nill',
+                    '/products/next-vibriosis',
+                    '/products/next-sludge'
+                  ]
+                }
+              ]
+            })
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

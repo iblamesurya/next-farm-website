@@ -17,14 +17,36 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Next Farm Bio Sciences | High-Potency Aquaculture Biotechnology & Probiotics',
+  title: 'Next Farm Bio Sciences | Aquaculture Bio-Inputs in India - Probiotics & Disease Treatments',
   description:
-    'Science-driven aquaculture biotechnology enterprise in Vijayawada formulating 11 targeted bacterial consortia, benthic sludge digestors, and bioavailable ionic minerals for shrimp & prawn farming. CAA Approved, ISO 9001:2015, 100% Antibiotic-Free.'
+    'Next Farm Bio Sciences (New Autonagar, Vijayawada, Andhra Pradesh) - Leading Indian aquaculture biotechnology enterprise formulating 11 CAA-approved biological inputs, shrimp probiotics, and water conditioners. 100% Antibiotic-Free, ISO 9001:2015.',
+  alternates: {
+    canonical: 'https://nextfarmbiosciences.app'
+  }
 };
 
 export default function HomePage() {
+  const catalogItemListJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Next Farm Bio Sciences Aquaculture Biotechnology Formulations',
+    description: '11 CAA-approved, 100% antibiotic-free probiotics, water conditioners, and soil bioremediators.',
+    itemListElement: PRODUCTS.map((prod, idx) => ({
+      '@type': 'ListItem',
+      position: idx + 1,
+      name: prod.name,
+      url: `https://nextfarmbiosciences.app/products/${prod.slug}`
+    }))
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(catalogItemListJsonLd)
+        }}
+      />
       {/* 1. Hero Section */}
       <Hero />
 

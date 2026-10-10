@@ -91,15 +91,15 @@ export function Hero() {
             <h1 className="font-heading font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.08]">
               Next Farm Bio Sciences <br className="hidden sm:inline" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFD200] via-emerald-300 to-cyan-300">
-                Aquaculture Biotechnology &amp; Probiotics
+                Aquaculture Bio-Inputs in India
               </span>
             </h1>
 
             {/* Sub-headline */}
             <p className="text-base sm:text-lg text-slate-200 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-              Scientific microbial consortia, benthic sludge digestors, and bio-available mineral formulations
-              specifically engineered for Indian shrimp &amp; prawn culture (<em>L. vannamei</em> &amp; <em>P. monodon</em>).
-              Shipped directly from our Vijayawada bio-laboratories.
+              Manufacturer of 11 CAA-approved biological water treatments, benthic soil digestors, and high-potency probiotics
+              specifically engineered for commercial shrimp &amp; prawn culture (<em>L. vannamei</em> &amp; <em>P. monodon</em>).
+              Shipped directly from our New Autonagar, Vijayawada biotechnology plant HQ.
             </p>
 
             {/* 3 Pack Size Pricing Strip */}

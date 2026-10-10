@@ -166,41 +166,88 @@ const MEDICINE_CATALOG = [
 ];
 
 export default function ShrimpMedicineGuidePage() {
-  const structuredFaq = {
+  const structuredData = {
     '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
+    '@graph': [
       {
-        '@type': 'Question',
-        name: 'What is shrimp medicine in commercial aquaculture?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'In commercial shrimp and prawn farming (Litopenaeus vannamei and Penaeus monodon), chemical antibiotics are strictly banned by the Coastal Aquaculture Authority (CAA) and international export regulators. Commercial shrimp medicines are biological inputs consisting of high-potency multi-strain probiotics, nitrifying bacteria, ionic macrominerals, and enzymatic sludge digesters formulated to treat diseases like White Gut, Ammonia toxicity, and Vibriosis without leaving toxic chemical residues.'
+        '@type': 'Article',
+        '@id': 'https://nextfarmbiosciences.app/shrimp-medicine#article',
+        isPartOf: {
+          '@type': 'WebSite',
+          '@id': 'https://nextfarmbiosciences.app/#website',
+          name: 'Next Farm Bio Sciences',
+          url: 'https://nextfarmbiosciences.app'
+        },
+        headline: 'Shrimp Medicine & Prawn Aquaculture Treatments | Complete Clinical Guide',
+        description:
+          'Comprehensive scientific reference for commercial shrimp diseases, active microbial strains, and 100% antibiotic-free biological inputs manufactured in Vijayawada, Andhra Pradesh.',
+        url: 'https://nextfarmbiosciences.app/shrimp-medicine',
+        datePublished: '2026-10-09T00:00:00+05:30',
+        dateModified: '2026-10-10T00:00:00+05:30',
+        publisher: {
+          '@type': 'Organization',
+          name: 'Next Farm Bio Sciences',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://nextfarmbiosciences.app/images/branding/logo_primary.png'
+          }
         }
       },
       {
-        '@type': 'Question',
-        name: 'What is the best medicine for White Gut in shrimp?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Next Gut is the leading commercial biological treatment for White Gut and White Feces Syndrome. Formulated with Citrobacter freundii, Lactobacillus, and Saccharomyces cerevisiae at 10 Billion CFU/g, it colonizes the shrimp gut lining, repairs the hepatopancreas, and eliminates white fecal strings within 48 to 72 hours when fed at 15-20 ml per kg feed.'
-        }
+        '@type': 'BreadcrumbList',
+        '@id': 'https://nextfarmbiosciences.app/shrimp-medicine#breadcrumb',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: 'https://nextfarmbiosciences.app'
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Shrimp Medicine Guide',
+            item: 'https://nextfarmbiosciences.app/shrimp-medicine'
+          }
+        ]
       },
       {
-        '@type': 'Question',
-        name: 'Can aquarium shrimp antibiotics like Kanaplex be used in commercial ponds?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'No. Aquarium shrimp antibiotics (such as Kanamycin or Neomycin) are formulated exclusively for ornamental pet tanks (Cherry/Crystal shrimp). In commercial food-grade aquaculture ponds, using antibiotics is illegal under CAA regulations, causes mass export rejections by the US FDA and EU, and triggers severe hepatopancreatic necrosis in prawns. Commercial ponds require CAA-approved biological probiotics like Next Farm Bio Sciences formulations.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'How do you reduce toxic ammonia in shrimp ponds?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'To treat active ammonia (TAN > 1.0 ppm) spikes in commercial ponds, broadcast Next Converter at 2.0 to 3.0 Liters per Acre during morning aeration. Its live nitrifying bacteria convert unionized ammonia and nitrite into harmless nitrates within 24 hours.'
-        }
+        '@type': 'FAQPage',
+        '@id': 'https://nextfarmbiosciences.app/shrimp-medicine#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'What is shrimp medicine in commercial aquaculture?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'In commercial shrimp and prawn farming (Litopenaeus vannamei and Penaeus monodon), chemical antibiotics are strictly banned by the Coastal Aquaculture Authority (CAA) and international export regulators. Commercial shrimp medicines are biological inputs consisting of high-potency multi-strain probiotics, nitrifying bacteria, ionic macrominerals, and enzymatic sludge digesters formulated to treat diseases like White Gut, Ammonia toxicity, and Vibriosis without leaving toxic chemical residues.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'What is the best medicine for White Gut in shrimp?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Next Gut is the leading commercial biological treatment for White Gut and White Feces Syndrome. Formulated with Citrobacter freundii, Lactobacillus, and Saccharomyces cerevisiae at 10 Billion CFU/g, it colonizes the shrimp gut lining, repairs the hepatopancreas, and eliminates white fecal strings within 48 to 72 hours when fed at 15-20 ml per kg feed.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'Can aquarium shrimp antibiotics like Kanaplex be used in commercial ponds?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'No. Aquarium shrimp antibiotics (such as Kanamycin or Neomycin) are formulated exclusively for ornamental pet tanks (Cherry/Crystal shrimp). In commercial food-grade aquaculture ponds, using antibiotics is illegal under CAA regulations, causes mass export rejections by the US FDA and EU, and triggers severe hepatopancreatic necrosis in prawns. Commercial ponds require CAA-approved biological probiotics like Next Farm Bio Sciences formulations.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'How do you reduce toxic ammonia in shrimp ponds?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'To treat active ammonia (TAN > 1.0 ppm) spikes in commercial ponds, broadcast Next Converter at 2.0 to 3.0 Liters per Acre during morning aeration. Its live nitrifying bacteria convert unionized ammonia and nitrite into harmless nitrates within 24 hours.'
+            }
+          }
+        ]
       }
     ]
   };
@@ -210,7 +257,7 @@ export default function ShrimpMedicineGuidePage() {
       {/* Schema Injection */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredFaq) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       {/* Hero Header */}

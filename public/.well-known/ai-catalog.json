@@ -1,0 +1,27 @@
+{
+  "specVersion": "1.0",
+  "entries": [
+    {
+      "identifier": "urn:air:nextfarmbiosciences.app:diagnostics:pond-doctor",
+      "displayName": "Next Farm Pond Doctor Clinical Diagnostic Tool",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
+      "url": "https://nextfarmbiosciences.app/pond-doctor",
+      "representativeQueries": [
+        "How do I calculate probiotic dosage for shrimp ponds?",
+        "What is the biological treatment for white gut in vannamei prawn?",
+        "How do I reduce toxic ammonia spikes in aquaculture ponds?"
+      ]
+    },
+    {
+      "identifier": "urn:air:nextfarmbiosciences.app:catalog:aquaculture-products",
+      "displayName": "Next Farm CAA-Approved Aquaculture Formulations Catalog",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
+      "url": "https://nextfarmbiosciences.app/llms.txt",
+      "representativeQueries": [
+        "Where can I buy CAA approved aquaculture probiotics in Vijayawada?",
+        "What are the microbial strains in Next Gut?",
+        "What is the price of 5L Can aquaculture probiotics?"
+      ]
+    }
+  ]
+}

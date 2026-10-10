@@ -11,6 +11,7 @@ import {
   BookOpen
 } from 'lucide-react';
 import { SOLUTIONS } from '@/lib/solutions-data';
+import { getBreadcrumbJsonLd, getCollectionPageJsonLd } from '@/lib/structured-data';
 
 export const metadata: Metadata = {
   title: 'Shrimp & Prawn Disease Treatment Directory | Next Farm Bio Sciences',
@@ -27,12 +28,65 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://nextfarmbiosciences.app/solutions'
+  },
+  openGraph: {
+    title: 'Shrimp & Prawn Disease Treatment Directory | Next Farm Bio Sciences',
+    description:
+      'Comprehensive aquaculture clinical guide for White Gut, Toxic Ammonia, Vibrio, Benthic Sludge, Soft Shell, and Microcystis Algae. 100% Antibiotic-Free.',
+    url: 'https://nextfarmbiosciences.app/solutions',
+    siteName: 'Next Farm Bio Sciences',
+    locale: 'en_IN',
+    type: 'website',
+    images: [
+      {
+        url: '/images/branding/og_image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Shrimp & Prawn Disease Treatment Directory'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Shrimp & Prawn Disease Treatment Directory | Next Farm Bio Sciences',
+    description: 'Field-validated biological treatments and protocols for commercial shrimp farming.',
+    images: ['/images/branding/og_image.png']
   }
 };
 
 export default function SolutionsIndexPage() {
+  const breadcrumbsJsonLd = getBreadcrumbJsonLd([
+    { name: 'Home', url: '/' },
+    { name: 'Aquaculture Solutions', url: '/solutions' }
+  ]);
+
+  const collectionPageJsonLd = getCollectionPageJsonLd({
+    title: 'Shrimp & Prawn Disease Treatment Directory',
+    description:
+      'Field-validated biological treatments and step-by-step recovery protocols for commercial Litopenaeus vannamei and Penaeus monodon cultivators.',
+    url: 'https://nextfarmbiosciences.app/solutions',
+    items: SOLUTIONS.map((s) => ({
+      name: s.diseaseName,
+      url: `/solutions/${s.slug}`,
+      description: s.metaDescription
+    }))
+  });
+
   return (
     <div className="bg-[#F4F7F8] min-h-screen pb-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(collectionPageJsonLd)
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbsJsonLd)
+        }}
+      />
+
       {/* Header Banner */}
       <section className="bg-gradient-to-br from-[#002D3A] via-[#003847] to-[#014154] text-white pt-16 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="max-w-7xl mx-auto relative z-10 text-center">

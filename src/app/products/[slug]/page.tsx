@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { PRODUCTS, getProductBySlug } from '@/lib/catalog';
 import { ProductDetailView } from '@/components/pdp/product-detail-view';
-import { getProductJsonLd } from '@/lib/structured-data';
+import { getProductJsonLd, getBreadcrumbJsonLd } from '@/lib/structured-data';
 
 interface PageProps {
   params: Promise<{
@@ -28,6 +28,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://nextfarmbiosciences.app';
+  const canonicalUrl = `${baseUrl}/products/${product.slug}`;
+
   return {
     title: `${product.name} | Next Farm Bio Sciences Aquaculture Biotechnology`,
     description: `${product.tagline}. High-potency biological formulation for shrimp and prawn farming. CAA Approved, ISO 9001:2015, 100% Antibiotic-Free.`,
@@ -40,9 +43,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       'Vijayawada biotechnology',
       ...product.strains
     ],
+    alternates: {
+      canonical: canonicalUrl
+    },
     openGraph: {
       title: `${product.name} | Next Farm Bio Sciences`,
       description: product.tagline,
+      url: canonicalUrl,
+      siteName: 'Next Farm Bio Sciences',
+      locale: 'en_IN',
+      type: 'website',
       images: [
         {
           url: product.packshotImage,
@@ -51,6 +61,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
           alt: `${product.name} Studio Packshot`
         }
       ]
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${product.name} | Next Farm Bio Sciences`,
+      description: product.tagline,
+      images: [product.packshotImage]
     }
   };
 }
@@ -66,6 +82,12 @@ export default async function ProductPage({ params }: PageProps) {
   // Get up to 3 complementary products
   const relatedProducts = PRODUCTS.filter((p) => p.id !== product.id).slice(0, 3);
 
+  const breadcrumbsJsonLd = getBreadcrumbJsonLd([
+    { name: 'Home', url: '/' },
+    { name: 'Aquaculture Formulations', url: '/#catalog' },
+    { name: product.name, url: `/products/${product.slug}` }
+  ]);
+
   return (
     <>
       <script
@@ -74,7 +96,14 @@ export default async function ProductPage({ params }: PageProps) {
           __html: JSON.stringify(getProductJsonLd(product))
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbsJsonLd)
+        }}
+      />
       <ProductDetailView product={product} relatedProducts={relatedProducts} />
     </>
   );
 }
+

@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { SOLUTIONS, getSolutionBySlug } from '@/lib/solutions-data';
 import { getProductBySlug } from '@/lib/catalog';
 import { SolutionDetailView } from '@/components/solutions/solution-detail-view';
+import { getBreadcrumbJsonLd, getMedicalWebPageJsonLd } from '@/lib/structured-data';
 
 interface PageProps {
   params: Promise<{
@@ -88,6 +89,22 @@ export default async function SolutionPage({ params }: PageProps) {
 
   const relatedSolutions = SOLUTIONS.filter((s) => s.slug !== solution.slug).slice(0, 3);
 
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://nextfarmbiosciences.app';
+  const canonicalUrl = `${baseUrl}/solutions/${solution.slug}`;
+
+  const breadcrumbsJsonLd = getBreadcrumbJsonLd([
+    { name: 'Home', url: '/' },
+    { name: 'Aquaculture Solutions', url: '/solutions' },
+    { name: solution.diseaseName, url: `/solutions/${solution.slug}` }
+  ]);
+
+  const medicalWebPageJsonLd = getMedicalWebPageJsonLd({
+    title: solution.metaTitle,
+    description: solution.metaDescription,
+    url: canonicalUrl,
+    keywords: [solution.targetKeyword, ...solution.secondaryKeywords]
+  });
+
   // Generate FAQPage Schema JSON-LD
   const faqJsonLd = {
     '@context': 'https://schema.org',
@@ -107,6 +124,18 @@ export default async function SolutionPage({ params }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
+          __html: JSON.stringify(medicalWebPageJsonLd)
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbsJsonLd)
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
           __html: JSON.stringify(faqJsonLd)
         }}
       />
@@ -119,3 +148,4 @@ export default async function SolutionPage({ params }: PageProps) {
     </>
   );
 }
+

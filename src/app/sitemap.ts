@@ -28,6 +28,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0
     },
     {
+      url: `${baseUrl}/aquaculture`,
+      lastModified,
+      changeFrequency: 'daily',
+      priority: 0.99
+    },
+    {
       url: `${baseUrl}/shrimp-medicine`,
       lastModified,
       changeFrequency: 'daily',

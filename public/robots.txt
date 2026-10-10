@@ -1,18 +1,210 @@
-User-agent: Googlebot
-Allow: /
-User-agent: GPTBot
-Allow: /
-User-agent: PerplexityBot
-Allow: /
-User-agent: ClaudeBot
-Allow: /
-User-agent: Bingbot
-Allow: /
-User-agent: Applebot
-Allow: /
+# ========================================================
+# Next Farm Bio Sciences - AI Discovery & Search Robots.txt
+# Comprehensive Crawl Specification for 30+ AI Engines
+# ========================================================
+
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 Disallow: /api/
 Disallow: /admin/
 
+# --- Major Search Engines & AI Overviews ---
+User-agent: Googlebot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: Google-Extended
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: GoogleOther
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: Bingbot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: Applebot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: Applebot-Extended
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- OpenAI / ChatGPT ---
+User-agent: GPTBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: OAI-SearchBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: ChatGPT-User
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- Anthropic / Claude ---
+User-agent: ClaudeBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: Claude-SearchBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: Claude-User
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: anthropic-ai
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- Perplexity AI ---
+User-agent: PerplexityBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: Perplexity-User
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- xAI / Grok ---
+User-agent: GrokBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: xai-grok
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- Moonshot AI / Kimi ---
+User-agent: KimiBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: MoonshotBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- Alibaba Cloud / Qwen ---
+User-agent: QwenBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: Alibaba-Cloud
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- DeepSeek ---
+User-agent: DeepSeekBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- Baidu AI ---
+User-agent: Baiduspider
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- Meta / Llama ---
+User-agent: Meta-ExternalAgent
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: FacebookBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- You.com ---
+User-agent: YouBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- Cohere ---
+User-agent: cohere-ai
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: cohere-training-data-crawler
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- Amazon Rufus & Alexa ---
+User-agent: Amazonbot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- ByteDance Doubao / TikTok ---
+User-agent: Bytespider
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- Mistral AI ---
+User-agent: MistralBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- DuckDuckGo DuckAssist ---
+User-agent: DuckAssistBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: DuckDuckBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- Brave Search & Leo AI ---
+User-agent: Bravebot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- Phind AI ---
+User-agent: PhindBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- Exa AI Search ---
+User-agent: ExaBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- Diffbot Knowledge Graph ---
+User-agent: Diffbot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- Huawei Celia / Petal Search ---
+User-agent: PetalBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- Webz.io / LLM Retrieval ---
+User-agent: Omgilibot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- Timpi Search ---
+User-agent: Timpibot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- Common Crawl & Archive ---
+User-agent: CCBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: ia_archiver
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# --- Manifests & Sitemaps ---
+Agentmap: https://nextfarmbiosciences.app/llms.txt
 Sitemap: https://nextfarmbiosciences.app/sitemap.xml

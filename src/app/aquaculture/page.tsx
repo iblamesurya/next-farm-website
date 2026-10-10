@@ -168,6 +168,24 @@ export default function AquaculturePage() {
         }
       },
       {
+        '@type': 'BreadcrumbList',
+        '@id': 'https://nextfarmbiosciences.app/aquaculture#breadcrumb',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: 'https://nextfarmbiosciences.app'
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Aquaculture Biotechnology',
+            item: 'https://nextfarmbiosciences.app/aquaculture'
+          }
+        ]
+      },
+      {
         '@type': 'FAQPage',
         '@id': 'https://nextfarmbiosciences.app/aquaculture#faq',
         mainEntity: AQUACULTURE_FAQS.map((faq) => ({

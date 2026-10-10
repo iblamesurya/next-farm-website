@@ -21,19 +21,24 @@ export function getVeterinaryBusinessJsonLd() {
     description:
       'Pioneering sustainable aquaculture biotechnology, providing CAA-approved, antibiotic-free probiotics, mineral supplements, and water conditioners for shrimp and prawn farming.',
     telephone: '+91-8977656444',
-    email: 'info@nextfarmbiosciences.app',
+    email: 'support@nextfarmbiosciences.app',
     alternateName: [
       'NextFarm Bio Sciences',
       'Next Farm Biosciences',
       'Next Farm Biosciences Vijayawada',
       'Next Farm'
     ],
+    sameAs: [
+      'https://wa.me/918977656444',
+      'https://nextfarmbiosciences.app'
+    ],
+    hasMap: 'https://maps.google.com/?q=Next+Farm+Bio+Sciences+New+Autonagar+Vijayawada',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '100 Feet Rd, Enikepadu, Kanuru',
+      streetAddress: 'New Autonagar',
       addressLocality: 'Vijayawada',
       addressRegion: 'Andhra Pradesh',
-      postalCode: '520007',
+      postalCode: '520010',
       addressCountry: 'IN'
     },
     geo: {

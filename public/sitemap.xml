@@ -16,16 +16,94 @@
     <loc>https://nextfarmbiosciences.app/shrimp-medicine</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>daily</changefreq>
+    <priority>0.99</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/calculators</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.98</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/pond-doctor</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/products</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.96</priority>
   </url>
   <url>
     <loc>https://nextfarmbiosciences.app/solutions</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>daily</changefreq>
+    <priority>0.96</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/blog</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.96</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/blog/vannamei-white-gut-white-feces-ehp-treatment-protocol</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://nextfarmbiosciences.app/pond-doctor</loc>
+    <loc>https://nextfarmbiosciences.app/blog/ammonia-tan-nitrite-toxicity-shrimp-pond-nitrification-guide</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/blog/luminescent-vibriosis-red-disease-ems-ahpnd-shrimp-protocol</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/blog/caa-mpeda-banned-antibiotics-gazette-legal-probiotics-guide</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/blog/andhra-pradesh-regional-shrimp-farming-bhimavaram-nellore-guide</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/blog/benthic-sludge-black-soil-h2s-bioremediation-guide</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/blog/vannamei-mineral-ionic-ratios-molting-soft-shell-cure</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/blog/running-mortality-syndrome-rms-andhra-pradesh-field-guide</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/blog/freshwater-low-salinity-vannamei-farming-mineral-guide</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/blog/doc-1-to-120-shrimp-probiotic-master-schedule-fcr-guide</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
@@ -34,55 +112,55 @@
     <loc>https://nextfarmbiosciences.app/solutions/white-gut-treatment-shrimp</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.92</priority>
   </url>
   <url>
     <loc>https://nextfarmbiosciences.app/solutions/ammonia-control-shrimp-pond</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.92</priority>
   </url>
   <url>
     <loc>https://nextfarmbiosciences.app/solutions/vibrio-red-disease-cure-shrimp</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.92</priority>
   </url>
   <url>
     <loc>https://nextfarmbiosciences.app/solutions/black-soil-sludge-digester-pond</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.92</priority>
   </url>
   <url>
     <loc>https://nextfarmbiosciences.app/solutions/soft-shell-molting-cramps-shrimp</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.92</priority>
   </url>
   <url>
     <loc>https://nextfarmbiosciences.app/solutions/running-mortality-syndrome-shrimp</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.92</priority>
   </url>
   <url>
     <loc>https://nextfarmbiosciences.app/solutions/blue-green-algae-control-pond</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.92</priority>
   </url>
   <url>
     <loc>https://nextfarmbiosciences.app/solutions/loose-shell-slow-growth-shrimp</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.92</priority>
   </url>
   <url>
     <loc>https://nextfarmbiosciences.app/solutions/hard-water-salinity-conditioner-pond</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.92</priority>
   </url>
   <url>
     <loc>https://nextfarmbiosciences.app/products/next-viro-nill</loc>
@@ -161,5 +239,11 @@
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/google-merchant-feed.xml</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
   </url>
 </urlset>

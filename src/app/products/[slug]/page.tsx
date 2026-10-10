@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { PRODUCTS, getProductBySlug } from '@/lib/catalog';
 import { ProductDetailView } from '@/components/pdp/product-detail-view';
-import { getProductJsonLd, getBreadcrumbJsonLd } from '@/lib/structured-data';
+import { getProductJsonLd, getBreadcrumbJsonLd, getProductFaqJsonLd } from '@/lib/structured-data';
 
 interface PageProps {
   params: Promise<{
@@ -100,6 +100,12 @@ export default async function ProductPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbsJsonLd)
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(getProductFaqJsonLd(product))
         }}
       />
       <ProductDetailView product={product} relatedProducts={relatedProducts} />

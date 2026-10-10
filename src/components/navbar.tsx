@@ -69,29 +69,23 @@ export function Navbar() {
               Shrimp Medicine
             </Link>
             <Link
-              href="/solutions"
+              href="/calculators"
+              className="text-sm font-semibold text-slate-700 hover:text-[#004B50] flex items-center gap-1 transition-colors"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-[#004B50]" />
+              <span>Calculators</span>
+            </Link>
+            <Link
+              href="/blog"
               className="text-sm font-semibold text-slate-700 hover:text-[#004B50] transition-colors"
             >
-              Disease Treatments
+              Clinical Guides
             </Link>
             <Link
               href="/pond-doctor"
               className="text-sm font-semibold text-slate-700 hover:text-[#004B50] flex items-center gap-1.5 transition-colors"
             >
-              <Sparkles className="w-4 h-4 text-[#004B50]" />
               <span>Pond Doctor</span>
-            </Link>
-            <Link
-              href="/#certifications"
-              className="text-sm font-semibold text-slate-700 hover:text-[#004B50] transition-colors"
-            >
-              Certifications
-            </Link>
-            <Link
-              href="/#contact"
-              className="text-sm font-semibold text-slate-700 hover:text-[#004B50] transition-colors"
-            >
-              Contact
             </Link>
           </nav>
 
@@ -161,6 +155,21 @@ export function Navbar() {
               className="text-base font-semibold text-slate-800 py-2 border-b border-slate-100"
             >
               Shrimp Medicine &amp; Treatments
+            </Link>
+            <Link
+              href="/calculators"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-base font-semibold text-slate-800 py-2 border-b border-slate-100 flex items-center gap-2 text-[#004B50]"
+            >
+              <Sparkles className="w-4 h-4 text-[#004B50]" />
+              <span>Aquaculture Clinical Calculators</span>
+            </Link>
+            <Link
+              href="/blog"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-base font-semibold text-slate-800 py-2 border-b border-slate-100"
+            >
+              Clinical Technical Guides (10 Protocols)
             </Link>
             <Link
               href="/solutions"

@@ -1,11 +1,11 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import {
   CLINICAL_SYMPTOMS,
   ClinicalSymptomKey
 } from '@/lib/diagnostic-engine';
-import { ShieldAlert, CheckCircle2, Circle } from 'lucide-react';
+import { ShieldAlert, CheckCircle2, Circle, Search, Sparkles, X } from 'lucide-react';
 
 interface SymptomSelectorProps {
   selectedSymptoms: ClinicalSymptomKey[];

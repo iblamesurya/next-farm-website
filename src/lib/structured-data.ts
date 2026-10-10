@@ -5,6 +5,7 @@
  */
 
 import { Product } from '@/types/catalog';
+import { getFaqsForProduct } from '@/lib/product-faqs';
 
 export function getVeterinaryBusinessJsonLd() {
   const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://nextfarmbiosciences.app';
@@ -272,6 +273,65 @@ export function getFaqPageJsonLd() {
   };
 }
 
+export function getProductFaqJsonLd(product: Product) {
+  const faqs = getFaqsForProduct(product.slug);
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    '@id': `https://nextfarmbiosciences.app/products/${product.slug}#faq`,
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer
+      }
+    }))
+  };
+}
+
+export function getPondDoctorFaqJsonLd() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    '@id': 'https://nextfarmbiosciences.app/pond-doctor#faq',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'How does the Pond Doctor calculate exact formulation dosages for shrimp ponds?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The Pond Doctor utilizes dynamic volumetric calculation multiplying pond surface acreage by verified water column depth (in meters or feet). It adjusts dosage intensity based on severity (low, moderate, acute shock dose) and automatically allocates quantities into 5-Liter industrial cans and 1-Liter precision bottles for cost-optimized farm broadcasting.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the immediate protocol for sudden toxic ammonia (TAN > 1.0 ppm) spikes?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Administer shock biosecurity treatment using Next Converter (autotrophic nitrifiers) @ 2.0 to 3.0 Liters per Acre in morning aeration (60% Day 1, 40% Day 2). Ensure dissolved oxygen remains above 4.5 ppm to accelerate bacterial ammonia conversion to harmless nitrogen gas.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'How can Vannamei farmers cure White Gut Syndrome without using banned antibiotics?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Top-dress Next Gut multi-strain probiotic @ 15-20 mL per kg feed across all daily meals for 5 days bound with Next Bind Plus, combined with water broadcasting of Next Viro Nill @ 1.0 L/Acre to eliminate environmental Vibrio reservoirs.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'Can Next Farm prescriptions be ordered online for delivery to Andhra Pradesh coastal farms?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. Prescriptions generated on Pond Doctor can be added directly to cart in 1 click and checked out via pre-paid Razorpay UPI/NetBanking with express 24-48 hour delivery to Vijayawada, Bhimavaram, Nellore, Kakinada, and Ongole farming mandals.'
+        }
+      }
+    ]
+  };
+}
+
 export function getWebSiteJsonLd() {
   const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://nextfarmbiosciences.app';
 
@@ -408,6 +468,33 @@ export function getCollectionPageJsonLd({
         url: item.url.startsWith('http') ? item.url : `${baseUrl}${item.url}`,
         description: item.description
       }))
+    }
+  };
+}
+
+export function getCalculatorsAppJsonLd() {
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://nextfarmbiosciences.app';
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    '@id': `${baseUrl}/calculators#app`,
+    name: 'Aquaculture Clinical Calculators & Bio-Metrics Suite',
+    url: `${baseUrl}/calculators`,
+    description:
+      'Interactive veterinary and engineering calculators for shrimp & prawn farming: Un-ionized Toxic Ammonia (NH3) dissociation, Standing Biomass & Feed FCR planner, Vannamei Ionic Mineral Ratio (Ca:Mg:K) molting analyzer, and Aeration DO Horsepower calculator.',
+    applicationCategory: 'BusinessApplication',
+    operatingSystem: 'All Modern Web Browsers',
+    browserRequirements: 'Requires JavaScript. Requires HTML5.',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'INR'
+    },
+    provider: {
+      '@type': 'Organization',
+      name: 'Next Farm Bio Sciences',
+      url: baseUrl
     }
   };
 }

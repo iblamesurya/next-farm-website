@@ -15,11 +15,14 @@ import {
   RotateCcw,
   Sparkles,
   MessageCircle,
-  Award
+  Award,
+  HelpCircle,
+  ChevronDown
 } from 'lucide-react';
 import { Product } from '@/types/catalog';
 import { useCart } from '@/context/cart-context';
 import { formatInr } from '@/lib/catalog';
+import { getFaqsForProduct } from '@/lib/product-faqs';
 import { ImageCarousel } from './image-carousel';
 import { BiologicalAccordion } from './biological-accordion';
 import { SpecSheetDownload } from './spec-sheet-download';
@@ -35,6 +38,8 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
   const [selectedPack, setSelectedPack] = useState<'5L' | '2L' | '1L'>('5L');
   const [quantity, setQuantity] = useState(1);
   const [isAdded, setIsAdded] = useState(false);
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
+  const faqs = getFaqsForProduct(product.slug);
 
   const price =
     selectedPack === '5L'
@@ -383,6 +388,58 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
           <BiologicalAccordion product={product} />
         </div>
       </div>
+
+      {/* High-Intent Product FAQ Section (SEO & GEO Rich Snippets) */}
+      {faqs && faqs.length > 0 && (
+        <div className="mt-14 pt-10 border-t border-slate-200">
+          <div className="max-w-4xl mx-auto space-y-6">
+            <div className="text-center space-y-1">
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-100 text-amber-900 rounded-full text-xs font-bold uppercase tracking-wider mb-1">
+                <HelpCircle className="w-3.5 h-3.5 text-amber-700" />
+                <span>Frequently Asked Questions</span>
+              </div>
+              <h2 className="font-heading font-black text-2xl text-[#002B5B]">
+                Farmer Questions &amp; Clinical Protocols
+              </h2>
+              <p className="text-sm text-slate-500">
+                Direct answers to application dosage, biosecurity compliance, and regional field delivery
+              </p>
+            </div>
+
+            <div className="space-y-3 pt-2">
+              {faqs.map((faq, idx) => {
+                const isOpen = openFaqIndex === idx;
+                return (
+                  <div
+                    key={idx}
+                    className="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-sm transition-all"
+                  >
+                    <button
+                      onClick={() => setOpenFaqIndex(isOpen ? null : idx)}
+                      className="w-full px-5 py-4 text-left flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors"
+                      aria-expanded={isOpen}
+                    >
+                      <span className="font-heading font-bold text-sm sm:text-base text-[#002B5B]">
+                        {faq.question}
+                      </span>
+                      <ChevronDown
+                        className={`w-4 h-4 text-slate-400 shrink-0 transition-transform duration-200 ${
+                          isOpen ? 'rotate-180 text-[#004B50]' : ''
+                        }`}
+                      />
+                    </button>
+                    {isOpen && (
+                      <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-slate-50/50">
+                        {faq.answer}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Related Formulations Grid */}
       {relatedProducts.length > 0 && (

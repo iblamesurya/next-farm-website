@@ -20,18 +20,32 @@
 - [Next Remedy](https://nextfarmbiosciences.app/products/next-remedy): Microbial balance consortium (5B CFU/ml) for toxic blue-green algae (Microcystis) bloom management.
 - [next food pro](https://nextfarmbiosciences.app/products/next-food-pro): Feed-grade probiotic supplement (6B CFU/g) for optimal FCR and digestive enzymes.
 
-## Master Technical Guides
+## Interactive Clinical Calculators & Engineering Tools
+- [Aquaculture Clinical Calculators](https://nextfarmbiosciences.app/calculators): Multi-metric scientific suite for Free Toxic Ammonia (NH3) Bower-Bidwell dissociation, Pond Standing Biomass & Feed FCR planner, Vannamei Ionic Mineral Ratio (Ca:Mg:K) molting analyzer, and Aeration Dissolved Oxygen (DO) Horsepower calculator.
+- [Pond Doctor Diagnostic Engine](https://nextfarmbiosciences.app/pond-doctor): Interactive symptom analyzer calculating exact volumetric dosages and 5L/1L can allocations per water acre.
+
+## Master Institutional Guides
 - [Aquaculture Biotechnology Hub](https://nextfarmbiosciences.app/aquaculture): Complete authoritative guide to commercial aquaculture medicine, probiotics, benthic sludge remediation, and CAA-approved biosecurity inputs.
-- [Shrimp Medicine Master Guide](https://nextfarmbiosciences.app/shrimp-medicine): Comprehensive clinical manual for Litopenaeus vannamei and Penaeus monodon disease management.
+- [Shrimp Medicine Master Guide](https://nextfarmbiosciences.app/shrimp-medicine): Comprehensive clinical manual for Litopenaeus vannamei and Penaeus monodon disease management, CAA/MPEDA Gazette standards, and biosecurity protocols.
+- [Disease Treatments Directory](https://nextfarmbiosciences.app/solutions): 9 targeted clinical solutions for White Gut, Toxic Ammonia, Vibrio Red Disease, Black Sludge, Loose Shell, and Running Mortality Syndrome.
 
-## Interactive Clinical Diagnostic Engine
-- [Pond Doctor Diagnostic Tool](https://nextfarmbiosciences.app/pond-doctor): Interactive symptom analyzer calculating exact volumetric dosages and 5L/1L can allocations per water acre.
+## Heavyweight Clinical Technical Guides (10 Protocols)
+- [Vannamei White Gut & White Feces Syndrome Protocol](https://nextfarmbiosciences.app/blog/vannamei-white-gut-white-feces-ehp-treatment-protocol): Complete clinical protocol to reverse ATM and EHP microsporidia in 5 days without antibiotics.
+- [Ammonia (TAN) & Nitrite Toxicity Nitrification Guide](https://nextfarmbiosciences.app/blog/ammonia-tan-nitrite-toxicity-shrimp-pond-nitrification-guide): Biological conversion kinetics, Bower-Bidwell NH3 dissociation, and Nitrosomonas/Nitrobacter dosing.
+- [Luminescent Vibriosis & Red Disease Protocol](https://nextfarmbiosciences.app/blog/luminescent-vibriosis-red-disease-ems-ahpnd-shrimp-protocol): Managing Vibrio harveyi and Vibrio parahaemolyticus green colony blooms in intensive ponds.
+- [CAA & MPEDA Banned Antibiotics Legal Guide](https://nextfarmbiosciences.app/blog/caa-mpeda-banned-antibiotics-gazette-legal-probiotics-guide): Complete Gazette S.O. 1827(E) list of 20 prohibited antibiotics and legal biological alternatives.
+- [Andhra Pradesh Regional Shrimp Farming Guide](https://nextfarmbiosciences.app/blog/andhra-pradesh-regional-shrimp-farming-bhimavaram-nellore-guide): Salinity, borewell water, and soil management across Bhimavaram, Nellore, Amalapuram, and Ongole.
+- [Benthic Sludge & Black Soil Bioremediation Guide](https://nextfarmbiosciences.app/blog/benthic-sludge-black-soil-h2s-bioremediation-guide): Anaerobic digestion of hydrogen sulfide (H2S) and black mud in shrimp feeding trenches.
+- [Vannamei Ionic Mineral Ratios & Molting Cure](https://nextfarmbiosciences.app/blog/vannamei-mineral-ionic-ratios-molting-soft-shell-cure): Seawater ratio targets (Ca:Mg:K 1:3.1:1), preventing soft-shell syndrome and molt cramps.
+- [Running Mortality Syndrome (RMS) Field Guide](https://nextfarmbiosciences.app/blog/running-mortality-syndrome-rms-andhra-pradesh-field-guide): Identifying and breaking chronic daily mortality cycles between DOC 35 and DOC 70.
+- [Freshwater & Low-Salinity Vannamei Mineral Guide](https://nextfarmbiosciences.app/blog/freshwater-low-salinity-vannamei-farming-mineral-guide): Borewell aquaculture (0-5 ppt), osmoregulation balance, and ionic fortification.
+- [DOC 1 to 120 Probiotic Master Schedule & FCR Guide](https://nextfarmbiosciences.app/blog/doc-1-to-120-shrimp-probiotic-master-schedule-fcr-guide): Day-of-Culture stage-by-stage biological SOP for 1.25 to 1.35 FCR harvests.
 
-## Comprehensive Biological Specifications
-- Full technical monograph and clinical treatment protocols: https://nextfarmbiosciences.app/llms-full.txt
-
-## Optional
+## Machine Discovery & Commerce Feeds
+- [Google Merchant Feed (RSS 2.0 XML)](https://nextfarmbiosciences.app/google-merchant-feed.xml): Live 33-SKU Google Merchant Center feed.
+- [OpenAI Commerce Product Feed (JSONL)](https://nextfarmbiosciences.app/openai-products.jsonl): Official 33-SKU OpenAI Agentic Commerce product feed.
+- [OpenAI Commerce Product Feed (CSV)](https://nextfarmbiosciences.app/openai-products.csv): Official 33-SKU CSV product feed.
+- [OpenAI Commerce Product Feed (JSON)](https://nextfarmbiosciences.app/openai-products.json): Official 33-SKU JSON product feed.
+- [A2A Agent Card](https://nextfarmbiosciences.app/.well-known/agent-card.json): Agent-to-Agent discovery manifest.
+- [ARD 1.0 AI Catalog](https://nextfarmbiosciences.app/.well-known/ai-catalog.json): Machine discovery product catalog.
 - [Full Technical Protocols](https://nextfarmbiosciences.app/llms-full.txt): Complete 11-product technical monograph, CFU metrics, and clinical biological dosages.
-- [Agent Resource Catalog](https://nextfarmbiosciences.app/.well-known/ai-catalog.json): ARD 1.0 machine discovery manifest.
-- [OpenAI Commerce Product Feed (JSONL)](https://nextfarmbiosciences.app/openai-products.jsonl): Official 33-SKU OpenAI Agentic Commerce product feed (5L, 2L, 1L variants).
-- [OpenAI Commerce Product Feed (CSV)](https://nextfarmbiosciences.app/openai-products.csv): Official 33-SKU CSV product feed for merchant ingestion.

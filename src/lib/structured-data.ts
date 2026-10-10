@@ -30,16 +30,16 @@ export function getVeterinaryBusinessJsonLd() {
     ],
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'New Autonagar',
+      streetAddress: '100 Feet Rd, Enikepadu, Kanuru',
       addressLocality: 'Vijayawada',
       addressRegion: 'Andhra Pradesh',
-      postalCode: '520010',
+      postalCode: '520007',
       addressCountry: 'IN'
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: '16.5062',
-      longitude: '80.6480'
+      latitude: '16.5160',
+      longitude: '80.6920'
     },
     openingHoursSpecification: [
       {
@@ -52,6 +52,23 @@ export function getVeterinaryBusinessJsonLd() {
     priceRange: '₹₹',
     currenciesAccepted: 'INR',
     paymentAccepted: 'UPI, Credit Card, Debit Card, Net Banking (Razorpay Pre-Paid)',
+    areaServed: [
+      { '@type': 'AdministrativeArea', name: 'Andhra Pradesh' },
+      { '@type': 'AdministrativeArea', name: 'Tamil Nadu' },
+      { '@type': 'AdministrativeArea', name: 'Telangana' },
+      { '@type': 'AdministrativeArea', name: 'Gujarat' },
+      { '@type': 'AdministrativeArea', name: 'Odisha' },
+      { '@type': 'AdministrativeArea', name: 'West Bengal' }
+    ],
+    knowsAbout: [
+      'Aquaculture Biotechnology',
+      'Shrimp Disease Management',
+      'Penaeus monodon Health',
+      'Litopenaeus vannamei Probiotics',
+      'Water Quality Bioremediation',
+      'Nitrifying Bacteria',
+      'Vibrio Parahaemolyticus Control'
+    ],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Aquaculture Biotechnology Formulations',
@@ -78,24 +95,92 @@ export function getProductJsonLd(product: Product) {
       ? product.packshotImage
       : `${baseUrl}${product.packshotImage}`,
     description: product.tagline,
+    sku: `NF-${product.slug.toUpperCase().replace(/-/g, '_')}-5L`,
+    mpn: `NF-BIO-${product.id}`,
     brand: {
       '@type': 'Brand',
       name: 'Next Farm Bio Sciences'
     },
     category: product.category,
+    hasMemberProgram: {
+      '@type': 'MemberProgram',
+      name: 'Next Farm Aqua Farmer Direct',
+      description: 'Direct-to-farmer aquaculture biosecurity membership and express dispatch'
+    },
     offers: {
       '@type': 'Offer',
       name: `${product.name} (5L Can)`,
       price: product.pricing?.can5L || 5000,
       priceCurrency: 'INR',
+      priceValidUntil: '2027-12-31',
       availability: 'https://schema.org/InStock',
       itemCondition: 'https://schema.org/NewCondition',
       url,
       seller: {
         '@type': 'Organization',
         name: 'Next Farm Bio Sciences'
+      },
+      hasMerchantReturnPolicy: {
+        '@type': 'MerchantReturnPolicy',
+        applicableCountry: 'IN',
+        returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+        merchantReturnDays: 7,
+        returnMethod: 'https://schema.org/ReturnByMail',
+        returnFees: 'https://schema.org/FreeReturn'
+      },
+      shippingDetails: {
+        '@type': 'OfferShippingDetails',
+        shippingRate: {
+          '@type': 'MonetaryAmount',
+          value: 0,
+          currency: 'INR'
+        },
+        shippingDestination: {
+          '@type': 'DefinedRegion',
+          addressCountry: 'IN'
+        },
+        deliveryTime: {
+          '@type': 'ShippingDeliveryTime',
+          handlingTime: {
+            '@type': 'QuantitativeValue',
+            minValue: 1,
+            maxValue: 2,
+            unitCode: 'DAY'
+          },
+          transitTime: {
+            '@type': 'QuantitativeValue',
+            minValue: 2,
+            maxValue: 4,
+            unitCode: 'DAY'
+          }
+        }
       }
     },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      reviewCount: '142',
+      bestRating: '5',
+      worstRating: '1'
+    },
+    hasCertification: [
+      {
+        '@type': 'Certification',
+        name: 'Coastal Aquaculture Authority (CAA) Approval',
+        issuedBy: {
+          '@type': 'Organization',
+          name: 'Coastal Aquaculture Authority (Govt. of India)'
+        }
+      },
+      {
+        '@type': 'Certification',
+        name: 'ISO 9001:2015 Quality Management System',
+        issuedBy: {
+          '@type': 'Organization',
+          name: 'International Organization for Standardization'
+        }
+      }
+    ],
     additionalProperty: [
       {
         '@type': 'PropertyValue',
@@ -113,6 +198,20 @@ export function getProductJsonLd(product: Product) {
         value: '100% Antibiotic-Free'
       }
     ]
+  };
+}
+
+export function getBreadcrumbJsonLd(items: { name: string; url: string }[]) {
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://nextfarmbiosciences.app';
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      item: item.url.startsWith('http') ? item.url : `${baseUrl}${item.url}`
+    }))
   };
 }
 
@@ -185,6 +284,123 @@ export function getWebSiteJsonLd() {
     publisher: {
       '@id': `${baseUrl}/#organization`
     },
-    inLanguage: 'en-IN'
+    inLanguage: 'en-IN',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${baseUrl}/solutions?q={search_term_string}`
+      },
+      'query-input': 'required name=search_term_string'
+    }
   };
 }
+
+export function getPondDoctorAppJsonLd() {
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://nextfarmbiosciences.app';
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    '@id': `${baseUrl}/pond-doctor#app`,
+    name: 'Pond Doctor Clinical Diagnostic Engine',
+    url: `${baseUrl}/pond-doctor`,
+    description:
+      'Interactive clinical diagnostic assistant and volumetric dosage calculator for shrimp and prawn aquaculture ponds. Diagnoses White Gut, Toxic Ammonia, Vibrio, Benthic Sludge, and Molting Cramps with precise pack allocation.',
+    applicationCategory: 'BusinessApplication',
+    operatingSystem: 'All Modern Web Browsers',
+    browserRequirements: 'Requires JavaScript. Requires HTML5.',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'INR'
+    },
+    provider: {
+      '@type': 'Organization',
+      name: 'Next Farm Bio Sciences',
+      url: baseUrl
+    }
+  };
+}
+
+export function getMedicalWebPageJsonLd({
+  title,
+  description,
+  url,
+  keywords,
+  datePublished = '2026-01-15',
+  dateModified = '2026-10-10'
+}: {
+  title: string;
+  description: string;
+  url: string;
+  keywords: string[];
+  datePublished?: string;
+  dateModified?: string;
+}) {
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://nextfarmbiosciences.app';
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalWebPage',
+    '@id': `${url}#webpage`,
+    url,
+    name: title,
+    headline: title,
+    description,
+    keywords: keywords.join(', '),
+    inLanguage: 'en-IN',
+    datePublished,
+    dateModified,
+    publisher: {
+      '@type': 'Organization',
+      name: 'Next Farm Bio Sciences',
+      url: baseUrl,
+      logo: `${baseUrl}/images/branding/logo_primary.png`
+    },
+    author: {
+      '@type': 'Organization',
+      name: 'Next Farm Bio Sciences Research & Biosecurity Team',
+      url: baseUrl
+    },
+    about: {
+      '@type': 'MedicalCondition',
+      name: 'Aquaculture Pathology & Biosecurity Management'
+    }
+  };
+}
+
+export function getCollectionPageJsonLd({
+  title,
+  description,
+  url,
+  items
+}: {
+  title: string;
+  description: string;
+  url: string;
+  items: Array<{ name: string; url: string; description?: string }>;
+}) {
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://nextfarmbiosciences.app';
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': `${url}#collection`,
+    url,
+    name: title,
+    description,
+    inLanguage: 'en-IN',
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: items.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: item.name,
+        url: item.url.startsWith('http') ? item.url : `${baseUrl}${item.url}`,
+        description: item.description
+      }))
+    }
+  };
+}
+

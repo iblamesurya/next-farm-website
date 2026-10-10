@@ -301,6 +301,30 @@ export default function ShrimpMedicineGuidePage() {
               '@type': 'Answer',
               text: 'To treat active ammonia (TAN > 1.0 ppm) spikes in commercial ponds, broadcast Next Converter at 2.0 to 3.0 Liters per Acre during morning aeration. Its live nitrifying bacteria convert unionized ammonia and nitrite into harmless nitrates within 24 hours.'
             }
+          },
+          {
+            '@type': 'Question',
+            name: 'Can EHP (Enterocytozoon hepatopenaei) microsporidian spores be controlled without banned antibiotics?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Yes. EHP microsporidia have polar filaments resistant to standard antibiotics. The validated biological protocol combines water biosecurity broadcasting (Next Viro Nill @ 1.5 L/Acre) to suppress environmental spore reservoirs with multi-strain enteric probiotics (Next Gut @ 20 mL/kg feed) to prevent polar spore germination in hepatopancreatic tubules and sustain normal harvest growth.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'What is the safe biological alternative to harsh BKC 50 and Glutaraldehyde sanitizers?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Chemical disinfectants like Benzalkonium Chloride (BKC 50%) and glutaraldehyde burn sensitive shrimp gill lamellae and crash beneficial diatom blooms. Next Viro Nill provides a safe biological alternative using high-density antagonistic Bacillus and Pediococcus strains (5 Billion CFU/ml) that outcompete pathogenic Vibrio without gill damage or plankton collapse.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'Does Next Farm Bio Sciences offer Third-Party Contract Manufacturing and private labeling in India?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Yes. We provide complete third-party contract manufacturing, custom formulation, and private-label bottling for aqua-input brands, distributors, and cooperatives from our Vijayawada facility with low MOQs, ISO 9001:2015 standards, and full CAA export compliance documentation.'
+            }
           }
         ]
       }
@@ -721,6 +745,91 @@ export default function ShrimpMedicineGuidePage() {
                 All 11 formulations are produced under sterile conditions in our ISO 9001:2015 certified biotechnology laboratories located in New Autonagar, Vijayawada, Andhra Pradesh. Orders confirmed before 2:00 PM are dispatched same-day with express delivery to all coastal aquaculture districts across AP, Tamil Nadu, and Odisha.
               </p>
             </div>
+
+            <div className="border border-slate-200 rounded-2xl p-5">
+              <h3 className="font-bold text-base text-[#002D3A] mb-2">
+                Can EHP (Enterocytozoon hepatopenaei) microsporidian spores be controlled without banned antibiotics?
+              </h3>
+              <p className="text-slate-600 leading-relaxed">
+                Yes. EHP microsporidia have polar filaments resistant to standard antibiotics. The validated biological protocol combines water biosecurity broadcasting (Next Viro Nill @ 1.5 L/Acre) to suppress environmental spore reservoirs with multi-strain enteric probiotics (Next Gut @ 20 mL/kg feed) to prevent polar spore germination in hepatopancreatic tubules and sustain normal harvest growth.
+              </p>
+            </div>
+
+            <div className="border border-slate-200 rounded-2xl p-5">
+              <h3 className="font-bold text-base text-[#002D3A] mb-2">
+                What is the safe biological alternative to harsh BKC 50 and Glutaraldehyde sanitizers?
+              </h3>
+              <p className="text-slate-600 leading-relaxed">
+                Chemical disinfectants like Benzalkonium Chloride (BKC 50%) and glutaraldehyde burn sensitive shrimp gill lamellae and crash beneficial diatom blooms. Next Viro Nill provides a safe biological alternative using high-density antagonistic Bacillus and Pediococcus strains (5 Billion CFU/ml) that outcompete pathogenic Vibrio without gill damage or plankton collapse.
+              </p>
+            </div>
+
+            <div className="border border-slate-200 rounded-2xl p-5">
+              <h3 className="font-bold text-base text-[#002D3A] mb-2">
+                Does Next Farm Bio Sciences offer Third-Party Contract Manufacturing and private labeling?
+              </h3>
+              <p className="text-slate-600 leading-relaxed">
+                Yes. We provide complete third-party contract manufacturing, custom formulation, and private-label bottling for aqua-input brands, distributors, and cooperatives from our Vijayawada facility with low MOQs, ISO 9001:2015 standards, and full CAA export compliance documentation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Third-Party & Contract Manufacturing Section (B2B Authority) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+        <div className="bg-gradient-to-br from-slate-900 to-[#002D3A] text-white rounded-3xl p-8 sm:p-12 border border-slate-800 shadow-xl">
+          <div className="max-w-3xl">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-400/20 text-amber-300 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
+              <Award className="w-3.5 h-3.5" />
+              <span>B2B Contract Manufacturing &amp; OEM</span>
+            </span>
+            <h2 className="text-2xl sm:text-4xl font-black font-display tracking-tight text-white mb-4">
+              Third-Party Shrimp Medicine &amp; Probiotic Manufacturing in India
+            </h2>
+            <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-6">
+              Next Farm Bio Sciences offers end-to-end contract manufacturing, private labeling, and custom formulation for aquaculture feed supplements, multi-strain probiotics, and water biosecurity sanitizers. Produced in our ISO 9001:2015 and CAA-compliant biotechnology facility in New Autonagar, Vijayawada, Andhra Pradesh.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-sm">
+              <h3 className="font-bold text-base text-white mb-2">Low Minimum Order Quantities (MOQ)</h3>
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Flexible batch scaling starting from trial batches for regional aqua-input brands, veterinary stockists, and coastal farm cooperatives.
+              </p>
+            </div>
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-sm">
+              <h3 className="font-bold text-base text-white mb-2">Custom Packaging &amp; Bottling</h3>
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Available in 1-Liter HDPE bottles, 5-Liter industrial canisters, 20-Liter carboys, and bulk drums with custom label printing and tamper-proof induction sealing.
+              </p>
+            </div>
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-sm">
+              <h3 className="font-bold text-base text-white mb-2">100% Antibiotic-Free &amp; CAA Documentation</h3>
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Complete Certificate of Analysis (COA), microbial CFU validation reports, and zero-antibiotic lab affidavits provided for every production run.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-4 pt-2">
+            <a
+              href="https://wa.me/918977656444?text=Hello%20Next%20Farm%20Team%2C%20I%20am%20enquiring%20about%20third%20party%20contract%20manufacturing%20and%20private%20labeling"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#FFD200] hover:bg-[#e6bd00] text-slate-950 font-bold py-3.5 px-6 rounded-2xl shadow transition-all flex items-center gap-2 text-sm"
+            >
+              <MessageSquare className="w-4 h-4 text-slate-950" />
+              <span>Inquire for Contract Manufacturing (WhatsApp)</span>
+            </a>
+            <a
+              href="tel:+918977656444"
+              className="bg-white/10 hover:bg-white/20 text-white font-bold py-3.5 px-6 rounded-2xl border border-white/20 transition-all flex items-center gap-2 text-sm"
+            >
+              <Phone className="w-4 h-4 text-[#FFD200]" />
+              <span>Direct B2B Line: +91 8977656444</span>
+            </a>
           </div>
         </div>
       </section>

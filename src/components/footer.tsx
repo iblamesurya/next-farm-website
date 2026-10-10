@@ -184,15 +184,33 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/diseases" className="hover:text-[#FFD200] transition-colors flex items-center gap-1.5 font-bold text-[#FFD200]">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#FFD200]"></span>
+                  <span>Shrimp Pathology Compendium (10 Diseases)</span>
+                </Link>
+              </li>
+              <li>
                 <Link href="/calculators" className="hover:text-[#FFD200] transition-colors flex items-center gap-1.5 font-bold text-[#FFD200]">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#FFD200]"></span>
-                  <span>Aquaculture Calculators &amp; Bio-Metrics</span>
+                  <span>Aquaculture Calculators Suite</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/research" className="hover:text-[#FFD200] transition-colors flex items-center gap-1.5 font-semibold text-emerald-300">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  <span>Commercial Harvest Trials &amp; Research</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/certifications" className="hover:text-[#FFD200] transition-colors flex items-center gap-1.5 font-semibold text-emerald-300">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  <span>CAA &amp; ISO 9001 Regulatory Certifications</span>
                 </Link>
               </li>
               <li>
                 <Link href="/blog" className="hover:text-[#FFD200] transition-colors flex items-center gap-1.5 font-semibold text-teal-300">
                   <span className="w-1.5 h-1.5 rounded-full bg-teal-400"></span>
-                  <span>Clinical Guides &amp; Protocols (10 Articles)</span>
+                  <span>Clinical Field Guides (10 Articles)</span>
                 </Link>
               </li>
               <li>

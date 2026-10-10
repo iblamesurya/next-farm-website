@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next';
 import { PRODUCTS } from '@/lib/catalog';
 import { SOLUTIONS } from '@/lib/solutions-data';
 import { BLOG_ARTICLES } from '@/lib/blog-data';
+import { DISEASE_MONOGRAPHS } from '@/lib/diseases-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://nextfarmbiosciences.app';
@@ -28,6 +29,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.92
   }));
 
+  const diseaseRoutes: MetadataRoute.Sitemap = DISEASE_MONOGRAPHS.map((disease) => ({
+    url: `${baseUrl}/diseases/${disease.slug}`,
+    lastModified,
+    changeFrequency: 'weekly',
+    priority: 0.96
+  }));
+
   const staticRoutes: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
@@ -52,6 +60,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: 'daily',
       priority: 0.98
+    },
+    {
+      url: `${baseUrl}/diseases`,
+      lastModified,
+      changeFrequency: 'daily',
+      priority: 0.99
+    },
+    {
+      url: `${baseUrl}/calculators`,
+      lastModified,
+      changeFrequency: 'daily',
+      priority: 0.98
+    },
+    {
+      url: `${baseUrl}/research`,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 0.95
+    },
+    {
+      url: `${baseUrl}/certifications`,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 0.95
     },
     {
       url: `${baseUrl}/solutions`,
@@ -85,5 +117,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   ];
 
-  return [...staticRoutes, ...solutionRoutes, ...productRoutes, ...blogRoutes];
+  return [...staticRoutes, ...diseaseRoutes, ...solutionRoutes, ...productRoutes, ...blogRoutes];
 }

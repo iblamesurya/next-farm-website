@@ -69,6 +69,12 @@ export function Navbar() {
               Shrimp Medicine
             </Link>
             <Link
+              href="/diseases"
+              className="text-sm font-semibold text-slate-700 hover:text-[#004B50] transition-colors"
+            >
+              Pathology Atlas
+            </Link>
+            <Link
               href="/calculators"
               className="text-sm font-semibold text-slate-700 hover:text-[#004B50] flex items-center gap-1 transition-colors"
             >
@@ -155,6 +161,13 @@ export function Navbar() {
               className="text-base font-semibold text-slate-800 py-2 border-b border-slate-100"
             >
               Shrimp Medicine &amp; Treatments
+            </Link>
+            <Link
+              href="/diseases"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-base font-semibold text-slate-800 py-2 border-b border-slate-100 text-[#004B50]"
+            >
+              Shrimp Pathology Compendium (10 Monographs)
             </Link>
             <Link
               href="/calculators"

@@ -27,7 +27,22 @@
 ## Master Institutional Guides
 - [Aquaculture Biotechnology Hub](https://nextfarmbiosciences.app/aquaculture): Complete authoritative guide to commercial aquaculture medicine, probiotics, benthic sludge remediation, and CAA-approved biosecurity inputs.
 - [Shrimp Medicine Master Guide](https://nextfarmbiosciences.app/shrimp-medicine): Comprehensive clinical manual for Litopenaeus vannamei and Penaeus monodon disease management, CAA/MPEDA Gazette standards, and biosecurity protocols.
+- [Indian Shrimp Pathology Compendium](https://nextfarmbiosciences.app/diseases): Comprehensive clinical atlas of 10 major shrimp pathologies with etiology, gross field pathology, histology, and CAA protocols.
 - [Disease Treatments Directory](https://nextfarmbiosciences.app/solutions): 9 targeted clinical solutions for White Gut, Toxic Ammonia, Vibrio Red Disease, Black Sludge, Loose Shell, and Running Mortality Syndrome.
+
+## Clinical Shrimp Pathology Monographs
+- [White Gut & White Feces Syndrome](https://nextfarmbiosciences.app/diseases/white-gut-white-feces-syndrome): ATM microvillar sloughing, EHP spore co-infection, and 5-day biological protocol.
+- [Enterocytozoon hepatopenaei (EHP)](https://nextfarmbiosciences.app/diseases/enterocytozoon-hepatopenaei-ehp): Microsporidian polar filament injection, SWP1 PCR testing, and spore wall digestion.
+- [Acute Hepatopancreatic Necrosis Disease (AHPND / EMS)](https://nextfarmbiosciences.app/diseases/acute-hepatopancreatic-necrosis-ahpnd-ems): Vibrio pVA1 plasmid, PirA/PirB binary toxins, and quorum quenching.
+- [Toxic Ammonia & Nitrite Asphyxiation](https://nextfarmbiosciences.app/diseases/toxic-ammonia-nitrite-asphyxia): Un-ionized NH3 Bower-Bidwell dissociation and rapid Nitrosomonas bioremediation.
+- [Luminescent Vibriosis & Red Disease](https://nextfarmbiosciences.app/diseases/luminescent-vibriosis-vibrio-harveyi): luxCDABE bioluminescence, TCBS agar monitoring, and competitive exclusion.
+- [Running Mortality Syndrome (RMS)](https://nextfarmbiosciences.app/diseases/running-mortality-syndrome-rms): Andhra Pradesh DOC 35-70 daily mortality patterns, benthic H2S, and mineral stabilization.
+- [Black Gill Disease & Branchial Melanization](https://nextfarmbiosciences.app/diseases/black-gill-melanization-disease): Prophenoloxidase melanosis, Fusarium, sludge fouling, and biological clearing.
+- [Loose Shell & Soft Shell Syndrome](https://nextfarmbiosciences.app/diseases/loose-shell-soft-shell-syndrome): Hypomineralization, Ca:Mg:K ratio rebalancing, and chelated mineral therapy.
+- [Benthic Sludge & H2S Toxicity](https://nextfarmbiosciences.app/diseases/benthic-sludge-h2s-black-soil-toxicity): Desulfovibrio anaerobic reduction, -150 mV redox, and enzymatic sludge digestion.
+- [White Spot Syndrome Virus (WSSV)](https://nextfarmbiosciences.app/diseases/white-spot-syndrome-virus-wssv): VP28 envelope blocking, temperature trigger dynamics, and biological antiviral defense.
+- [Infectious Myonecrosis Virus (IMNV)](https://nextfarmbiosciences.app/diseases/infectious-myonecrosis-virus-imnv): Coagulative striated muscle necrosis, osmotic shock, and electrolyte rebalancing.
+- [Zoothamnium Ciliate Fouling](https://nextfarmbiosciences.app/diseases/zoothamnium-ciliate-fouling): Ectocommensal peritrich ciliates, ecdysis molt induction, and bloom clearing.
 
 ## Heavyweight Clinical Technical Guides (10 Protocols)
 - [Vannamei White Gut & White Feces Syndrome Protocol](https://nextfarmbiosciences.app/blog/vannamei-white-gut-white-feces-ehp-treatment-protocol): Complete clinical protocol to reverse ATM and EHP microsporidia in 5 days without antibiotics.

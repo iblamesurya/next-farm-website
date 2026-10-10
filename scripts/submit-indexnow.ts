@@ -1,4 +1,4 @@
-import { PRODUCTS } from '../src/data/products';
+import { PRODUCTS } from '../src/lib/catalog';
 
 const HOST = 'nextfarmbiosciences.app';
 const BASE_URL = `https://${HOST}`;

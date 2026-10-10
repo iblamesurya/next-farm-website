@@ -26,9 +26,12 @@ export function getVeterinaryBusinessJsonLd() {
       'NextFarm Bio Sciences',
       'Next Farm Biosciences',
       'Next Farm Biosciences Vijayawada',
+      'Next Farm Aqua',
       'Next Farm'
     ],
     sameAs: [
+      'https://www.wikidata.org/wiki/Q141685540',
+      'https://www.wikidata.org/entity/Q141685540',
       'https://wa.me/918977656444',
       'https://nextfarmbiosciences.app'
     ],

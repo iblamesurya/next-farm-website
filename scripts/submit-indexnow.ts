@@ -1,4 +1,5 @@
 import { PRODUCTS } from '../src/lib/catalog';
+import { BLOG_ARTICLES } from '../src/lib/blog-data';
 
 const HOST = 'nextfarmbiosciences.app';
 const BASE_URL = `https://${HOST}`;
@@ -32,8 +33,9 @@ const STATIC_ROUTES = [
 
 async function submitIndexNow() {
   const productUrls = PRODUCTS.map((p) => `${BASE_URL}/products/${p.slug}`);
+  const blogUrls = BLOG_ARTICLES.map((b) => `${BASE_URL}/blog/${b.slug}`);
   const staticUrls = STATIC_ROUTES.map((r) => `${BASE_URL}${r}`);
-  const urlList = [...staticUrls, ...productUrls];
+  const urlList = [...staticUrls, ...productUrls, ...blogUrls];
 
   const payload = {
     host: HOST,

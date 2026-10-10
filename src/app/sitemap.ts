@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { PRODUCTS } from '@/lib/catalog';
 import { SOLUTIONS } from '@/lib/solutions-data';
+import { BLOG_ARTICLES } from '@/lib/blog-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://nextfarmbiosciences.app';
@@ -18,6 +19,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified,
     changeFrequency: 'weekly',
     priority: 0.95
+  }));
+
+  const blogRoutes: MetadataRoute.Sitemap = BLOG_ARTICLES.map((article) => ({
+    url: `${baseUrl}/blog/${article.slug}`,
+    lastModified,
+    changeFrequency: 'weekly',
+    priority: 0.92
   }));
 
   const staticRoutes: MetadataRoute.Sitemap = [
@@ -58,6 +66,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95
     },
     {
+      url: `${baseUrl}/blog`,
+      lastModified,
+      changeFrequency: 'daily',
+      priority: 0.98
+    },
+    {
       url: `${baseUrl}/llms.txt`,
       lastModified,
       changeFrequency: 'weekly',
@@ -71,5 +85,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   ];
 
-  return [...staticRoutes, ...solutionRoutes, ...productRoutes];
+  return [...staticRoutes, ...solutionRoutes, ...productRoutes, ...blogRoutes];
 }

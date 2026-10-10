@@ -206,5 +206,5 @@ Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 
 # --- Manifests & Sitemaps ---
-Agentmap: https://nextfarmbiosciences.app/llms.txt
+Agentmap: https://nextfarmbiosciences.app/.well-known/ai-catalog.json
 Sitemap: https://nextfarmbiosciences.app/sitemap.xml

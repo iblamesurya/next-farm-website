@@ -22,6 +22,37 @@
         "What are the microbial strains in Next Gut?",
         "What is the price of 5L Can aquaculture probiotics?"
       ]
+    },
+    {
+      "identifier": "urn:air:nextfarmbiosciences.app:commerce:openai-product-feed",
+      "displayName": "OpenAI Agentic Commerce Product Feed (33 SKUs)",
+      "type": "application/jsonl",
+      "url": "https://nextfarmbiosciences.app/openai-products.jsonl",
+      "representativeQueries": [
+        "Buy Next Gut shrimp probiotic online in India",
+        "Next Farm Bio Sciences product prices and SKU variants",
+        "CAA certified antibiotic-free aquaculture bio-inputs catalog"
+      ]
+    },
+    {
+      "identifier": "urn:air:nextfarmbiosciences.app:commerce:google-microsoft-merchant-feed",
+      "displayName": "Google & Microsoft Merchant Center RSS 2.0 XML Product Feed",
+      "type": "application/xml",
+      "url": "https://nextfarmbiosciences.app/google-merchant-feed.xml",
+      "representativeQueries": [
+        "Shop aquaculture water and soil probiotics in Andhra Pradesh",
+        "Compare Next Farm Bio Sciences 5L Can vs 20L Can vs 25kg Bag prices"
+      ]
+    },
+    {
+      "identifier": "urn:air:nextfarmbiosciences.app:agent:a2a-card",
+      "displayName": "Next Farm Bio Sciences A2A Multi-Agent Discovery Card",
+      "type": "application/json",
+      "url": "https://nextfarmbiosciences.app/.well-known/agent-card.json",
+      "representativeQueries": [
+        "What capabilities does Next Farm Bio Sciences offer to AI agents?",
+        "Connect to Next Farm Bio Sciences aquaculture diagnostic and commerce agent"
+      ]
     }
   ]
 }

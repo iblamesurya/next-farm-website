@@ -1,0 +1,69 @@
+{
+  "name": "Next Farm Bio Sciences — Pond Doctor & Aquaculture Bio-Inputs Agent",
+  "description": "Official aquaculture biotechnology diagnostic and commerce platform by Next Farm Bio Sciences (Vijayawada, India). Provides CAA-approved shrimp & fish probiotics, ammonia/H2S bioremediators, benthic sludge digestors, and automated pond dosage calculations.",
+  "url": "https://nextfarmbiosciences.app",
+  "provider": {
+    "organization": "Next Farm Bio Sciences Private Limited",
+    "url": "https://nextfarmbiosciences.app",
+    "contactEmail": "support@nextfarmbiosciences.app",
+    "phone": "+91-8977656444",
+    "location": "New Autonagar, Vijayawada, Andhra Pradesh 520010, India"
+  },
+  "version": "1.0.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/markdown",
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "pond-doctor-diagnostics",
+      "name": "Pond Doctor Aquaculture Symptom & Dosage Calculator",
+      "description": "Diagnoses White Gut, White Feces, WSSV viral risk, Vibrio Red Disease, Toxic Ammonia/Nitrite/H2S spikes, and Soft Shell molting cramps, calculating exact 5L and 1L biological dosages per pond acre and water depth.",
+      "tags": [
+        "aquaculture",
+        "shrimp-farming",
+        "probiotics",
+        "white-gut",
+        "ammonia",
+        "vibrio",
+        "wssv"
+      ],
+      "examples": [
+        "What is the dosage of Next Gut for a 3-acre vannamei shrimp pond with White Gut?",
+        "How to reduce toxic ammonia and black mud in a 1.5m deep prawn pond?"
+      ]
+    },
+    {
+      "id": "caa-catalog-lookup",
+      "name": "CAA-Approved Aquaculture Formulations Catalog & Feed",
+      "description": "Provides specifications, microbial CFU counts, strain compositions, and INR pricing for all 11 Next Farm Bio Sciences formulations across 5L, 2L, and 1L packs.",
+      "tags": [
+        "catalog",
+        "pricing",
+        "caa-approved",
+        "antibiotic-free",
+        "india"
+      ],
+      "examples": [
+        "List all 11 CAA-approved aquaculture products from Next Farm Bio Sciences.",
+        "What are the microbial strains and CFU count in Next Viro Nill?"
+      ]
+    }
+  ],
+  "links": {
+    "llmsTxt": "https://nextfarmbiosciences.app/llms.txt",
+    "llmsFullTxt": "https://nextfarmbiosciences.app/llms-full.txt",
+    "aiCatalog": "https://nextfarmbiosciences.app/.well-known/ai-catalog.json",
+    "openaiProductFeedJsonl": "https://nextfarmbiosciences.app/openai-products.jsonl",
+    "openaiProductFeedCsv": "https://nextfarmbiosciences.app/openai-products.csv",
+    "googleMerchantFeedXml": "https://nextfarmbiosciences.app/google-merchant-feed.xml",
+    "sitemapXml": "https://nextfarmbiosciences.app/sitemap.xml"
+  }
+}

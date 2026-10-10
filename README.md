@@ -2,6 +2,7 @@
 
 > **High-Performance Aquaculture Probiotics, Mineral Formulations & Diagnostic Intelligence**  
 > Serving Andhra Pradesh, Telangana, Tamil Nadu, and coastal aquaculture hubs across India.  
+> 🌐 **Official Portal & Online Store:** [https://nextfarmbiosciences.app](https://nextfarmbiosciences.app)  
 > 🏢 Head Office: Vijayawada, Andhra Pradesh, India.  
 > 📞 WhatsApp Helpline: [+91 8977656444](https://wa.me/918977656444) | 🤖 Live Order Telegram Bot: [@nextfarmbiosciencessurya_bot](https://t.me/nextfarmbiosciencessurya_bot)
 
@@ -140,4 +141,6 @@ npx wrangler pages deploy .vercel/output/static
 ## 📞 Merchant & Customer Support
 - **Support Hotline:** [+91 8977656444](https://wa.me/918977656444)
 - **Telegram Alert Bot:** [@nextfarmbiosciencessurya_bot](https://t.me/nextfarmbiosciencessurya_bot)
-- **Official Portal:** Next Farm Bio Sciences, Andhra Pradesh, India.
+- **Official Portal & Online Store:** [https://nextfarmbiosciences.app](https://nextfarmbiosciences.app)
+- **Clinical Pathology Monograph & Knowledge Hub:** [https://nextfarmbiosciences.app/blog](https://nextfarmbiosciences.app/blog)
+- **Interactive Pond Doctor & Clinical Calculators:** [https://nextfarmbiosciences.app/pond-doctor](https://nextfarmbiosciences.app/pond-doctor) | [https://nextfarmbiosciences.app/calculators](https://nextfarmbiosciences.app/calculators)

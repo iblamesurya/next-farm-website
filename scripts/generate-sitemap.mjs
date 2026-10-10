@@ -64,11 +64,24 @@ const diseaseSlugs = [
   'zoothamnium-ciliate-fouling'
 ];
 
+const districtSlugs = [
+  'bhimavaram-west-godavari',
+  'nellore-coastal',
+  'krishna-kaikaluru',
+  'bapatla-chirala',
+  'kakinada-east-godavari',
+  'guntur-nizampatnam',
+  'surat-gujarat',
+  'balasore-odisha'
+];
+
 const urls = [
   { loc: `${baseUrl}/`, priority: '1.0', changefreq: 'daily' },
   { loc: `${baseUrl}/aquaculture`, priority: '0.99', changefreq: 'daily' },
   { loc: `${baseUrl}/shrimp-medicine`, priority: '0.99', changefreq: 'daily' },
   { loc: `${baseUrl}/diseases`, priority: '0.99', changefreq: 'daily' },
+  { loc: `${baseUrl}/districts`, priority: '0.98', changefreq: 'daily' },
+  { loc: `${baseUrl}/glossary`, priority: '0.98', changefreq: 'daily' },
   { loc: `${baseUrl}/calculators`, priority: '0.98', changefreq: 'daily' },
   { loc: `${baseUrl}/pond-doctor`, priority: '0.98', changefreq: 'daily' },
   { loc: `${baseUrl}/research`, priority: '0.97', changefreq: 'weekly' },
@@ -76,6 +89,11 @@ const urls = [
   { loc: `${baseUrl}/products`, priority: '0.96', changefreq: 'daily' },
   { loc: `${baseUrl}/solutions`, priority: '0.96', changefreq: 'daily' },
   { loc: `${baseUrl}/blog`, priority: '0.96', changefreq: 'daily' },
+  ...districtSlugs.map((slug) => ({
+    loc: `${baseUrl}/districts/${slug}`,
+    priority: '0.96',
+    changefreq: 'weekly'
+  })),
   ...diseaseSlugs.map((slug) => ({
     loc: `${baseUrl}/diseases/${slug}`,
     priority: '0.97',
@@ -96,9 +114,9 @@ const urls = [
     priority: '0.90',
     changefreq: 'weekly'
   })),
+  { loc: `${baseUrl}/feed.xml`, priority: '0.85', changefreq: 'daily' },
   { loc: `${baseUrl}/llms.txt`, priority: '0.80', changefreq: 'weekly' },
-  { loc: `${baseUrl}/llms-full.txt`, priority: '0.80', changefreq: 'weekly' },
-  { loc: `${baseUrl}/google-merchant-feed.xml`, priority: '0.85', changefreq: 'daily' }
+  { loc: `${baseUrl}/llms-full.txt`, priority: '0.80', changefreq: 'weekly' }
 ];
 
 const xmlContent = `<?xml version="1.0" encoding="UTF-8"?>

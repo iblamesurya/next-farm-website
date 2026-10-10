@@ -25,6 +25,18 @@
     <priority>0.99</priority>
   </url>
   <url>
+    <loc>https://nextfarmbiosciences.app/districts</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/glossary</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+  </url>
+  <url>
     <loc>https://nextfarmbiosciences.app/calculators</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>daily</changefreq>
@@ -64,6 +76,54 @@
     <loc>https://nextfarmbiosciences.app/blog</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>daily</changefreq>
+    <priority>0.96</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/districts/bhimavaram-west-godavari</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.96</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/districts/nellore-coastal</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.96</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/districts/krishna-kaikaluru</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.96</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/districts/bapatla-chirala</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.96</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/districts/kakinada-east-godavari</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.96</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/districts/guntur-nizampatnam</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.96</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/districts/surat-gujarat</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.96</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/districts/balasore-odisha</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.96</priority>
   </url>
   <url>
@@ -355,6 +415,12 @@
     <priority>0.90</priority>
   </url>
   <url>
+    <loc>https://nextfarmbiosciences.app/feed.xml</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://nextfarmbiosciences.app/llms.txt</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -365,11 +431,5 @@
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://nextfarmbiosciences.app/google-merchant-feed.xml</loc>
-    <lastmod>2026-10-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.85</priority>
   </url>
 </urlset>

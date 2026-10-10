@@ -208,9 +208,21 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/districts" className="hover:text-[#FFD200] transition-colors flex items-center gap-1.5 font-bold text-[#FFD200]">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#FFD200]"></span>
+                  <span>District Field Network (8 Coastal Hubs)</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/glossary" className="hover:text-[#FFD200] transition-colors flex items-center gap-1.5 font-bold text-cyan-300">
+                  <span className="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                  <span>Aquaculture Glossary (40+ Terms)</span>
+                </Link>
+              </li>
+              <li>
                 <Link href="/blog" className="hover:text-[#FFD200] transition-colors flex items-center gap-1.5 font-semibold text-teal-300">
                   <span className="w-1.5 h-1.5 rounded-full bg-teal-400"></span>
-                  <span>Clinical Field Guides (10 Articles)</span>
+                  <span>Clinical Field Guides (16 Monographs)</span>
                 </Link>
               </li>
               <li>
@@ -218,6 +230,12 @@ export function Footer() {
                   <span className="w-1.5 h-1.5 rounded-full bg-[#FFD200]"></span>
                   <span>Pond Doctor Diagnostic Engine</span>
                 </Link>
+              </li>
+              <li>
+                <a href="/feed.xml" target="_blank" rel="noopener noreferrer" className="hover:text-[#FFD200] transition-colors flex items-center gap-1.5 text-xs text-amber-300">
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+                  <span>Clinical RSS 2.0 Newsfeed (XML)</span>
+                </a>
               </li>
               <li>
                 <a

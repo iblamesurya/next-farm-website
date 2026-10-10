@@ -1,6 +1,7 @@
 import { PRODUCTS } from '../src/lib/catalog';
 import { BLOG_ARTICLES } from '../src/lib/blog-data';
 import { DISEASE_MONOGRAPHS } from '../src/lib/diseases-data';
+import { DISTRICT_GUIDES } from '../src/lib/districts-data';
 
 const HOST = 'nextfarmbiosciences.app';
 const BASE_URL = `https://${HOST}`;
@@ -12,6 +13,8 @@ const STATIC_ROUTES = [
   '/aquaculture',
   '/shrimp-medicine',
   '/diseases',
+  '/districts',
+  '/glossary',
   '/calculators',
   '/pond-doctor',
   '/research',
@@ -28,12 +31,9 @@ const STATIC_ROUTES = [
   '/solutions/loose-shell-slow-growth-shrimp',
   '/solutions/hard-water-salinity-conditioner-pond',
   '/blog',
+  '/feed.xml',
   '/llms.txt',
   '/llms-full.txt',
-  '/openai-products.jsonl',
-  '/openai-products.csv',
-  '/openai-products.json',
-  '/google-merchant-feed.xml',
   '/.well-known/ai-catalog.json',
   '/.well-known/agent-card.json',
 ];
@@ -42,8 +42,9 @@ async function submitIndexNow() {
   const productUrls = PRODUCTS.map((p) => `${BASE_URL}/products/${p.slug}`);
   const blogUrls = BLOG_ARTICLES.map((b) => `${BASE_URL}/blog/${b.slug}`);
   const diseaseUrls = DISEASE_MONOGRAPHS.map((d) => `${BASE_URL}/diseases/${d.slug}`);
+  const districtUrls = DISTRICT_GUIDES.map((d) => `${BASE_URL}/districts/${d.slug}`);
   const staticUrls = STATIC_ROUTES.map((r) => `${BASE_URL}${r}`);
-  const urlList = [...staticUrls, ...productUrls, ...blogUrls, ...diseaseUrls];
+  const urlList = [...staticUrls, ...districtUrls, ...productUrls, ...blogUrls, ...diseaseUrls];
 
   const payload = {
     host: HOST,

@@ -3,6 +3,7 @@ import { PRODUCTS } from '@/lib/catalog';
 import { SOLUTIONS } from '@/lib/solutions-data';
 import { BLOG_ARTICLES } from '@/lib/blog-data';
 import { DISEASE_MONOGRAPHS } from '@/lib/diseases-data';
+import { DISTRICT_GUIDES } from '@/lib/districts-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://nextfarmbiosciences.app';
@@ -36,6 +37,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.96
   }));
 
+  const districtRoutes: MetadataRoute.Sitemap = DISTRICT_GUIDES.map((d) => ({
+    url: `${baseUrl}/districts/${d.slug}`,
+    lastModified,
+    changeFrequency: 'weekly',
+    priority: 0.94
+  }));
+
   const staticRoutes: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
@@ -66,6 +74,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: 'daily',
       priority: 0.99
+    },
+    {
+      url: `${baseUrl}/districts`,
+      lastModified,
+      changeFrequency: 'daily',
+      priority: 0.98
+    },
+    {
+      url: `${baseUrl}/glossary`,
+      lastModified,
+      changeFrequency: 'daily',
+      priority: 0.98
     },
     {
       url: `${baseUrl}/calculators`,
@@ -104,6 +124,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.98
     },
     {
+      url: `${baseUrl}/feed.xml`,
+      lastModified,
+      changeFrequency: 'daily',
+      priority: 0.9
+    },
+    {
       url: `${baseUrl}/llms.txt`,
       lastModified,
       changeFrequency: 'weekly',
@@ -117,5 +143,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   ];
 
-  return [...staticRoutes, ...diseaseRoutes, ...solutionRoutes, ...productRoutes, ...blogRoutes];
+  return [
+    ...staticRoutes, 
+    ...diseaseRoutes, 
+    ...districtRoutes, 
+    ...solutionRoutes, 
+    ...productRoutes, 
+    ...blogRoutes
+  ];
 }

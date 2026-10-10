@@ -65,6 +65,14 @@ function copyHtmlPages(src, baseDest) {
 
 if (fs.existsSync(appServerDir)) {
   copyHtmlPages(appServerDir, deployDir);
+  
+  // Copy feed.xml static body if present
+  const feedBody = path.join(appServerDir, 'feed.xml.body');
+  if (fs.existsSync(feedBody)) {
+    fs.copyFileSync(feedBody, path.join(deployDir, 'feed.xml'));
+    fs.copyFileSync(feedBody, path.join('public', 'feed.xml'));
+    console.log('✅ Copied feed.xml to deployment directory.');
+  }
 }
 
 console.log('✅ Deployment bundle successfully prepared in /deploy');

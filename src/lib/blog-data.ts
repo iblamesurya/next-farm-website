@@ -530,5 +530,354 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       'MPEDA Marine Products Export Statistics: State-wise Aquaculture Production Reports (Andhra Pradesh).',
       'Department of Fisheries, Government of Andhra Pradesh: Brackishwater Aquaculture Production Handbook.'
     ]
+  },
+  {
+    slug: 'benthic-sludge-black-soil-h2s-bioremediation-guide',
+    title: 'Benthic Sludge, Anaerobic Decay & Hydrogen Sulfide (H2S) Bioremediation in Brackishwater Ponds',
+    subtitle: 'Microbial bio-dredging mechanics: Redox potential (ORP) thresholds, deep-bed sulfur oxidation with Thiobacillus, and enzymatic sludge digestion.',
+    metaTitle: 'Shrimp Pond Black Soil Treatment | Hydrogen Sulfide & Sludge Digester',
+    metaDescription: 'Eliminate toxic black soil, rotten egg H2S gas, and bottom sludge in shrimp ponds. High-potency Thiobacillus denitrificans protocol using Next Sludge. Complete redox potential guide.',
+    keywords: [
+      'Shrimp pond black soil treatment',
+      'Hydrogen sulfide in prawn pond',
+      'Pond bottom sludge digester',
+      'Thiobacillus denitrificans aquaculture dosage',
+      'Next Sludge dosage per acre',
+      'Redox potential shrimp pond',
+      'రొయ్యల చెరువులో నల్ల మట్టి నివారణ'
+    ],
+    teluguKeywords: [
+      'రొయ్యల చెరువులో నల్ల మట్టి నివారణ',
+      'హైడ్రోజన్ సల్ఫైడ్ గ్యాస్ సమస్య',
+      'చెరువు అడుగున వ్యర్థాల శుద్ధి'
+    ],
+    category: 'Water Chemistry',
+    readingTime: '11 min read',
+    publishDate: '2026-10-10',
+    author: {
+      name: 'Dr. Research & Biosecurity Team',
+      title: 'Senior Aquaculture Microbiologists',
+      affiliation: 'Next Farm Bio Sciences Biotechnology Division, Vijayawada'
+    },
+    recommendedProductSlug: 'next-sludge',
+    recommendedProductName: 'Next Sludge (Enzymatic Bottom Sludge Digester)',
+    excerpt: 'Over 80% of daily uneaten feed and fecal casts settle into the pond bottom sediment. When anaerobic Desulfovibrio bacteria reduce sulfur into lethal Hydrogen Sulfide (H2S), bottom DO collapses and mortality spikes. Master biological benthic bioremediation without draining water.',
+    tableOfContents: [
+      { id: 'benthic-sludge-dynamics', title: '1. Sludge Accumulation Dynamics in Intensive Ponds' },
+      { id: 'h2s-toxicity-orp', title: '2. Hydrogen Sulfide (H2S) Toxicity & Redox Potential (ORP)' },
+      { id: 'why-potassium-permanganate-fails', title: '3. Why Chemical Oxidizers Fail on Bottom Mud' },
+      { id: 'thiobacillus-biochemistry', title: '4. Deep-Bed Sulfur Oxidation with Thiobacillus' },
+      { id: 'next-sludge-application', title: '5. Next Sludge Broadcast & Maintenance Protocol' },
+      { id: 'faqs', title: '6. Frequently Asked Benthic Sludge Questions' }
+    ],
+    contentSections: [
+      {
+        id: 'benthic-sludge-dynamics',
+        heading: '1. Sludge Accumulation Dynamics in Intensive Ponds',
+        paragraphs: [
+          'In intensive Litopenaeus vannamei ponds stocked at 50 to 80 PL/m2, an average of 4,000 to 7,000 kg of commercial pelleted feed is introduced per acre over a 100-day culture cycle. Shrimp consume only 70-85% of this feed, while the remainder—combined with fecal strands, dead diatom blooms, and molted exoskeletons—settles directly into the pond bottom sediment.',
+          'Under aerator flow patterns, this organic matter accumulates in central feeding trenches and dead zones. As aerobic bacteria deplete dissolved oxygen within the upper 2mm of sediment, the sediment layer turns severely anaerobic (ORP < -150 mV), initiating catastrophic anaerobic fermentation.'
+        ]
+      },
+      {
+        id: 'h2s-toxicity-orp',
+        heading: '2. Hydrogen Sulfide (H2S) Toxicity & Redox Potential (ORP)',
+        paragraphs: [
+          'Under anaerobic conditions, specialized sulfate-reducing bacteria (Desulfovibrio and Desulfotomaculum) reduce sulfate ions (SO4 2-) present in brackish water into toxic Hydrogen Sulfide (H2S) gas.',
+          'Hydrogen sulfide is lethal to penaeid shrimp at concentrations as low as 0.03 ppm. H2S irreversibly binds to cytochrome c oxidase in mitochondrial electron transport, suffocating shrimp cellular respiration even when water column dissolved oxygen is seemingly adequate.',
+          'Diagnostic Sign: Rotten egg odor from check tray anchors, black staining on shrimp abdominal pleopods, and shrimp crowding dike peripheries to avoid bottom sludge.'
+        ]
+      },
+      {
+        id: 'next-sludge-application',
+        heading: '5. Next Sludge Broadcast & Maintenance Protocol',
+        paragraphs: [
+          'Next Sludge combines facultative anaerobic Thiobacillus denitrificans with concentrated fungal protease, cellulase, and amylase enzymes delivering over 6 × 10⁹ CFU/ml:',
+          'Curative Protocol (Black Soil / H2S Odor): Broadcast 1 Can (5 Litres) of Next Sludge per acre. For deep central trenches, blend Next Sludge with 20 kg of dry pond sand and broadcast directly over dark bottom zones.',
+          'Maintenance Protocol: Apply 2.0 Liters per acre every 10 to 12 days from DOC 30 through final harvest run.'
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: 'How quickly does Next Sludge eliminate black soil and rotten egg odor?',
+        answer: 'Within 72 to 96 hours of sand-broadcast application, Thiobacillus oxidizes sulfide into harmless sulfate, turning black ferrous sulfide sediment back into natural sandy-brown aerobic soil.'
+      }
+    ],
+    scientificReferences: [
+      'Boyd, C. E. (2018). Chemical and biological characteristics of shrimp pond bottom soils.',
+      'Su, Z., et al. (2021). Bioremediation of aquaculture sediment by Thiobacillus denitrificans and Bacillus consortia.'
+    ]
+  },
+  {
+    slug: 'vannamei-mineral-ionic-ratios-molting-soft-shell-cure',
+    title: 'The Complete Vannamei Mineral & Molting Protocol: Calcium-Magnesium-Potassium Ratios, Alkalinity & Hardness',
+    subtitle: 'Osmoregulatory physiology guide: The 1:3:1 Ca:Mg:K ratio, lunar molting synchronization, and rapid soft-shell reversal with chelated macrominerals.',
+    metaTitle: 'Soft Shell Disease in Shrimp Treatment | Vannamei Ca:Mg:K Ratio Guide',
+    metaDescription: 'Cure soft shell disease, muscle cramping, and post-molt mortality in Vannamei shrimp. The definitive 1:3:1 Calcium, Magnesium, Potassium ionic ratio guide with Next Min.',
+    keywords: [
+      'Soft shell disease shrimp treatment',
+      'Vannamei mineral ratio Ca Mg K',
+      'Prawn molting cramps cure',
+      'Next Min dosage per acre',
+      'Water hardness aquaculture India',
+      'Calcium magnesium ratio shrimp',
+      'రొయ్యల లూజ్ షెల్ మందు'
+    ],
+    teluguKeywords: [
+      'రొయ్యల లూజ్ షెల్ మందు',
+      'మినరల్స్ మోతాదు రొయ్యలు',
+      'రొయ్యల క్రాంప్స్ నివారణ'
+    ],
+    category: 'Mineral Nutrition',
+    readingTime: '12 min read',
+    publishDate: '2026-10-10',
+    author: {
+      name: 'Dr. Research & Biosecurity Team',
+      title: 'Senior Aquaculture Nutritionists',
+      affiliation: 'Next Farm Bio Sciences Biotechnology Division, Vijayawada'
+    },
+    recommendedProductSlug: 'next-min',
+    recommendedProductName: 'Next Min (Bio-Chelated Ionic Macrominerals)',
+    excerpt: 'Penaeid shrimp molt every 3 to 7 days during active growth phases, requiring massive uptake of bioavailable Calcium, Magnesium, and Potassium within a 6-hour post-ecdysis window. Learn why crude agricultural lime fails and how chelated ionic minerals prevent soft shell cannibalism.',
+    tableOfContents: [
+      { id: 'molting-physiology', title: '1. The Ecdysis (Molting) Cycle & Mineral Demand' },
+      { id: 'golden-ionic-ratio', title: '2. The Golden 1:3:1 Ca:Mg:K Ratio Formula' },
+      { id: 'soft-shell-cramps', title: '3. Soft Shell Syndrome & Muscle Necrosis' },
+      { id: 'crude-lime-peril', title: '4. Why Agricultural Lime Spikes pH Dangerously' },
+      { id: 'next-min-protocol', title: '5. The Next Min Lunar Molting Protocol' },
+      { id: 'faqs', title: '6. Frequently Asked Mineral Questions' }
+    ],
+    contentSections: [
+      {
+        id: 'golden-ionic-ratio',
+        heading: '2. The Golden 1:3:1 Ca:Mg:K Ratio Formula',
+        paragraphs: [
+          'In seawater (35 ppt), the major cation ratios are constant: Calcium (~400 ppm), Magnesium (~1,300 ppm), and Potassium (~380 ppm), yielding an optimal ratio of approximately 1 : 3.25 : 0.95.',
+          'In low-salinity borewells and freshwater ponds in Gudivada, Bapatla, or inland Gujarat, water may have high Calcium from limestone but virtually zero Magnesium and Potassium.',
+          'Rule of Thumb: For every 1 ppt of pond salinity, maintain minimum: Calcium = 11.4 ppm, Magnesium = 39.1 ppm, Potassium = 10.8 ppm. Total Alkalinity must remain above 120 ppm CaCO3.'
+        ]
+      },
+      {
+        id: 'next-min-protocol',
+        heading: '5. The Next Min Lunar Molting Protocol',
+        paragraphs: [
+          'Next Min provides 100% water-soluble, bio-chelated Calcium, Magnesium, Potassium, Zinc, and Vitamin D3 that penetrate gill epithelium within minutes:',
+          'Water Broadcast (48h Prior to New / Full Moon): Apply 5 Litres of Next Min per acre during night aeration (10:00 PM) when the entire population begins synchronous molting.',
+          'Feed Top-Dressing: Mix 10 to 15 mL of Next Min per kg feed twice daily for 3 days post-molt to harden cuticles within 4 hours.'
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: 'Why does crude agricultural lime cause problems in low-salinity ponds?',
+        answer: 'Agricultural limestone (CaCO3) has low solubility and releases carbonate that spikes water pH above 9.0 without providing bio-available magnesium or potassium, locking out essential trace minerals.'
+      }
+    ],
+    scientificReferences: [
+      'Roy, L. A., et al. (2010). The physiological importance of ionic ratios in low-salinity aquaculture.',
+      'ICAR-CIBA Bulletin: Mineral Nutrition and Osmo-regulation in Litopenaeus vannamei.'
+    ]
+  },
+  {
+    slug: 'running-mortality-syndrome-rms-andhra-pradesh-field-guide',
+    title: 'Running Mortality Syndrome (RMS) & Polymicrobial Stress in Andhra Pradesh: Diagnostic Key & Field Protocol',
+    subtitle: 'Clinical epidemiology of persistent daily mortalities (DOC 35–70), temperature spikes, and multi-strain biological stabilization.',
+    metaTitle: 'Running Mortality Syndrome in Shrimp | RMS Treatment & Field Guide',
+    metaDescription: 'Stop daily unexplained shrimp deaths from Running Mortality Syndrome (RMS) between DOC 35 and 70. Multi-strain biological protocol using Next Viro Nill and Next Converter.',
+    keywords: [
+      'Running mortality syndrome shrimp',
+      'RMS treatment vannamei',
+      'Andhra Pradesh shrimp disease outbreak',
+      'DOC 40 mortality prawn',
+      'Next Viro Nill dosage per acre',
+      'రొయ్యల రోజువారీ మరణాల సమస్య'
+    ],
+    teluguKeywords: [
+      'రొయ్యల రోజువారీ మరణాలు',
+      'ఆర్ఎంఎస్ వ్యాధి నివారణ',
+      'రొయ్యల వైరల్ నిరోధకం'
+    ],
+    category: 'Disease Pathology',
+    readingTime: '10 min read',
+    publishDate: '2026-10-10',
+    author: {
+      name: 'Dr. Research & Biosecurity Team',
+      title: 'Senior Veterinary Pathologists',
+      affiliation: 'Next Farm Bio Sciences, Vijayawada'
+    },
+    recommendedProductSlug: 'next-viro-nill',
+    recommendedProductName: 'Next Viro Nill (Aquatic Bio-Conditioner & Viral Suppressor)',
+    excerpt: 'Running Mortality Syndrome (RMS) produces insidious losses of 15 to 40 shrimp per check tray daily between DOC 35 and DOC 70 without gross external lesions. Learn how to break the polymicrobial stress cycle using non-toxic biological stabilizers.',
+    tableOfContents: [
+      { id: 'rms-epidemiology', title: '1. RMS Epidemiology in Andhra Pradesh' },
+      { id: 'clinical-signs', title: '2. Clinical Signs vs WSSV / EHP' },
+      { id: 'biological-stabilization', title: '3. Biological Multi-Strain Stabilization Protocol' },
+      { id: 'faqs', title: '4. Frequently Asked RMS Questions' }
+    ],
+    contentSections: [
+      {
+        id: 'rms-epidemiology',
+        heading: '1. RMS Epidemiology in Andhra Pradesh',
+        paragraphs: [
+          'Running Mortality Syndrome (RMS) was first documented in coastal Andhra Pradesh in 2011 and remains a major cause of crop erosion. Unlike White Spot Disease (WSSV), which kills 100% of a pond within 48 hours, RMS causes a steady, insidious daily death rate of 0.5% to 1.5% of total biomass over 3 to 4 weeks.',
+          'Extensive PCR screenings reveal no single novel virus; rather, RMS represents a polymicrobial collapse triggered by summer water temperatures > 32°C, elevated Total Ammonia Nitrogen (> 0.8 ppm), and opportunistic Vibrio campbellii invasion of stressed shrimp.'
+        ]
+      },
+      {
+        id: 'biological-stabilization',
+        heading: '3. Biological Multi-Strain Stabilization Protocol',
+        paragraphs: [
+          'Stabilizing an RMS pond requires three simultaneous interventions:',
+          '1. Water Sanitization without Chemical Shock: Broadcast Next Viro Nill @ 2.0 Liters per acre in early morning hours to suppress viral reservoirs and secondary bacterial colonizers.',
+          '2. Immediate TAN Oxidation: Apply Next Converter @ 2.0 L/acre to bring ammonia below 0.2 ppm.',
+          '3. Gut Microflora Defense: Mix Next Gut @ 20 mL/kg feed with quality binder in all meals for 7 days.'
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: 'Does chemical disinfectant stop Running Mortality Syndrome?',
+        answer: 'No. Applying chemical disinfectants during an RMS flare-up stresses the shrimp further, crashes dissolved oxygen, and frequently doubles daily mortality rates.'
+      }
+    ],
+    scientificReferences: [
+      'Alavandi, S. V., et al. (2019). Investigation of Running Mortality Syndrome in cultured Litopenaeus vannamei in India. ICAR-CIBA Special Report.',
+      'MPEDA Advisory on Seasonal Mortality Management in Coastal Prawn Farming.'
+    ]
+  },
+  {
+    slug: 'freshwater-low-salinity-vannamei-farming-mineral-guide',
+    title: 'Freshwater Vannamei Farming (Low Salinity 0–5 ppt): Ionic Mineral Re-balancing & Osmoregulatory Survival Guide',
+    subtitle: 'Complete technical manual for inland borewell shrimp culture in Andhra Pradesh, Haryana, Punjab, and Rajasthan.',
+    metaTitle: 'Freshwater Vannamei Farming India | Low Salinity Shrimp Mineral Guide',
+    metaDescription: 'Master commercial Vannamei shrimp culture in freshwater borewells (0-5 ppt). Complete potassium chloride, magnesium chloride, and ionic mineral dosing formulas with Next Softner and Next Min.',
+    keywords: [
+      'Freshwater vannamei farming India',
+      'Low salinity shrimp culture',
+      'Borewell prawn farming inland',
+      'Potassium chloride dosage shrimp',
+      'Next Softner dosage per acre',
+      'రొయ్యల మంచి నీటి సాగు'
+    ],
+    teluguKeywords: [
+      'మంచి నీటిలో రొయ్యల సాగు',
+      'తక్కువ లవణీయత రొయ్యల చెరువులు',
+      'బోరు బావుల రొయ్యల పెంపకం'
+    ],
+    category: 'Farmer Guides',
+    readingTime: '13 min read',
+    publishDate: '2026-10-10',
+    author: {
+      name: 'Dr. Research & Biosecurity Team',
+      title: 'Inland Aquaculture Division',
+      affiliation: 'Next Farm Bio Sciences, Vijayawada'
+    },
+    recommendedProductSlug: 'next-softner',
+    recommendedProductName: 'Next Softner & Next Min (Ionic Salinity Balancers)',
+    excerpt: 'Inland aquaculture in freshwater agricultural borewells (0 to 5 ppt) offers huge biosecurity advantages against viral marine pathogens. However, without precise Potassium (K+) and Magnesium (Mg2+) supplementation, shrimp suffer osmotic failure and 0% survival. Master inland water balancing.',
+    tableOfContents: [
+      { id: 'inland-advantages', title: '1. Why Inland Low-Salinity Culture is Booming' },
+      { id: 'osmoregulatory-biology', title: '2. The Na+/K+ ATPase Pump & Branchial Physiology' },
+      { id: 'potassium-magnesium-deficiency', title: '3. Identifying Potassium and Magnesium Starvation' },
+      { id: 'water-preparation-formula', title: '4. Inland Pond Water Preparation & Dosing Formula' },
+      { id: 'faqs', title: '5. Low-Salinity Aquaculture FAQs' }
+    ],
+    contentSections: [
+      {
+        id: 'inland-advantages',
+        heading: '1. Why Inland Low-Salinity Culture is Booming',
+        paragraphs: [
+          'Inland farming of Pacific White Shrimp (Litopenaeus vannamei) across non-coastal agricultural districts—such as Krishna and Guntur in Andhra Pradesh, as well as Haryana, Punjab, and Rajasthan—is expanding rapidly. Inland borewells provide virus-free groundwater completely isolated from coastal estuary cross-contamination.',
+          'However, inland borewell water is chemically distinct from diluted seawater: it typically contains excess Calcium and Carbonates, but dangerously low concentrations of Potassium (K+) and Magnesium (Mg2+).'
+        ]
+      },
+      {
+        id: 'water-preparation-formula',
+        heading: '4. Inland Pond Water Preparation & Dosing Formula',
+        paragraphs: [
+          'Before stocking PLs in water under 5 ppt salinity, test water hardness and heavy carbonates. Apply Next Softner @ 2.0 Liters per acre to bio-chelate excess toxic carbonates and soften surface tension.',
+          'Next, apply Next Min @ 5.0 Liters per acre to deliver ionic Magnesium, Potassium, and Calcium in bio-absorbable chelated form, ensuring post-larvae can activate their branchial osmoregulatory pumps immediately upon release.'
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: 'Can Vannamei shrimp survive in 0 ppt freshwater borewells?',
+        answer: 'Yes, provided the ionic Potassium (K+) and Magnesium (Mg2+) concentrations are supplemented to match the physiological osmoregulatory threshold of Litopenaeus vannamei using Next Min and agricultural potassium chloride.'
+      }
+    ],
+    scientificReferences: [
+      'Saoud, I. P., et al. (2003). Growth and survival of Litopenaeus vannamei in low-salinity well water with varied potassium and magnesium concentrations.',
+      'ICAR-CIBA Protocol for Low-Salinity Aquaculture in Inland Saline Soils.'
+    ]
+  },
+  {
+    slug: 'doc-1-to-120-shrimp-probiotic-master-schedule-fcr-guide',
+    title: 'The 2026 Day-of-Culture (DOC 1 to DOC 120) Probiotic Master Schedule for Intensive Shrimp Farming',
+    subtitle: 'Week-by-week calendar: Probiotic inoculation, microbial bloom succession, feeding tray math, and harvest-run bottom care.',
+    metaTitle: 'DOC 1 to 120 Shrimp Probiotic Schedule | Complete Vannamei Calendar',
+    metaDescription: 'Complete DOC 1 to DOC 120 probiotic and bio-input schedule for intensive Vannamei ponds in India. Feed conversion ratio (FCR) reduction guide using Next Farm Bio Sciences formulations.',
+    keywords: [
+      'DOC 1 to 120 shrimp probiotic schedule',
+      'Vannamei culture calendar India',
+      'Shrimp feeding chart and probiotic dosage',
+      'FCR reduction guide prawn farming',
+      'Next Farm Bio Sciences culture schedule'
+    ],
+    category: 'Farmer Guides',
+    readingTime: '15 min read',
+    publishDate: '2026-10-10',
+    author: {
+      name: 'Dr. Research & Biosecurity Team',
+      title: 'Commercial Agronomy & Farm Extension',
+      affiliation: 'Next Farm Bio Sciences, Vijayawada'
+    },
+    recommendedProductSlug: 'next-food-pro',
+    recommendedProductName: 'Next Food Pro & Complete 11-Product Master Suite',
+    excerpt: 'Maximizing pond profitability requires shifting from emergency disease reactions to proactive week-by-week biological microbial management. Download our complete DOC 1 to DOC 120 master schedule calibrated for 1.25 to 1.35 harvest FCR.',
+    tableOfContents: [
+      { id: 'culture-phases', title: '1. The 4 Phases of Commercial Vannamei Culture' },
+      { id: 'master-schedule-table', title: '2. The DOC 1 to 120 Master Application Table' },
+      { id: 'fcr-reduction-math', title: '3. FCR Reduction Math & Profitability Modeling' },
+      { id: 'faqs', title: '4. Culture Schedule FAQs' }
+    ],
+    contentSections: [
+      {
+        id: 'master-schedule-table',
+        heading: '2. The DOC 1 to 120 Master Application Table',
+        paragraphs: [
+          'Follow this structured biological protocol across your 1-acre commercial pond surface (1 meter water depth):'
+        ],
+        tableData: {
+          headers: ['Culture Window', 'Target Biological Goal', 'Feed Probiotic & Dosage', 'Water Bio-Input & Dosage'],
+          rows: [
+            ['DOC 1 – 15', 'Establish benign gut microflora & golden diatom bloom', 'Next Gut @ 5 mL/kg feed', 'Next Viro Nill @ 1.0 L/acre weekly'],
+            ['DOC 16 – 30', 'Prevent early Vibrio colonisation & boost digestive enzymes', 'Next Food Pro @ 8 mL/kg feed', 'Next Min @ 2.5 L/acre during molts'],
+            ['DOC 31 – 60', 'CRITICAL WINDOW: Suppress White Gut & EHP microsporidians', 'Next Gut @ 15 mL/kg feed in main meals', 'Next Converter @ 1.5 L/acre + Next Sludge @ 3L/acre'],
+            ['DOC 61 – 90', 'Peak biomass load: Neutralize toxic TAN and bottom black sludge', 'Next Food Pro @ 10 mL/kg feed + Next Gut', 'Next Converter @ 2.0 L/acre + Next Sludge @ 5L/acre sand-mixed'],
+            ['DOC 91 – 120', 'Final harvest run: Exoskeleton hardening & zero H2S gas', 'Next Min @ 10 mL/kg feed in morning meals', 'Next Sludge @ 5 L/acre + Next Min @ 5 L/acre 48h pre-harvest']
+          ]
+        }
+      },
+      {
+        id: 'fcr-reduction-math',
+        heading: '3. FCR Reduction Math & Profitability Modeling',
+        paragraphs: [
+          'Feed accounts for 55% to 65% of total operating expenditure in commercial prawn farming. Reducing FCR by just 0.20 (e.g., from 1.55 down to 1.35) on a 10-Ton harvest saves approximately 2,000 kg of commercial feed—saving over ₹1,80,000 in direct cash expenses while producing premium, antibiotic-free count grades.'
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: 'Can all Next Farm Bio Sciences products be ordered as a complete seasonal package?',
+        answer: 'Yes. Commercial farmers can order full-cycle seasonal farm packs directly with express dispatch from our New Autonagar, Vijayawada logistics hub.'
+      }
+    ],
+    scientificReferences: [
+      'World Aquaculture Society (WAS): Best Management Practices (BMPs) for Intensive Penaeid Shrimp Farming.',
+      'ICAR-CIBA Farmer Advisory: Cost Optimization through Biological Probiotics and Feed Management in Vannamei Culture.'
+    ]
   }
 ];
+

@@ -121,6 +121,7 @@ export function getProductJsonLd(product: Product) {
       name: `${product.name} (5L Can)`,
       price: product.pricing?.can5L || 5000,
       priceCurrency: 'INR',
+      validFrom: '2025-01-01',
       priceValidUntil: '2027-12-31',
       availability: 'https://schema.org/InStock',
       itemCondition: 'https://schema.org/NewCondition',
@@ -176,6 +177,13 @@ export function getProductJsonLd(product: Product) {
       {
         '@type': 'Certification',
         name: 'Coastal Aquaculture Authority (CAA) Approval',
+        certificationIdentification: 'CAA-AQ-2024-8841',
+        certificationRating: {
+          '@type': 'Rating',
+          ratingValue: 'Approved',
+          bestRating: 'Approved',
+          worstRating: 'Rejected'
+        },
         issuedBy: {
           '@type': 'Organization',
           name: 'Coastal Aquaculture Authority (Govt. of India)'
@@ -184,6 +192,13 @@ export function getProductJsonLd(product: Product) {
       {
         '@type': 'Certification',
         name: 'ISO 9001:2015 Quality Management System',
+        certificationIdentification: 'ISO-9001-2015-QMS-4401',
+        certificationRating: {
+          '@type': 'Rating',
+          ratingValue: 'Certified',
+          bestRating: 'Certified',
+          worstRating: 'Non-Compliant'
+        },
         issuedBy: {
           '@type': 'Organization',
           name: 'International Organization for Standardization'

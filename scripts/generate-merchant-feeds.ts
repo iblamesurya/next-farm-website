@@ -51,11 +51,31 @@ for (const product of PRODUCTS) {
       .map((img) => `      <g:additional_image_link>${escapeXml(img)}</g:additional_image_link>`)
       .join('\n');
 
+    // Precision keyword mapping for Google Shopping search intent
+    let searchHeadline = 'Aquaculture Probiotic & Pond Conditioner';
+    if (product.slug.includes('gut')) {
+      searchHeadline = 'White Gut & EHP Probiotic Medicine for Shrimp';
+    } else if (product.slug.includes('viro') || product.slug.includes('vibrio')) {
+      searchHeadline = 'Anti-Vibrio & Pathogen Control Shrimp Medicine';
+    } else if (product.slug.includes('pond-clear') || product.slug.includes('sludge')) {
+      searchHeadline = 'Pond Bottom Sludge & H2S Digester';
+    } else if (product.slug.includes('eco') || product.slug.includes('ammonia')) {
+      searchHeadline = 'Ammonia (TAN) & Nitrite Reducer Water Probiotic';
+    } else if (product.slug.includes('min')) {
+      searchHeadline = 'Shrimp Molting Cramps & Soft Shell Mineral Mixture';
+    } else if (product.slug.includes('converter')) {
+      searchHeadline = 'Shrimp Growth Booster & Feed Conversion Probiotic';
+    } else if (product.slug.includes('pro')) {
+      searchHeadline = 'Multi-Strain Water & Soil Probiotic for Vannamei';
+    }
+
+    const shoppingTitle = `${product.name} (${v.code}) - ${searchHeadline} | CAA Approved`;
+
     itemsXml.push(`    <item>
       <g:id>${escapeXml(`${groupId}-${v.code}`)}</g:id>
       <g:item_group_id>${escapeXml(groupId)}</g:item_group_id>
       <g:mpn>${escapeXml(`NF-BIO-${product.id.toUpperCase()}-${v.code}`)}</g:mpn>
-      <g:title>${escapeXml(`${product.name} - ${v.sizeLabel} (${product.categoryDisplay})`)}</g:title>
+      <g:title>${escapeXml(shoppingTitle)}</g:title>
       <g:description>${escapeXml(fullDescription)}</g:description>
       <g:link>${escapeXml(`${BASE_URL}/products/${product.slug}?size=${v.code}`)}</g:link>
       <g:image_link>${escapeXml(mainImage)}</g:image_link>
@@ -68,7 +88,31 @@ ${additionalImgTags}
       <g:shipping_weight>${v.weightKg}</g:shipping_weight>
       <g:google_product_category>Business &amp; Industrial &gt; Agriculture</g:google_product_category>
       <g:product_type>${escapeXml(`Aquaculture Bio-Inputs > ${product.categoryDisplay}`)}</g:product_type>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:product_highlight>${escapeXml(product.cfuCount)} Laboratory Certified Microbial Potency</g:product_highlight>
+      <g:product_highlight>100% Antibiotic-Free Formulation (CAA &amp; MPEDA Export Compliant)</g:product_highlight>
+      <g:product_highlight>Zero Chloramphenicol &amp; Nitrofurans Guarantee</g:product_highlight>
+      <g:product_highlight>Express Pan-India Cold-Chain Dispatch from Vijayawada</g:product_highlight>
+      <g:product_detail>
+        <g:section_name>Technical Specifications</g:section_name>
+        <g:attribute_name>Microbial Consortium</g:attribute_name>
+        <g:attribute_value>${escapeXml(product.strains.slice(0, 3).join(', '))}</g:attribute_value>
+      </g:product_detail>
+      <g:product_detail>
+        <g:section_name>Technical Specifications</g:section_name>
+        <g:attribute_name>Formulation Type</g:attribute_name>
+        <g:attribute_value>${escapeXml(product.categoryDisplay || 'Liquid Probiotic Consortium')}</g:attribute_value>
+      </g:product_detail>
+      <g:product_detail>
+        <g:section_name>Storage &amp; Compliance</g:section_name>
+        <g:attribute_name>Quality Standard</g:attribute_name>
+        <g:attribute_value>ISO 9001:2015 Certified Aquaculture Facility</g:attribute_value>
+      </g:product_detail>
+      <g:product_detail>
+        <g:section_name>Storage &amp; Compliance</g:section_name>
+        <g:attribute_name>Shelf Life</g:attribute_name>
+        <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
+      </g:product_detail>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>IN</g:country>
         <g:service>Express Aquaculture Dispatch</g:service>
@@ -89,7 +133,15 @@ ${itemsXml.join('\n')}
 </rss>
 `;
 
-fs.writeFileSync(path.join('public', 'google-merchant-feed.xml'), xmlFeed, 'utf8');
+const publicDir = fs.existsSync(path.join(process.cwd(), 'next-farm-website', 'public'))
+  ? path.join(process.cwd(), 'next-farm-website', 'public')
+  : path.join(process.cwd(), 'public');
+
+if (!fs.existsSync(publicDir)) {
+  fs.mkdirSync(publicDir, { recursive: true });
+}
+
+fs.writeFileSync(path.join(publicDir, 'google-merchant-feed.xml'), xmlFeed, 'utf8');
 
 // Also create /.well-known/agent-card.json (Google A2A / Multi-Agent Discovery Card)
 const agentCard = {
@@ -146,10 +198,16 @@ const agentCard = {
   }
 };
 
+const wellKnownDir = path.join(publicDir, '.well-known');
+if (!fs.existsSync(wellKnownDir)) {
+  fs.mkdirSync(wellKnownDir, { recursive: true });
+}
+
 fs.writeFileSync(
-  path.join('public', '.well-known', 'agent-card.json'),
+  path.join(wellKnownDir, 'agent-card.json'),
   JSON.stringify(agentCard, null, 2) + '\n',
   'utf8'
 );
 
-console.log('✅ Generated public/google-merchant-feed.xml and public/.well-known/agent-card.json!');
+console.log(`✅ Generated ${path.join(publicDir, 'google-merchant-feed.xml')} and ${path.join(wellKnownDir, 'agent-card.json')}!`);
+

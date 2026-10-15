@@ -13,39 +13,50 @@ import {
   HelpCircle,
   Table,
   Microscope,
-  Award
+  Award,
+  MapPin
 } from 'lucide-react';
 import { PRODUCTS } from '@/lib/catalog';
 
 export const metadata: Metadata = {
-  title: 'Shrimp Medicine & Prawn Aquaculture Treatments | Next Farm Bio Sciences',
+  title: 'Shrimp Medicines Andhra Pradesh | Prawn Medicine Suppliers & Manufacturers',
   description:
-    'Complete guide to commercial shrimp medicine and biological treatments for Litopenaeus vannamei and Penaeus monodon. CAA-approved, 100% antibiotic-free probiotics, ammonia reducers, and gut medicines.',
+    'Top shrimp medicines and prawn aquaculture products in Andhra Pradesh. Certified CAA-approved biological treatments for White Gut, Toxic Ammonia, Vibrio, Oxygen Depletion, and Minerals. Rapid delivery across Eluru, Kaikaluru, Bapatla, Cherukupalli, Visakhapatnam, Bhimavaram, and Nellore. 100% antibiotic-free.',
   keywords: [
+    'Shrimp medicines andhrapradesh',
+    'Shrimp medicine suppliers in Andhra Pradesh',
+    'Prawn medicines Andhra Pradesh',
+    'Aquaculture medicine companies in Andhra Pradesh',
     'Shrimp medicine',
-    'Shrimp medicine list',
     'Prawn medicine India',
     'White gut medicine for shrimp',
-    'Shrimp culture medicine',
-    'Vannamei shrimp disease medicine',
-    'Aqua medicine for prawn',
-    'CAA approved shrimp probiotics',
+    'Eluru prawn medicine',
+    'Kaikaluru prawn medicine',
+    'Bapatla shrimp medicine',
+    'Cherukupalli aqua medicine',
+    'Visakhapatnam hatchery medicine',
     'Bhimavaram aqua medicine',
     'Nellore prawn probiotics',
-    'రొయ్యల మందులు',
+    'RRK Formulations alternative',
+    'Bhuvan Biologicals Kaikaluru alternative',
+    'ShineMax Aqua Products Bapatla alternative',
+    'Dr DSP Aqua Remedies Visakhapatnam alternative',
+    'Oxygen booster tablets for shrimp',
+    'Yucca zeolite ammonia remover',
+    'Water sanitizer for prawn pond',
+    'Aqua medicine shop near me',
+    'రొయ్యల మందులు ఆంధ్రప్రదేశ్',
     'రొయ్యల తెల్ల పేగు మందు',
     'అమోనియా నివారణ రొయ్యలు',
-    'NFDB aquaculture guidelines',
-    'CIBA shrimp disease management',
     'Next Farm Bio Sciences'
   ],
   alternates: {
     canonical: 'https://nextfarmbiosciences.app/shrimp-medicine'
   },
   openGraph: {
-    title: 'Shrimp Medicine & Prawn Aquaculture Treatments | Complete Guide',
+    title: 'Shrimp Medicines Andhra Pradesh | Prawn Medicine Suppliers & Formulations',
     description:
-      'Field-proven biological medicines for commercial shrimp farming: White Gut, Toxic Ammonia, Vibrio, Benthic Sludge, and Soft Shell. 100% Antibiotic-Free.',
+      'Field-proven biological medicines for commercial shrimp farming: White Gut, Toxic Ammonia, Vibrio, Benthic Sludge, and Soft Shell. 100% Antibiotic-Free. Direct delivery across Andhra Pradesh.',
     url: 'https://nextfarmbiosciences.app/shrimp-medicine',
     siteName: 'Next Farm Bio Sciences',
     locale: 'en_IN',
@@ -55,7 +66,7 @@ export const metadata: Metadata = {
         url: '/images/branding/logo_primary.png',
         width: 800,
         height: 600,
-        alt: 'Next Farm Bio Sciences Shrimp Medicine'
+        alt: 'Next Farm Bio Sciences Shrimp Medicines Andhra Pradesh'
       }
     ]
   }
@@ -320,6 +331,22 @@ export default function ShrimpMedicineGuidePage() {
           },
           {
             '@type': 'Question',
+            name: 'Who are the leading shrimp and prawn medicine suppliers in Andhra Pradesh?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Next Farm Bio Sciences Private Limited (Vijayawada) is the premier manufacturer and supplier of certified CAA-approved, 100% antibiotic-free shrimp medicines, probiotics, and water sanitizers across Andhra Pradesh. Serving Eluru, Kaikaluru, Bapatla, Cherukupalli, Visakhapatnam, Bhimavaram, and Nellore with 24-hour door delivery.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'Where can I find prawn medicines near me in Andhra Pradesh (Eluru, Kaikaluru, Bapatla, Visakhapatnam)?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Next Farm Bio Sciences supplies direct-to-farm and wholesale dealership deliveries across all aquaculture hubs in Andhra Pradesh, including Eluru, Kaikaluru, Bapatla, Cherukupalli, Visakhapatnam, Bhimavaram, and Nellore. Call or WhatsApp technical support at +91 8977656444.'
+            }
+          },
+          {
+            '@type': 'Question',
             name: 'Does Next Farm Bio Sciences offer Third-Party Contract Manufacturing and private labeling in India?',
             acceptedAnswer: {
               '@type': 'Answer',
@@ -344,18 +371,18 @@ export default function ShrimpMedicineGuidePage() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="flex flex-wrap items-center gap-2 mb-4">
             <span className="px-3.5 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">
-              Official Aquaculture Pharmacology Guide
+              Andhra Pradesh Aquaculture Pharmacology &amp; Supply Hub
             </span>
             <span className="px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-slate-200">
-              Target Species: L. vannamei & P. monodon
+              Target Species: L. vannamei &amp; P. monodon
             </span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black font-display tracking-tight max-w-4xl mb-4">
-            Shrimp Medicine &amp; Prawn Aquaculture Treatments
+            Shrimp Medicines Andhra Pradesh &amp; Prawn Aquaculture Treatments
           </h1>
           <p className="text-base sm:text-xl text-slate-300 max-w-3xl leading-relaxed mb-8">
-            Complete scientific reference for commercial shrimp diseases, active microbial strains, and 100% antibiotic-free biological inputs manufactured in Vijayawada, Andhra Pradesh.
+            Andhra Pradesh&apos;s leading biological shrimp medicine manufacturer and supplier. 100% antibiotic-free probiotics, oxygen boosters, and water sanitizers manufactured in Vijayawada with rapid delivery across Eluru, Kaikaluru, Bapatla, Visakhapatnam, Bhimavaram, and Nellore.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 text-xs font-semibold">
@@ -370,6 +397,10 @@ export default function ShrimpMedicineGuidePage() {
             <div className="flex items-center gap-1.5 bg-white/10 px-3.5 py-2 rounded-xl border border-white/15">
               <Microscope className="w-4 h-4 text-cyan-300" />
               <span>100% Antibiotic-Free Bio-Inputs</span>
+            </div>
+            <div className="flex items-center gap-1.5 bg-white/10 px-3.5 py-2 rounded-xl border border-white/15">
+              <MapPin className="w-4 h-4 text-[#FFD200]" />
+              <span>Direct Farm Supply Across AP</span>
             </div>
           </div>
         </div>
@@ -389,6 +420,152 @@ export default function ShrimpMedicineGuidePage() {
             <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
             <div className="text-xs sm:text-sm text-amber-900 leading-relaxed">
               <strong>Crucial Distinction — Commercial Ponds vs. Aquarium Shrimp:</strong> Medications designed for hobbyist freshwater dwarf shrimp (like Kanamycin or Neomycin aquarium pastes) must <em>never</em> be used in commercial brackishwater ponds. They violate export safety standards and lead to severe hepatopancreatic failure. Commercial farms require food-grade, residue-free biological consortia.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Andhra Pradesh District Distribution & Supplier Hubs (GEO / Competitor Counter-Strategy) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+        <div className="bg-gradient-to-br from-[#002B5B] to-[#004B50] rounded-3xl p-6 sm:p-10 text-white shadow-md">
+          <div className="max-w-3xl mb-8">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FFD200]/20 border border-[#FFD200]/40 text-[#FFD200] text-xs font-bold uppercase tracking-wider mb-3">
+              <MapPin className="w-3.5 h-3.5" />
+              <span>Andhra Pradesh Aquaculture Distribution Network</span>
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-black font-heading text-white mb-2">
+              Shrimp Medicine Suppliers in Andhra Pradesh: District Distribution Hubs
+            </h2>
+            <p className="text-sm text-slate-200 leading-relaxed">
+              Looking for prawn medicine suppliers, aquaculture probiotics, oxygen boosters, or water sanitizers in Andhra Pradesh? Next Farm Bio Sciences provides direct manufacturer supply and express farm delivery across all primary aquaculture hubs.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {/* 1. Eluru & West Godavari */}
+            <div className="bg-white/10 border border-white/15 rounded-2xl p-5 hover:bg-white/15 transition-all">
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="font-bold text-base text-white font-heading">Eluru &amp; Kolleru Hub</h3>
+                <span className="text-[10px] font-bold bg-[#FFD200] text-slate-950 px-2 py-0.5 rounded">West Godavari / Eluru</span>
+              </div>
+              <p className="text-xs text-slate-200 mb-3 leading-relaxed">
+                Prawn medicines for low-saline Vannamei, Scampi, and Kolleru fish polyculture. Probiotics for White Gut, emergency DO tablets, and ionic mineral replacers.
+              </p>
+              <div className="text-[11px] text-cyan-200 font-semibold mb-3">
+                📍 Serving Eluru, Denduluru, Pedavegi &amp; Kolleru border
+              </div>
+              <Link
+                href="/districts/eluru-aquaculture-zone"
+                className="inline-flex items-center gap-1 text-xs font-bold text-[#FFD200] hover:underline"
+              >
+                <span>View Eluru Field Protocol</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+
+            {/* 2. Kaikaluru & Krishna District */}
+            <div className="bg-white/10 border border-white/15 rounded-2xl p-5 hover:bg-white/15 transition-all">
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="font-bold text-base text-white font-heading">Kaikaluru &amp; Krishna Hub</h3>
+                <span className="text-[10px] font-bold bg-cyan-300 text-slate-950 px-2 py-0.5 rounded">Krishna District</span>
+              </div>
+              <p className="text-xs text-slate-200 mb-3 leading-relaxed">
+                Aquaculture supplements, blue-green algae bio-digesters, and cramp prevention minerals for zero/low-salinity ponds in Kaikaluru and Gudivada.
+              </p>
+              <div className="text-[11px] text-cyan-200 font-semibold mb-3">
+                📍 Serving Kaikaluru, Chavalipadu, Gudivada &amp; Bantumilli
+              </div>
+              <Link
+                href="/districts/krishna-kaikaluru"
+                className="inline-flex items-center gap-1 text-xs font-bold text-[#FFD200] hover:underline"
+              >
+                <span>View Kaikaluru Field Protocol</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+
+            {/* 3. Bapatla & Cherukupalli */}
+            <div className="bg-white/10 border border-white/15 rounded-2xl p-5 hover:bg-white/15 transition-all">
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="font-bold text-base text-white font-heading">Bapatla &amp; Cherukupalli</h3>
+                <span className="text-[10px] font-bold bg-emerald-400 text-slate-950 px-2 py-0.5 rounded">Bapatla District</span>
+              </div>
+              <p className="text-xs text-slate-200 mb-3 leading-relaxed">
+                Estuarine prawn medicines, H2S toxic gas eliminators, and acid-sulfate soil buffers for Romperu drain and coastal creek farms.
+              </p>
+              <div className="text-[11px] text-cyan-200 font-semibold mb-3">
+                📍 Serving Cherukupalli, Bapatla, Chirala &amp; Karlapalem
+              </div>
+              <Link
+                href="/districts/bapatla-chirala"
+                className="inline-flex items-center gap-1 text-xs font-bold text-[#FFD200] hover:underline"
+              >
+                <span>View Bapatla Field Protocol</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+
+            {/* 4. Visakhapatnam Hatcheries & North Coastal */}
+            <div className="bg-white/10 border border-white/15 rounded-2xl p-5 hover:bg-white/15 transition-all">
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="font-bold text-base text-white font-heading">Visakhapatnam &amp; Hatcheries</h3>
+                <span className="text-[10px] font-bold bg-amber-300 text-slate-950 px-2 py-0.5 rounded">Visakhapatnam</span>
+              </div>
+              <p className="text-xs text-slate-200 mb-3 leading-relaxed">
+                SPF spawner broodstock biosecurity, Zoea/Mysis larval dips, Luminescent Vibrio harveyi eradication, and PL seed conditioning electrolytes.
+              </p>
+              <div className="text-[11px] text-cyan-200 font-semibold mb-3">
+                📍 Serving Visakhapatnam, Bheemunipatnam, Anakapalli &amp; Payakaraopeta
+              </div>
+              <Link
+                href="/districts/visakhapatnam-hatchery-hub"
+                className="inline-flex items-center gap-1 text-xs font-bold text-[#FFD200] hover:underline"
+              >
+                <span>View Visakhapatnam Protocol</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+
+            {/* 5. Bhimavaram Coastal Delta */}
+            <div className="bg-white/10 border border-white/15 rounded-2xl p-5 hover:bg-white/15 transition-all">
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="font-bold text-base text-white font-heading">Bhimavaram Intensive Belt</h3>
+                <span className="text-[10px] font-bold bg-blue-300 text-slate-950 px-2 py-0.5 rounded">West Godavari</span>
+              </div>
+              <p className="text-xs text-slate-200 mb-3 leading-relaxed">
+                Intensive Vannamei culture medicines for White Gut &amp; White Feces, EHP spore prevention, and anaerobic bottom sludge bioremediation.
+              </p>
+              <div className="text-[11px] text-cyan-200 font-semibold mb-3">
+                📍 Serving Bhimavaram, Akividu, Mogalthur &amp; Narsapur
+              </div>
+              <Link
+                href="/districts/bhimavaram-west-godavari"
+                className="inline-flex items-center gap-1 text-xs font-bold text-[#FFD200] hover:underline"
+              >
+                <span>View Bhimavaram Protocol</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+
+            {/* 6. Nellore Hypersaline Marine Delta */}
+            <div className="bg-white/10 border border-white/15 rounded-2xl p-5 hover:bg-white/15 transition-all">
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="font-bold text-base text-white font-heading">Nellore Marine Hub</h3>
+                <span className="text-[10px] font-bold bg-purple-300 text-slate-950 px-2 py-0.5 rounded">SPSR Nellore</span>
+              </div>
+              <p className="text-xs text-slate-200 mb-3 leading-relaxed">
+                High-salinity marine prawn medicines for virulent Vibriosis, Buckingham canal biosecurity, and toxic ammonia (TAN) neutralization.
+              </p>
+              <div className="text-[11px] text-cyan-200 font-semibold mb-3">
+                📍 Serving Kandukur, Kavali, Gudur, Kota &amp; Vakadu
+              </div>
+              <Link
+                href="/districts/nellore-coastal"
+                className="inline-flex items-center gap-1 text-xs font-bold text-[#FFD200] hover:underline"
+              >
+                <span>View Nellore Protocol</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
             </div>
           </div>
         </div>

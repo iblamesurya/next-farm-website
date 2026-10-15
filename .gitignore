@@ -14,10 +14,11 @@
 /build
 /deploy/
 
-# Cloudflare
+# Cloudflare & Vercel
 /.wrangler/
 /.open-next/
 .cloudflare/
+.vercel/
 
 # Environment variables
 .env

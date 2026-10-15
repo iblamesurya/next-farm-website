@@ -74,6 +74,16 @@ export function Navbar() {
             >
               Pathology Atlas
             </Link>
+            <a
+              href="https://pathology.nextfarmbiosciences.app"
+              target="_blank"
+              rel="noopener"
+              className="text-sm font-semibold text-emerald-800 hover:text-emerald-950 flex items-center gap-1.5 transition-colors bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200"
+              title="AquaPathology India - Clinical Diagnostic Encyclopedia"
+            >
+              <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+              <span>AquaPathology ↗</span>
+            </a>
             <Link
               href="/calculators"
               className="text-sm font-semibold text-slate-700 hover:text-[#004B50] flex items-center gap-1 transition-colors"

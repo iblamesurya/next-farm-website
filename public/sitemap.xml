@@ -61,6 +61,12 @@
     <priority>0.97</priority>
   </url>
   <url>
+    <loc>https://nextfarmbiosciences.app/refund-policy</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://nextfarmbiosciences.app/products</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>daily</changefreq>
@@ -125,6 +131,24 @@
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.96</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/districts/eluru-aquaculture-zone</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.97</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/districts/visakhapatnam-hatchery-hub</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.97</priority>
+  </url>
+  <url>
+    <loc>https://nextfarmbiosciences.app/shrimp-aquaculture-products-andhra-pradesh</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.99</priority>
   </url>
   <url>
     <loc>https://nextfarmbiosciences.app/diseases/white-gut-white-feces-syndrome</loc>

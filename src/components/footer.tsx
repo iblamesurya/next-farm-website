@@ -183,6 +183,73 @@ export function Footer() {
                   <span>Ammonia Reducer for Ponds</span>
                 </Link>
               </li>
+              
+              <li>
+                <a
+                  href="https://pathology.nextfarmbiosciences.app/pathologies/ehp-microsporidian-treatment"
+                  target="_blank"
+                  rel="noopener"
+                  className="hover:text-[#FFD200] transition-colors flex items-center gap-1.5 text-xs text-slate-300"
+                >
+                  <span className="w-1 h-1 rounded-full bg-emerald-400"></span>
+                  <span>EHP Microsporidian Monograph ↗</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://pathology.nextfarmbiosciences.app/pathologies/white-gut"
+                  target="_blank"
+                  rel="noopener"
+                  className="hover:text-[#FFD200] transition-colors flex items-center gap-1.5 text-xs text-slate-300"
+                >
+                  <span className="w-1 h-1 rounded-full bg-emerald-400"></span>
+                  <span>White Gut Syndrome Monograph ↗</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://pathology.nextfarmbiosciences.app/pathologies/vibriosis-ems"
+                  target="_blank"
+                  rel="noopener"
+                  className="hover:text-[#FFD200] transition-colors flex items-center gap-1.5 text-xs text-slate-300"
+                >
+                  <span className="w-1 h-1 rounded-full bg-emerald-400"></span>
+                  <span>Vibriosis &amp; EMS Protocol ↗</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://reviews.nextfarmbiosciences.app/probiotic-pricing-guide"
+                  target="_blank"
+                  rel="noopener"
+                  className="hover:text-[#FFD200] transition-colors flex items-center gap-1.5 text-xs text-slate-300"
+                >
+                  <span className="w-1 h-1 rounded-full bg-cyan-400"></span>
+                  <span>Probiotic Pricing &amp; CFU Guide ↗</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://pathology.nextfarmbiosciences.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#FFD200] transition-colors flex items-center gap-1.5 text-xs text-cyan-300 font-semibold"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                  <span>AquaPathology India (Clinical Compendium) ↗</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://reviews.nextfarmbiosciences.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#FFD200] transition-colors flex items-center gap-1.5 text-xs text-cyan-300 font-semibold"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                  <span>Coastal Aqua Farmer Review (Price Guide) ↗</span>
+                </a>
+              </li>
               <li>
                 <Link href="/diseases" className="hover:text-[#FFD200] transition-colors flex items-center gap-1.5 font-bold text-[#FFD200]">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#FFD200]"></span>
@@ -308,6 +375,14 @@ export function Footer() {
           </p>
           <div className="flex flex-col sm:flex-row justify-between items-center gap-2 pt-2">
             <p>&copy; {new Date().getFullYear()} Next Farm Bio Sciences. All rights reserved.</p>
+            <div className="flex items-center gap-4 text-xs">
+              <Link href="/refund-policy" className="text-slate-300 hover:text-[#FFD200] underline">
+                Return &amp; Refund Policy
+              </Link>
+              <Link href="/shrimp-medicine" className="text-slate-300 hover:text-[#FFD200] underline">
+                Shrimp Medicines AP Hub
+              </Link>
+            </div>
             <p className="text-slate-400">
               Made with scientific rigor for Indian Shrimp &amp; Prawn Farmers.
             </p>

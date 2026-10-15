@@ -5,8 +5,8 @@ import { DISTRICT_GUIDES } from '@/lib/districts-data';
 import { MapPin, Droplets, ShieldAlert, Sparkles, Phone, ArrowRight, Compass } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Indian Aquaculture District Directory | Andhra Pradesh & Gujarat Shrimp Hubs',
-  description: 'Localized aquaculture medicine and biosecurity protocols across Bhimavaram, Nellore, Kaikaluru, Bapatla, Kakinada, Guntur, Surat, and Balasore. Tailored salinity and pathology management.',
+  title: 'Andhra Pradesh & National Shrimp Medicine District Directory | Prawn Aqua Hubs',
+  description: 'Localized aquaculture medicine, probiotics, and emergency disease protocols across Eluru, Kaikaluru, Bapatla, Cherukupalli, Visakhapatnam, Bhimavaram, Nellore, Kakinada, Guntur, Surat, and Balasore.',
   alternates: {
     canonical: 'https://nextfarmbiosciences.app/districts'
   }
@@ -27,12 +27,12 @@ export default function DistrictsPage() {
               Indian Aquaculture District Field Network
             </h1>
             <p className="text-base sm:text-lg text-slate-200 leading-relaxed mb-6">
-              Shrimp and prawn farming dynamics vary drastically by region. From low-saline freshwater culture in Kaikaluru (0.5 ppt) to hypersaline marine creeks in Nellore (35 ppt), access customized microbial schedules, soil conditioners, and emergency disease protocols engineered for your specific coastal delta.
+              Shrimp and prawn farming dynamics vary drastically by region. From low-saline freshwater culture in Kaikaluru & Eluru (0.5–4 ppt) to estuarine creeks in Bapatla and hypersaline marine waters in Visakhapatnam & Nellore (35 ppt), access customized microbial schedules, soil conditioners, and emergency disease protocols engineered for your specific coastal delta.
             </p>
             <div className="flex flex-wrap items-center gap-4 text-xs sm:text-sm font-semibold text-slate-300">
               <span className="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-lg border border-white/10">
                 <MapPin className="w-4 h-4 text-[#FFD200]" />
-                8 Major Coastal Belts
+                {DISTRICT_GUIDES.length} Major Aquaculture Belts
               </span>
               <span className="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-lg border border-white/10">
                 <Droplets className="w-4 h-4 text-cyan-300" />

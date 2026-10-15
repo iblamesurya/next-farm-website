@@ -176,8 +176,7 @@ export function getProductJsonLd(product: Product) {
     hasCertification: [
       {
         '@type': 'Certification',
-        name: 'Coastal Aquaculture Authority (CAA) Approval',
-        certificationIdentification: 'CAA-AQ-2024-8841',
+        name: '100% Antibiotic-Free Formulation — Formulated in compliance with CAA & MPEDA export standards (Zero Chloramphenicol & Nitrofurans Guarantee)',
         certificationRating: {
           '@type': 'Rating',
           ratingValue: 'Approved',

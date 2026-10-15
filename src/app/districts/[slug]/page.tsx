@@ -54,6 +54,44 @@ export async function generateMetadata({ params }: DistrictPageProps): Promise<M
   };
 }
 
+function getPathologyMonograph(diseaseName: string): { url: string; title: string } | null {
+  const lower = diseaseName.toLowerCase();
+  if (lower.includes('white gut') || lower.includes('wfs') || lower.includes('wgs')) {
+    return { url: 'https://pathology.nextfarmbiosciences.app/pathologies/white-gut', title: 'White Gut Disease Protocol' };
+  }
+  if (lower.includes('ehp') || lower.includes('hepatopenaei')) {
+    return { url: 'https://pathology.nextfarmbiosciences.app/pathologies/ehp-microsporidian-treatment', title: 'EHP Microsporidian Monograph' };
+  }
+  if (lower.includes('vibrio') || lower.includes('ems') || lower.includes('ahpnd')) {
+    return { url: 'https://pathology.nextfarmbiosciences.app/pathologies/vibriosis-ems', title: 'Vibriosis & EMS Biosecurity Protocol' };
+  }
+  if (lower.includes('luminescent') || lower.includes('harveyi') || lower.includes('green colony')) {
+    return { url: 'https://pathology.nextfarmbiosciences.app/pathologies/luminescent-vibrio-green-colony', title: 'Luminescent Vibrio Monograph' };
+  }
+  if (lower.includes('sludge') || lower.includes('h2s') || lower.includes('hydrogen sulfide') || lower.includes('black soil')) {
+    return { url: 'https://pathology.nextfarmbiosciences.app/pathologies/benthic-sludge-h2s', title: 'Benthic Sludge & H2S Bioremediation' };
+  }
+  if (lower.includes('ammonia') || lower.includes('nitrite') || lower.includes('tan') || lower.includes('no2')) {
+    return { url: 'https://pathology.nextfarmbiosciences.app/pathologies/ammonia-nitrite', title: 'Ammonia & Nitrite Bioremediation Protocol' };
+  }
+  if (lower.includes('mineral') || lower.includes('cramp') || lower.includes('soft shell') || lower.includes('molt')) {
+    return { url: 'https://pathology.nextfarmbiosciences.app/pathologies/vannamei-mineral-imbalance-cramps', title: 'Mineral Imbalance & Cramps Protocol' };
+  }
+  if (lower.includes('black gill') || lower.includes('zoothamnium')) {
+    return { url: 'https://pathology.nextfarmbiosciences.app/pathologies/black-gill-syndrome', title: 'Black Gill & Zoothamnium Protocol' };
+  }
+  if (lower.includes('algae') || lower.includes('cyanobacteria') || lower.includes('microcystis')) {
+    return { url: 'https://pathology.nextfarmbiosciences.app/pathologies/cyanobacteria-blue-green-algae', title: 'Cyanobacteria & Algal Remediation' };
+  }
+  if (lower.includes('running mortality') || lower.includes('rms')) {
+    return { url: 'https://pathology.nextfarmbiosciences.app/pathologies/running-mortality-syndrome', title: 'Running Mortality Syndrome (RMS) Monograph' };
+  }
+  if (lower.includes('white muscle')) {
+    return { url: 'https://pathology.nextfarmbiosciences.app/pathologies/white-muscle-disease', title: 'White Muscle Disease Protocol' };
+  }
+  return null;
+}
+
 export default async function DistrictDetailPage({ params }: DistrictPageProps) {
   const { slug } = await params;
   const d = DISTRICT_GUIDES.find((item) => item.slug === slug);
@@ -62,14 +100,28 @@ export default async function DistrictDetailPage({ params }: DistrictPageProps) 
     notFound();
   }
 
-  // Schema.org LocalBusiness + AreaServed Structured Data
+  // Schema.org Service + AreaServed Structured Data (Data-Density Rule compliant)
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    name: `Next Farm Bio Sciences — ${d.name} Clinical Hub`,
+    '@type': 'Service',
+    name: `Aquaculture Disease Management & Biosecurity Service — ${d.name}`,
+    serviceType: 'Shrimp Pathology Diagnostics & Probiotic Bio-Inputs',
     description: d.metaDescription,
     url: `https://nextfarmbiosciences.app/districts/${d.slug}`,
-    telephone: d.contactHelpline,
+    provider: {
+      '@type': 'LocalBusiness',
+      name: 'Next Farm Bio Sciences Private Limited',
+      telephone: d.contactHelpline,
+      url: 'https://nextfarmbiosciences.app',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'New Autonagar',
+        addressLocality: 'Vijayawada',
+        addressRegion: 'Andhra Pradesh',
+        postalCode: '520007',
+        addressCountry: 'IN'
+      }
+    },
     areaServed: {
       '@type': 'AdministrativeArea',
       name: d.district,
@@ -78,17 +130,49 @@ export default async function DistrictDetailPage({ params }: DistrictPageProps) 
         name: d.state
       }
     },
-    parentOrganization: {
-      '@type': 'Organization',
-      name: 'Next Farm Bio Sciences',
-      url: 'https://nextfarmbiosciences.app'
-    },
     knowsAbout: [
       'Litopenaeus vannamei aquaculture',
       'Shrimp probiotic formulations',
       'White Gut Disease management',
       'Toxic ammonia and nitrite remediation',
-      'Benthic black sludge oxidation'
+      'Benthic black sludge oxidation',
+      'Shrimp medicine suppliers in Andhra Pradesh'
+    ],
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: `${d.name} Recommended Aquaculture Formulations`,
+      itemListElement: d.recommendedFormulations.map((rec) => ({
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Product',
+          name: rec.productName,
+          url: `https://nextfarmbiosciences.app/products/${rec.productSlug}`,
+          description: rec.indication
+        }
+      }))
+    }
+  };
+
+  const faqLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: `Where can I buy shrimp and prawn medicines in ${d.district}, Andhra Pradesh?`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: `Next Farm Bio Sciences supplies certified CAA-approved shrimp probiotics, gut medicines, and water sanitizers across ${d.keyGeography.join(', ')} with rapid door delivery. Contact helpline: ${d.contactHelpline}.`
+        }
+      },
+      {
+        '@type': 'Question',
+        name: `What are the primary prawn diseases and solutions in ${d.district}?`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: `In ${d.district}, key pathology challenges include ${d.pathologyRisks.map(p => p.disease).join(', ')}. Recommended biological protocols include ${d.recommendedFormulations.map(f => f.productName).join(', ')}.`
+        }
+      }
     ]
   };
 
@@ -98,6 +182,10 @@ export default async function DistrictDetailPage({ params }: DistrictPageProps) 
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -229,6 +317,27 @@ export default async function DistrictDetailPage({ params }: DistrictPageProps) 
                   <span className="font-bold text-emerald-800 block mb-1">Recommended Biological Protocol:</span>
                   <span className="text-emerald-950 font-medium">{risk.preventativeProtocol}</span>
                 </div>
+                {(() => {
+                  const monograph = getPathologyMonograph(risk.disease);
+                  if (!monograph) return null;
+                  return (
+                    <div className="mt-3 flex flex-wrap items-center justify-between gap-2 p-3 bg-cyan-50/80 border border-cyan-200 rounded-xl">
+                      <div className="flex items-center gap-2">
+                        <span className="text-cyan-800 font-bold text-xs">🔬 Clinical Monograph:</span>
+                        <span className="text-xs text-slate-700 font-semibold">{monograph.title}</span>
+                      </div>
+                      <a
+                        href={monograph.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-xs font-bold text-[#002B5B] hover:text-[#004B50] underline underline-offset-2 transition-colors"
+                      >
+                        <span>Access Lab Pathology Protocol</span>
+                        <ExternalLink className="w-3.5 h-3.5" />
+                      </a>
+                    </div>
+                  );
+                })()}
               </div>
             ))}
           </div>

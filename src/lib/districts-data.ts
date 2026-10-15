@@ -171,16 +171,16 @@ export const DISTRICT_GUIDES: DistrictGuide[] = [
     name: 'Krishna & Kaikaluru Aquaculture Zone',
     district: 'Krishna',
     state: 'Andhra Pradesh',
-    teluguName: 'కృష్ణా & కైకలూరు ఆక్వా క్లినిక్',
-    metaTitle: 'Krishna District Prawn & Fish Medicine | Kaikaluru Aquaculture Clinic',
-    metaDescription: 'Low-salinity and freshwater shrimp & fish disease management for Kaikaluru, Gudivada, and Krishna delta. Remediation for cyanobacteria blooms and slow growth.',
-    keyGeography: ['Kaikaluru', 'Gudivada', 'Bantumilli', 'Nagayalanka', 'Machilipatnam'],
+    teluguName: 'కృష్ణా & కైకలూరు ఆక్వా క్లినిక్ & రొయ్యల మందులు',
+    metaTitle: 'Kaikaluru Prawn Medicine & Probiotics | Krishna District Aquaculture Suppliers',
+    metaDescription: 'Certified CAA-approved prawn medicines, probiotics, and water sanitizers for Kaikaluru, Chavalipadu, Gudivada, and Krishna delta. Immediate delivery for White Gut, cyanobacteria, and mineral deficiencies.',
+    keyGeography: ['Kaikaluru', 'Chavalipadu', 'Gudivada', 'Bantumilli', 'Mudinepalli', 'Nagayalanka', 'Machilipatnam', 'Kolleru lake belt'],
     averageSalinity: '0.5 – 6 ppt',
     salinityType: 'Freshwater / Low Saline',
-    primarySpecies: ['Litopenaeus vannamei', 'Pangasius', 'Rohu / Catla (Polyculture)'],
+    primarySpecies: ['Litopenaeus vannamei', 'Pangasius', 'Rohu / Catla (Polyculture)', 'Macrobrachium rosenbergii (Scampi)'],
     stockingDensity: '35 – 55 PL/m²',
-    primaryWaterSource: 'Krishna Eastern Delta canals, Kolleru overflow channels',
-    soilCharacteristics: 'Deep alluvial black cotton soil with high silt content',
+    primaryWaterSource: 'Krishna Eastern Delta canals, Kolleru overflow channels, borewell freshwater',
+    soilCharacteristics: 'Deep alluvial black cotton soil with high silt content and high nutrient retention',
     pathologyRisks: [
       {
         disease: 'Blue-Green Algae (Cyanobacteria / Microcystis) Pond Crash',
@@ -226,13 +226,13 @@ export const DISTRICT_GUIDES: DistrictGuide[] = [
   },
   {
     slug: 'bapatla-chirala',
-    name: 'Bapatla & Chirala Estuarine Belt',
+    name: 'Bapatla & Cherukupalli Estuarine Aqua Belt',
     district: 'Bapatla',
     state: 'Andhra Pradesh',
-    teluguName: 'బాపట్ల & చీరాల రొయ్యల మందులు',
-    metaTitle: 'Bapatla Aquaculture Solutions & Shrimp Medicine | Chirala & Karlapalem',
-    metaDescription: 'Clinical guidance for shrimp ponds in Bapatla and Chirala estuarine zone. Managing acid sulfate soils, toxic hydrogen sulfide, and black gill disease.',
-    keyGeography: ['Bapatla', 'Chirala', 'Karlapalem', 'Vetapalem', 'Romperu drain belt'],
+    teluguName: 'బాపట్ల & చేరుకుపల్లి రొయ్యల మందులు & ఆక్వా క్లినిక్',
+    metaTitle: 'Bapatla & Cherukupalli Shrimp Medicine | Aquaculture Suppliers Bapatla District',
+    metaDescription: 'Trusted prawn medicines, probiotics, and water treatment products in Bapatla, Cherukupalli, Chirala, and Nizampatnam. Effective treatment for acid sulfate soils, toxic H2S, and black gill disease.',
+    keyGeography: ['Bapatla', 'Cherukupalli', 'Chirala', 'Karlapalem', 'Vetapalem', 'Nizampatnam coastal border', 'Romperu drain belt'],
     averageSalinity: '12 – 28 ppt',
     salinityType: 'Estuarine Delta',
     primarySpecies: ['Litopenaeus vannamei', 'Tiger Shrimp'],
@@ -489,6 +489,150 @@ export const DISTRICT_GUIDES: DistrictGuide[] = [
         'Drain top freshwater layer using sluice gate surface skimmers after heavy rain',
         'Verify alkalinity immediately after thunderstorms',
         'Run aerators during rainfall to prevent water thermal stratification'
+      ]
+    },
+    contactHelpline: '+91 8977656444'
+  },
+  {
+    slug: 'eluru-aquaculture-zone',
+    name: 'Eluru & Kolleru Aqua Hub',
+    district: 'Eluru',
+    state: 'Andhra Pradesh',
+    teluguName: 'ఏలూరు & కొల్లేరు రొయ్యల & చేపల సాగు మందులు',
+    metaTitle: 'Eluru Prawn Medicine & Probiotics | Aquaculture Medicine Suppliers in Eluru',
+    metaDescription: 'Top-grade shrimp & prawn medicines, pond probiotics, oxygen boosters, and water sanitizers in Eluru district, Andhra Pradesh. Rapid delivery across Eluru, Denduluru, Pedavegi, and Kolleru border.',
+    keyGeography: ['Eluru', 'Denduluru', 'Pedavegi', 'Chintalapudi', 'Sanivarapupeta', 'Sabbavarapu Vari Street zone', 'Kolleru lake border'],
+    averageSalinity: '1 – 8 ppt',
+    salinityType: 'Freshwater / Low Saline',
+    primarySpecies: ['Litopenaeus vannamei', 'Penaeus monodon', 'Freshwater Scampi', 'Rohu / Catla'],
+    stockingDensity: '40 – 60 PL/m²',
+    primaryWaterSource: 'Tammileru river, Eluru canal, Kolleru freshwater inlets',
+    soilCharacteristics: 'Alluvial clay-loam with moderate organic silt and low salinity groundwater',
+    pathologyRisks: [
+      {
+        disease: 'White Gut & Microvilli Enteritis in Low-Saline Vannamei',
+        severity: 'Critical',
+        trigger: 'High summer temperatures (>34°C) paired with low salinity osmoregulatory stress',
+        clinicalSigns: 'White fecal threads in check trays, slow growth, feed refusal, and soft carapaces',
+        preventativeProtocol: 'Feed top-dressing with Next Gut (20 ml/kg) + morning Next Viro Nill water sanitation'
+      },
+      {
+        disease: 'Nocturnal Dissolved Oxygen (DO) Crash & Bottom Sludge',
+        severity: 'Severe',
+        trigger: 'Accumulation of unconsumed feed pellets and heavy benthic muck in Kolleru basin ponds',
+        clinicalSigns: 'Shrimp gasping at surface at 3:00 AM, blackened bottom soil, toxic ammonia spikes',
+        preventativeProtocol: 'Application of Next Oxy Fresh oxygen boosters + Next Eco Bio Clean sludge digester'
+      },
+      {
+        disease: 'Mineral Depletion & Poor Post-Molt Hardening',
+        severity: 'High',
+        trigger: 'Low levels of Calcium, Magnesium, and Potassium in Eluru freshwater borewells',
+        clinicalSigns: 'Soft shell lasting over 24 hours, muscle cramps, cannibalism during lunar cycles',
+        preventativeProtocol: 'Weekly replenishment with Next Speed Mineral (10–12 kg/acre)'
+      }
+    ],
+    recommendedFormulations: [
+      {
+        productName: 'Next Gut',
+        productSlug: 'next-gut',
+        dosage: '15–20 ml/kg feed',
+        timing: 'Morning and afternoon meals daily for 5 days',
+        indication: 'White Gut Disease & EHP microvilli repair'
+      },
+      {
+        productName: 'Next Oxy Fresh',
+        productSlug: 'next-oxy-fresh',
+        dosage: '1.0–1.5 kg / acre',
+        timing: 'Broadcast at 11:00 PM during low-aeration periods',
+        indication: 'Emergency oxygen elevation and bottom sludge oxidation'
+      },
+      {
+        productName: 'Next Speed Mineral',
+        productSlug: 'next-speed-mineral',
+        dosage: '10–12 kg / acre',
+        timing: 'Apply 24 hours prior to new moon / full moon',
+        indication: 'Replenishing essential ionic Ca, Mg, and K'
+      }
+    ],
+    localFieldAdvisory: {
+      teluguAdvisory: 'ఏలూరు మరియు కొల్లేరు పరిసరాల్లోని మంచినీటి చెరువుల్లో తెల్ల పేగు (White Gut) మరియు రాత్రి వేళల్లో ఆక్సిజన్ కొరత సాధారణం. నెక్స్ట్ గట్ ప్రొబయోటిక్ మరియు నెక్స్ట్ ఆక్సీ ఫ్రెష్ ఉపయోగించి రొయ్యలను ఆరోగ్యంగా ఉంచవచ్చు.',
+      englishSummary: 'Eluru freshwater ponds suffer from low mineral reserves and midnight DO drops. Maintaining constant dissolved oxygen and ionic balance prevents white gut outbreaks.',
+      seasonalChecklist: [
+        'Check dissolved oxygen at 4:00 AM before sunrise',
+        'Verify bore water hardness (Ca & Mg) every fortnight',
+        'Inspect bottom mud odor near check trays weekly'
+      ]
+    },
+    contactHelpline: '+91 8977656444'
+  },
+  {
+    slug: 'visakhapatnam-hatchery-hub',
+    name: 'Visakhapatnam & North Coastal Hatchery & Culture Hub',
+    district: 'Visakhapatnam',
+    state: 'Andhra Pradesh',
+    teluguName: 'విశాఖపట్నం ఆక్వా హేచరీ & రొయ్యల సాగు మందులు',
+    metaTitle: 'Visakhapatnam Shrimp Medicine & Hatchery Probiotics | North Coastal AP',
+    metaDescription: 'Specialized SPF shrimp hatchery water treatments, nauplii biosecurity, and marine grow-out prawn medicines in Visakhapatnam, Anakapalli, and Bheemunipatnam. 100% antibiotic-free.',
+    keyGeography: ['Visakhapatnam', 'Bheemunipatnam', 'Payakaraopeta', 'Anakapalli', 'Nakkapalli', 'Vizianagaram coastal belt', 'Srikakulam border'],
+    averageSalinity: '28 – 34 ppt',
+    salinityType: 'Hypersaline Marine',
+    primarySpecies: ['Litopenaeus vannamei (SPF Broodstock & Seed)', 'Penaeus monodon', 'Marine Finfish'],
+    stockingDensity: '60 – 100 PL/m²',
+    primaryWaterSource: 'Direct Bay of Bengal deep sea seawater intake, coastal creeks',
+    soilCharacteristics: 'Sandy marine loam with high percolation and low organic sediment',
+    pathologyRisks: [
+      {
+        disease: 'Virulent Luminescent Vibriosis & Hatchery Zoea/Mysis Mortality',
+        severity: 'Critical',
+        trigger: 'High marine salinity paired with organic larval rearing broth',
+        clinicalSigns: 'Zoea and Mysis larvae glowing in the dark, necrosis of appendages, sudden hatchery tank crashes',
+        preventativeProtocol: 'Water biosecurity shield with Next Viro Nill (1.5 L/acre or 5 ml/ton hatchery tank)'
+      },
+      {
+        disease: 'Seed Transportation Stress & Post-Stocking Mortality',
+        severity: 'Severe',
+        trigger: 'Osmotic shock and temperature stress during PL transportation and pond acclimatization',
+        clinicalSigns: 'PL swimming erratically along pond banks, opaque muscle, 15-25% initial stocking loss',
+        preventativeProtocol: 'Electrolyte immersion using Next Speed Mineral in nursery conditioning tanks'
+      },
+      {
+        disease: 'Hepatopancreatic Necrosis & Epibiont Ciliate Fouling',
+        severity: 'High',
+        trigger: 'High organic loading and protozoan infestation in coastal nursery ponds',
+        clinicalSigns: 'Shrimp fail to molt cleanly, flared gill covers, reduced feed intake in check trays',
+        preventativeProtocol: 'Application of Next Gut feed probiotic + Next Eco Bio Clean'
+      }
+    ],
+    recommendedFormulations: [
+      {
+        productName: 'Next Viro Nill',
+        productSlug: 'next-viro-nill',
+        dosage: '1.5 L / acre (or 5–8 ml / m³ hatchery water)',
+        timing: 'Morning broad dispersal with full aeration',
+        indication: 'Broad-spectrum suppression of luminescent Vibrio harveyi'
+      },
+      {
+        productName: 'Next Speed Mineral',
+        productSlug: 'next-speed-mineral',
+        dosage: '10 kg / acre',
+        timing: 'Broadcast 2 hours before PL stocking',
+        indication: 'Osmotic buffering and rapid shell hardening'
+      },
+      {
+        productName: 'Next Gut',
+        productSlug: 'next-gut',
+        dosage: '15–20 ml / kg feed',
+        timing: 'Daily during early grow-out DOC 1-45',
+        indication: 'Hepatopancreas immune stimulation and microvilli growth'
+      }
+    ],
+    localFieldAdvisory: {
+      teluguAdvisory: 'విశాఖపట్నం మరియు ఉత్తర కోస్తా ప్రాంతాల్లో రొయ్యల హేచరీలు మరియు సముద్రపు నీటి చెరువుల్లో విబ్రియో వెలుగు బ్యాక్టీరియా మరియు సీడ్ స్టాకింగ్ ఒత్తిడి ప్రధానం. నెక్స్ట్ విరో నిల్ మరియు నెక్స్ట్ స్పీడ్ మినరల్ ద్వారా నాణ్యమైన సీడ్ సర్వైవల్ సాధించవచ్చు.',
+      englishSummary: 'Visakhapatnam hatchery operators and marine farmers must prioritize Vibrio suppression and post-larvae electrolyte conditioning to ensure high nursery survival.',
+      seasonalChecklist: [
+        'Test green vs yellow Vibrio colonies on TCBS agar plates every 48 hours',
+        'Acclimatize PL gradually by matching salinity and temperature over 2 hours',
+        'Inspect larval digestive tracts under 100x magnification daily'
       ]
     },
     contactHelpline: '+91 8977656444'

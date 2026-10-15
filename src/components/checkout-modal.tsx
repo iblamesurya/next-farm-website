@@ -38,6 +38,7 @@ export function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
   const [fullName, setFullName] = useState('');
   const [whatsappMobile, setWhatsappMobile] = useState('');
   const [villageMandal, setVillageMandal] = useState('');
+  const [gstin, setGstin] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
@@ -46,10 +47,11 @@ export function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
     try {
       const saved = localStorage.getItem(CUSTOMER_STORAGE_KEY);
       if (saved) {
-        const parsed = JSON.parse(saved) as CustomerProfile;
+        const parsed = JSON.parse(saved) as CustomerProfile & { gstin?: string };
         if (parsed.fullName) setFullName(parsed.fullName);
         if (parsed.whatsappMobile) setWhatsappMobile(parsed.whatsappMobile);
         if (parsed.villageMandal) setVillageMandal(parsed.villageMandal);
+        if (parsed.gstin) setGstin(parsed.gstin);
       }
     } catch (e) {
       console.warn('Failed to load profile from localStorage', e);
@@ -57,14 +59,15 @@ export function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
   }, []);
 
   // Save profile to localStorage on changes
-  const saveProfile = (name: string, phone: string, address: string) => {
+  const saveProfile = (name: string, phone: string, address: string, taxId: string) => {
     try {
       localStorage.setItem(
         CUSTOMER_STORAGE_KEY,
         JSON.stringify({
           fullName: name,
           whatsappMobile: phone,
-          villageMandal: address
+          villageMandal: address,
+          gstin: taxId
         })
       );
     } catch (e) {
@@ -100,7 +103,7 @@ export function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
       return;
     }
 
-    saveProfile(fullName.trim(), cleanPhone, villageMandal.trim());
+    saveProfile(fullName.trim(), cleanPhone, villageMandal.trim(), gstin.trim().toUpperCase());
     setIsSubmitting(true);
 
     try {
@@ -333,7 +336,34 @@ export function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
                 className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 font-medium text-sm text-[#002B5B] focus:outline-none focus:ring-2 focus:ring-[#004B50]"
               />
             </div>
+
+            <div>
+              <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+                GSTIN for Tax Invoice / Input Credit <span className="text-slate-400 font-normal">(Optional)</span>
+              </label>
+              <input
+                type="text"
+                maxLength={15}
+                placeholder="15-digit GSTIN (e.g. 37AAAAA0000A1Z5)"
+                value={gstin}
+                onChange={(e) => setGstin(e.target.value.toUpperCase())}
+                className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 font-medium text-sm text-[#002B5B] uppercase focus:outline-none focus:ring-2 focus:ring-[#004B50]"
+              />
+            </div>
           </div>
+
+          {/* High-Value / B2B UPI Advisory */}
+          {totalAmount >= 95000 && (
+            <div className="p-3 bg-blue-50 border border-blue-200 rounded-xl space-y-1 text-xs text-blue-950">
+              <div className="font-bold flex items-center gap-1.5 text-blue-900">
+                <AlertCircle className="w-4 h-4 text-blue-700 flex-shrink-0" />
+                <span>Commercial Farm Order (≥ ₹95,000)</span>
+              </div>
+              <p className="leading-relaxed text-blue-900/90">
+                Single UPI transactions are capped at ₹1,00,000 by NPCI. For orders exceeding ₹1L, please select <strong>NetBanking / Corporate Card</strong> in Razorpay, or generate an instant <strong>NEFT / RTGS Proforma Invoice on WhatsApp</strong>.
+              </p>
+            </div>
+          )}
 
           {/* Payment Methods Info - Pre-paid only */}
           <div className="bg-slate-50 rounded-xl p-4 border border-slate-200 space-y-3">
@@ -390,6 +420,31 @@ export function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
                 </>
               )}
             </button>
+
+            {/* WhatsApp B2B Proforma Button */}
+            <a
+              href={`https://wa.me/918977656444?text=${encodeURIComponent(
+                [
+                  `*NEXT FARM BIO SCIENCES — B2B PROFORMA / NEFT ORDER REQUEST*`,
+                  `----------------------------------------`,
+                  items.map(i => `• ${i.title} (${i.packSize}) × ${i.quantity} = ₹${(i.unitPrice * i.quantity).toLocaleString('en-IN')}`).join('\n'),
+                  `----------------------------------------`,
+                  `*Total Order Value:* ${formatInr(totalAmount)} (Free Door Delivery & Taxes Included)`,
+                  fullName.trim() ? `*Customer Name:* ${fullName.trim()}` : null,
+                  whatsappMobile.trim() ? `*Contact Mobile:* ${whatsappMobile.trim()}` : null,
+                  villageMandal.trim() ? `*Delivery Location:* ${villageMandal.trim()}` : null,
+                  gstin.trim() ? `*GSTIN:* ${gstin.trim().toUpperCase()}` : null,
+                  totalAmount >= 95000
+                    ? `\n*Note:* Order value approaches/exceeds UPI ₹1L limit. Please provide Next Farm NEFT/RTGS bank details for direct transfer.`
+                    : `\nPlease confirm dispatch schedule from New Autonagar, Vijayawada HQ.`
+                ].filter(Boolean).join('\n')
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-2.5 px-4 bg-emerald-50 hover:bg-emerald-100 text-emerald-900 border border-emerald-300 font-bold text-xs rounded-lg transition-all flex items-center justify-center gap-2"
+            >
+              <span>📲 Request GST Proforma / NEFT Order on WhatsApp (+91 8977656444)</span>
+            </a>
           </div>
         </form>
       </div>

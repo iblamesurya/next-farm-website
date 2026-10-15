@@ -205,6 +205,24 @@ export function CartDrawer() {
                   <ArrowRight className="w-4 h-4" />
                 </button>
 
+                <a
+                  href={`https://wa.me/918977656444?text=${encodeURIComponent(
+                    [
+                      `*NEXT FARM BIO SCIENCES — B2B CART / PROFORMA INQUIRY*`,
+                      `----------------------------------------`,
+                      items.map(i => `• ${i.title} (${i.packSize}) × ${i.quantity} = ₹${(i.unitPrice * i.quantity).toLocaleString('en-IN')}`).join('\n'),
+                      `----------------------------------------`,
+                      `*Total Value:* ${formatInr(totalAmount)} (Free Door Delivery Included)`,
+                      `\nPlease provide GST proforma invoice / NEFT bank transfer details for direct company dispatch.`
+                    ].join('\n')
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-2.5 px-4 bg-emerald-50 hover:bg-emerald-100 text-emerald-900 border border-emerald-300 font-bold text-xs rounded-lg transition-all flex items-center justify-center gap-2 text-center"
+                >
+                  <span>📲 Share Cart / Request Proforma on WhatsApp</span>
+                </a>
+
                 <div className="flex justify-between items-center text-xs text-slate-500 pt-1">
                   <button
                     onClick={clearCart}

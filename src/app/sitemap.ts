@@ -124,6 +124,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.98
     },
     {
+      url: `${baseUrl}/shipping-and-returns`,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 0.9
+    },
+    {
       url: `${baseUrl}/feed.xml`,
       lastModified,
       changeFrequency: 'daily',

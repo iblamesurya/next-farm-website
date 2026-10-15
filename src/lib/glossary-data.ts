@@ -56,7 +56,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     optimalRangeOrIndicator: '0 spores/g on PCR screening (Strict Target)',
     relatedProducts: [
       { name: 'Next Gut', slug: 'next-gut' },
-      { name: 'Next Eco Bio Clean', slug: 'next-eco-bio-clean' }
+      { name: 'Next Sludge', slug: 'next-sludge' }
     ]
   },
   {
@@ -70,8 +70,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     teluguExplanation: 'టోటల్ అమ్మోనియా నైట్రోజన్ (TAN) అంటే చెరువు నీటిలోని విషపూరిత అమ్మోనియా మొత్తం పరిమాణం. pH ఎక్కువగా ఉన్నప్పుడు అమ్మోనియా తీవ్రత పెరిగి రొయ్యలు చనిపోతాయి.',
     optimalRangeOrIndicator: '< 0.5 ppm TAN (< 0.05 ppm toxic NH3)',
     relatedProducts: [
-      { name: 'Next Quick Gas Nill', slug: 'next-quick-gas-nill' },
-      { name: 'Next Super PS', slug: 'next-super-ps' }
+      { name: 'Next Converter', slug: 'next-converter' },
+      { name: 'Next Pro', slug: 'next-pro' }
     ]
   },
   {
@@ -86,7 +86,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     optimalRangeOrIndicator: '< 0.2 ppm in low salinity | < 1.0 ppm in seawater',
     relatedProducts: [
       { name: 'Next Converter', slug: 'next-converter' },
-      { name: 'Next Quick Gas Nill', slug: 'next-quick-gas-nill' }
+      { name: 'Next Converter', slug: 'next-converter' }
     ]
   },
   {
@@ -100,7 +100,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     teluguExplanation: 'డిసాల్వ్డ్ ఆక్సిజన్ (DO) అంటే చెరువు నీటిలో కరిగి ఉన్న ప్రాణవాయువు. రొయ్యల ఆరోగ్యకరమైన ఎదుగుదలకు ఎల్లప్పుడూ 4.5 ppm కంటే ఎక్కువ ఆక్సిజన్ ఉండాలి.',
     optimalRangeOrIndicator: '4.5 – 7.5 ppm (Target) | < 3.0 ppm (Danger Threshold)',
     relatedProducts: [
-      { name: 'Next Oxy Fresh', slug: 'next-oxy-fresh' }
+      { name: 'Next Sludge', slug: 'next-sludge' }
     ]
   },
   {
@@ -114,7 +114,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     teluguExplanation: 'ఆల్కలీనిటీ అంటే నీటిలో ఉండే బైకార్బోనేట్ మరియు కార్బోనేట్ ల పరిమాణం. ఇది నీటి pH హెచ్చుతగ్గులు లేకుండా నిలకడగా ఉంచుతుంది మరియు రొయ్యల కుబుసం గట్టిపడటానికి అవసరం.',
     optimalRangeOrIndicator: '120 – 180 ppm CaCO3 equivalent',
     relatedProducts: [
-      { name: 'Next Speed Mineral', slug: 'next-speed-mineral' }
+      { name: 'Next-Min', slug: 'next-min' }
     ]
   },
   {
@@ -156,8 +156,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     teluguExplanation: 'బెంతిక్ స్లడ్జ్ ఆక్సిడేషన్ అంటే చెరువు అడుగున చేరిన కుళ్ళిన నల్ల మట్టి, పాచి మరియు రొయ్య మలాన్ని బ్యాక్టీరియా ద్వారా తినిపించి శుభ్రం చేయడం.',
     optimalRangeOrIndicator: 'Redox potential (ORP) > -100 mV',
     relatedProducts: [
-      { name: 'Next Eco Bio Clean', slug: 'next-eco-bio-clean' },
-      { name: 'Next Super PS', slug: 'next-super-ps' }
+      { name: 'Next Sludge', slug: 'next-sludge' },
+      { name: 'Next Pro', slug: 'next-pro' }
     ]
   },
   {
@@ -183,7 +183,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     teluguExplanation: 'బయోఫ్లాక్ C:N నిష్పత్తి అంటే నీటిలోని కార్బన్ మరియు నైట్రోజన్ ల సమతుల్యత. బెల్లం లేదా మొలాసెస్ కలపడం ద్వారా మంచి బ్యాక్టీరియా వృద్ధి చెంది అమ్మోనియాను ఆహారంగా మారుస్తుంది.',
     optimalRangeOrIndicator: '15:1 – 20:1 (Biofloc Standard)',
     relatedProducts: [
-      { name: 'Next Eco Bio Clean', slug: 'next-eco-bio-clean' }
+      { name: 'Next Sludge', slug: 'next-sludge' }
     ]
   },
   {
@@ -196,8 +196,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     teluguExplanation: 'ప్లాంక్టన్ క్రాష్ అంటే చెరువులోని ఆల్గే (పాచి) అకస్మాత్తుగా చనిపోయి నీరు రంగు మారడం. దీనివల్ల నీటిలో ఆక్సిజన్ ఒక్కసారిగా పడిపోయి అమ్మోనియా పెరుగుతుంది.',
     optimalRangeOrIndicator: 'Secchi disc depth: 25 – 35 cm',
     relatedProducts: [
-      { name: 'Next Oxy Fresh', slug: 'next-oxy-fresh' },
-      { name: 'Next Plankton Boom', slug: 'next-plankton-boom' }
+      { name: 'Next Sludge', slug: 'next-sludge' },
+      { name: 'Next Remedy', slug: 'next-remedy' }
     ]
   },
   {

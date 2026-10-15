@@ -136,7 +136,8 @@ export function getProductJsonLd(product: Product) {
         returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
         merchantReturnDays: 7,
         returnMethod: 'https://schema.org/ReturnByMail',
-        returnFees: 'https://schema.org/FreeReturn'
+        returnFees: 'https://schema.org/FreeReturn',
+        merchantReturnLink: 'https://nextfarmbiosciences.app/shipping-and-returns'
       },
       shippingDetails: {
         '@type': 'OfferShippingDetails',
@@ -331,7 +332,7 @@ export function getPondDoctorFaqJsonLd() {
         name: 'How can Vannamei farmers cure White Gut Syndrome without using banned antibiotics?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Top-dress Next Gut multi-strain probiotic @ 15-20 mL per kg feed across all daily meals for 5 days bound with Next Bind Plus, combined with water broadcasting of Next Viro Nill @ 1.0 L/Acre to eliminate environmental Vibrio reservoirs.'
+          text: 'Top-dress Next Gut multi-strain probiotic @ 15-20 mL per kg feed across all daily meals for 5 days bound with Next Food Pro, combined with water broadcasting of Next Viro Nill @ 1.0 L/Acre to eliminate environmental Vibrio reservoirs.'
         }
       },
       {

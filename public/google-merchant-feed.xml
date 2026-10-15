@@ -49,9 +49,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -100,9 +107,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -151,9 +165,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -201,9 +222,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -251,9 +279,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -301,9 +336,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -351,9 +393,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -401,9 +450,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -451,9 +507,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -501,9 +564,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -551,9 +621,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -601,9 +678,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -651,9 +735,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -701,9 +792,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -751,9 +849,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -771,7 +876,7 @@
       <g:brand>Next Farm Bio Sciences</g:brand>
       <g:condition>new</g:condition>
       <g:size>10 kg Heavy-Duty Multi-Wall Bag</g:size>
-      <g:shipping_weight>5.0 kg</g:shipping_weight>
+      <g:shipping_weight>10.0 kg</g:shipping_weight>
       <g:google_product_category>Business &amp; Industrial &gt; Agriculture</g:google_product_category>
       <g:product_type>Aquaculture Bio-Inputs &gt; Balanced Bio-Mineral Supplement</g:product_type>
       <g:product_highlight>100% Water-Soluble Pharmaceutical-Grade Bioavailable Electrolytes Laboratory Certified Microbial Potency</g:product_highlight>
@@ -799,9 +904,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -819,6 +931,61 @@
       <g:brand>Next Farm Bio Sciences</g:brand>
       <g:condition>new</g:condition>
       <g:size>2-Liter Twin Field Pack</g:size>
+      <g:shipping_weight>4.0 kg</g:shipping_weight>
+      <g:google_product_category>Business &amp; Industrial &gt; Agriculture</g:google_product_category>
+      <g:product_type>Aquaculture Bio-Inputs &gt; Balanced Bio-Mineral Supplement</g:product_type>
+      <g:product_highlight>100% Water-Soluble Pharmaceutical-Grade Bioavailable Electrolytes Laboratory Certified Microbial Potency</g:product_highlight>
+      <g:product_highlight>100% Antibiotic-Free Formulation (CAA &amp; MPEDA Export Compliant)</g:product_highlight>
+      <g:product_highlight>Zero Chloramphenicol &amp; Nitrofurans Guarantee</g:product_highlight>
+      <g:product_highlight>Express Pan-India Cold-Chain Dispatch from Vijayawada</g:product_highlight>
+      <g:product_detail>
+        <g:section_name>Technical Specifications</g:section_name>
+        <g:attribute_name>Microbial Consortium</g:attribute_name>
+        <g:attribute_value>Calcium (Ca) Min 22.0%, Magnesium (Mg) Min 11.0%, Phosphorus (P) Min 4.5%</g:attribute_value>
+      </g:product_detail>
+      <g:product_detail>
+        <g:section_name>Technical Specifications</g:section_name>
+        <g:attribute_name>Formulation Type</g:attribute_name>
+        <g:attribute_value>Balanced Bio-Mineral Supplement</g:attribute_value>
+      </g:product_detail>
+      <g:product_detail>
+        <g:section_name>Storage &amp; Compliance</g:section_name>
+        <g:attribute_name>Quality Standard</g:attribute_name>
+        <g:attribute_value>ISO 9001:2015 Certified Aquaculture Facility</g:attribute_value>
+      </g:product_detail>
+      <g:product_detail>
+        <g:section_name>Storage &amp; Compliance</g:section_name>
+        <g:attribute_name>Shelf Life</g:attribute_name>
+        <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
+      </g:product_detail>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>NF-NEXT-MIN-1L</g:id>
+      <g:item_group_id>NF-NEXT-MIN</g:item_group_id>
+      <g:mpn>NF-BIO-PROD-006-1L</g:mpn>
+      <g:title>Next-Min (1L) - Shrimp Molting Cramps &amp; Soft Shell Mineral Mixture | CAA Approved</g:title>
+      <g:description>Next-Min is a comprehensive, highly bioavailable ionic mineral formulation designed to satisfy the rigorous osmotic and mineral requirements of shrimp and prawns. Formulated with an optimized Calcium-to-Magnesium ratio (1:3.5) alongside bioavailable Phosphorus and trace minerals, Next-Min accelerates post-molt shell hardening. Potency: 100% Water-Soluble Pharmaceutical-Grade Bioavailable Electrolytes. Microbial Consortium: Calcium (Ca) Min 22.0%, Magnesium (Mg) Min 11.0%, Phosphorus (P) Min 4.5%, Potassium (K) Min 3.0%, Trace Minerals: Zinc, Manganese, Iron, Copper, Selenium. Primary Indications: Soft shell syndrome persisting beyond 4 hours post-molt; Incomplete molting mortalities and stuck shells; White muscle cramps and opaque abdominal tissue; Low salinity and inland shrimp farming (0-10 ppt); Lunar cycle molting stress (Full Moon / New Moon); Electrolyte imbalance in borewell waters. CAA-Approved, ISO 9001:2015 Certified, 100% Antibiotic-Free. Manufactured by Next Farm Bio Sciences, New Autonagar, Vijayawada, India.</g:description>
+      <g:link>https://nextfarmbiosciences.app/products/next-min?size=1L</g:link>
+      <g:image_link>https://nextfarmbiosciences.app/images/products/next-min/shoot.png</g:image_link>
+      <g:additional_image_link>https://nextfarmbiosciences.app/images/products/next-min/farm.png</g:additional_image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>1199.00 INR</g:price>
+      <g:brand>Next Farm Bio Sciences</g:brand>
+      <g:condition>new</g:condition>
+      <g:size>2 kg Precision Bag</g:size>
       <g:shipping_weight>2.0 kg</g:shipping_weight>
       <g:google_product_category>Business &amp; Industrial &gt; Agriculture</g:google_product_category>
       <g:product_type>Aquaculture Bio-Inputs &gt; Balanced Bio-Mineral Supplement</g:product_type>
@@ -847,57 +1014,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
-    </item>
-    <item>
-      <g:id>NF-NEXT-MIN-1L</g:id>
-      <g:item_group_id>NF-NEXT-MIN</g:item_group_id>
-      <g:mpn>NF-BIO-PROD-006-1L</g:mpn>
-      <g:title>Next-Min (1L) - Shrimp Molting Cramps &amp; Soft Shell Mineral Mixture | CAA Approved</g:title>
-      <g:description>Next-Min is a comprehensive, highly bioavailable ionic mineral formulation designed to satisfy the rigorous osmotic and mineral requirements of shrimp and prawns. Formulated with an optimized Calcium-to-Magnesium ratio (1:3.5) alongside bioavailable Phosphorus and trace minerals, Next-Min accelerates post-molt shell hardening. Potency: 100% Water-Soluble Pharmaceutical-Grade Bioavailable Electrolytes. Microbial Consortium: Calcium (Ca) Min 22.0%, Magnesium (Mg) Min 11.0%, Phosphorus (P) Min 4.5%, Potassium (K) Min 3.0%, Trace Minerals: Zinc, Manganese, Iron, Copper, Selenium. Primary Indications: Soft shell syndrome persisting beyond 4 hours post-molt; Incomplete molting mortalities and stuck shells; White muscle cramps and opaque abdominal tissue; Low salinity and inland shrimp farming (0-10 ppt); Lunar cycle molting stress (Full Moon / New Moon); Electrolyte imbalance in borewell waters. CAA-Approved, ISO 9001:2015 Certified, 100% Antibiotic-Free. Manufactured by Next Farm Bio Sciences, New Autonagar, Vijayawada, India.</g:description>
-      <g:link>https://nextfarmbiosciences.app/products/next-min?size=1L</g:link>
-      <g:image_link>https://nextfarmbiosciences.app/images/products/next-min/shoot.png</g:image_link>
-      <g:additional_image_link>https://nextfarmbiosciences.app/images/products/next-min/farm.png</g:additional_image_link>
-      <g:availability>in_stock</g:availability>
-      <g:price>1199.00 INR</g:price>
-      <g:brand>Next Farm Bio Sciences</g:brand>
-      <g:condition>new</g:condition>
-      <g:size>2 kg Precision Bag</g:size>
-      <g:shipping_weight>1.0 kg</g:shipping_weight>
-      <g:google_product_category>Business &amp; Industrial &gt; Agriculture</g:google_product_category>
-      <g:product_type>Aquaculture Bio-Inputs &gt; Balanced Bio-Mineral Supplement</g:product_type>
-      <g:product_highlight>100% Water-Soluble Pharmaceutical-Grade Bioavailable Electrolytes Laboratory Certified Microbial Potency</g:product_highlight>
-      <g:product_highlight>100% Antibiotic-Free Formulation (CAA &amp; MPEDA Export Compliant)</g:product_highlight>
-      <g:product_highlight>Zero Chloramphenicol &amp; Nitrofurans Guarantee</g:product_highlight>
-      <g:product_highlight>Express Pan-India Cold-Chain Dispatch from Vijayawada</g:product_highlight>
-      <g:product_detail>
-        <g:section_name>Technical Specifications</g:section_name>
-        <g:attribute_name>Microbial Consortium</g:attribute_name>
-        <g:attribute_value>Calcium (Ca) Min 22.0%, Magnesium (Mg) Min 11.0%, Phosphorus (P) Min 4.5%</g:attribute_value>
-      </g:product_detail>
-      <g:product_detail>
-        <g:section_name>Technical Specifications</g:section_name>
-        <g:attribute_name>Formulation Type</g:attribute_name>
-        <g:attribute_value>Balanced Bio-Mineral Supplement</g:attribute_value>
-      </g:product_detail>
-      <g:product_detail>
-        <g:section_name>Storage &amp; Compliance</g:section_name>
-        <g:attribute_name>Quality Standard</g:attribute_name>
-        <g:attribute_value>ISO 9001:2015 Certified Aquaculture Facility</g:attribute_value>
-      </g:product_detail>
-      <g:product_detail>
-        <g:section_name>Storage &amp; Compliance</g:section_name>
-        <g:attribute_name>Shelf Life</g:attribute_name>
-        <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
-      </g:product_detail>
-      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -905,7 +1031,7 @@
       <g:id>NF-NEXT-FOOD-PRO-5L</g:id>
       <g:item_group_id>NF-NEXT-FOOD-PRO</g:item_group_id>
       <g:mpn>NF-BIO-PROD-007-5L</g:mpn>
-      <g:title>next food pro (5L) - Multi-Strain Water &amp; Soil Probiotic for Vannamei | CAA Approved</g:title>
+      <g:title>Next Food Pro (5L) - Multi-Strain Water &amp; Soil Probiotic for Vannamei | CAA Approved</g:title>
       <g:description>Next Food Pro is a premium, feed-grade probiotic supplement engineered to fortify standard aquaculture feed pellets with bioactive digestive enzymes, essential vitamins, and heat-resistant spore-forming bacteria. Designed to withstand pelleted feed processing, it ensures active spores reach the shrimp gut intact. Potency: Minimum 6 Billion CFU/g (6 x 10^9 CFU/g). Microbial Consortium: Bacillus subtilis (feed grade), Lactobacillus acidophilus, Enterococcus faecium, Beta-1,3/1,6-glucans, Mannan-Oligosaccharides (MOS), B-Complex Vitamins (B1, B2, B6, B12, Niacin, Folic acid). Primary Indications: Feed Conversion Ratio (FCR) optimization; Immune system activation and disease resistance; Daily weight gain (ADG) acceleration; Nursery and juvenile growth fortification; Uniform harvest grading and reduced size disparity. CAA-Approved, ISO 9001:2015 Certified, 100% Antibiotic-Free. Manufactured by Next Farm Bio Sciences, New Autonagar, Vijayawada, India.</g:description>
       <g:link>https://nextfarmbiosciences.app/products/next-food-pro?size=5L</g:link>
       <g:image_link>https://nextfarmbiosciences.app/images/products/next-food-pro/shoot.png</g:image_link>
@@ -945,9 +1071,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -955,7 +1088,7 @@
       <g:id>NF-NEXT-FOOD-PRO-2L</g:id>
       <g:item_group_id>NF-NEXT-FOOD-PRO</g:item_group_id>
       <g:mpn>NF-BIO-PROD-007-2L</g:mpn>
-      <g:title>next food pro (2L) - Multi-Strain Water &amp; Soil Probiotic for Vannamei | CAA Approved</g:title>
+      <g:title>Next Food Pro (2L) - Multi-Strain Water &amp; Soil Probiotic for Vannamei | CAA Approved</g:title>
       <g:description>Next Food Pro is a premium, feed-grade probiotic supplement engineered to fortify standard aquaculture feed pellets with bioactive digestive enzymes, essential vitamins, and heat-resistant spore-forming bacteria. Designed to withstand pelleted feed processing, it ensures active spores reach the shrimp gut intact. Potency: Minimum 6 Billion CFU/g (6 x 10^9 CFU/g). Microbial Consortium: Bacillus subtilis (feed grade), Lactobacillus acidophilus, Enterococcus faecium, Beta-1,3/1,6-glucans, Mannan-Oligosaccharides (MOS), B-Complex Vitamins (B1, B2, B6, B12, Niacin, Folic acid). Primary Indications: Feed Conversion Ratio (FCR) optimization; Immune system activation and disease resistance; Daily weight gain (ADG) acceleration; Nursery and juvenile growth fortification; Uniform harvest grading and reduced size disparity. CAA-Approved, ISO 9001:2015 Certified, 100% Antibiotic-Free. Manufactured by Next Farm Bio Sciences, New Autonagar, Vijayawada, India.</g:description>
       <g:link>https://nextfarmbiosciences.app/products/next-food-pro?size=2L</g:link>
       <g:image_link>https://nextfarmbiosciences.app/images/products/next-food-pro/shoot.png</g:image_link>
@@ -995,9 +1128,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -1005,7 +1145,7 @@
       <g:id>NF-NEXT-FOOD-PRO-1L</g:id>
       <g:item_group_id>NF-NEXT-FOOD-PRO</g:item_group_id>
       <g:mpn>NF-BIO-PROD-007-1L</g:mpn>
-      <g:title>next food pro (1L) - Multi-Strain Water &amp; Soil Probiotic for Vannamei | CAA Approved</g:title>
+      <g:title>Next Food Pro (1L) - Multi-Strain Water &amp; Soil Probiotic for Vannamei | CAA Approved</g:title>
       <g:description>Next Food Pro is a premium, feed-grade probiotic supplement engineered to fortify standard aquaculture feed pellets with bioactive digestive enzymes, essential vitamins, and heat-resistant spore-forming bacteria. Designed to withstand pelleted feed processing, it ensures active spores reach the shrimp gut intact. Potency: Minimum 6 Billion CFU/g (6 x 10^9 CFU/g). Microbial Consortium: Bacillus subtilis (feed grade), Lactobacillus acidophilus, Enterococcus faecium, Beta-1,3/1,6-glucans, Mannan-Oligosaccharides (MOS), B-Complex Vitamins (B1, B2, B6, B12, Niacin, Folic acid). Primary Indications: Feed Conversion Ratio (FCR) optimization; Immune system activation and disease resistance; Daily weight gain (ADG) acceleration; Nursery and juvenile growth fortification; Uniform harvest grading and reduced size disparity. CAA-Approved, ISO 9001:2015 Certified, 100% Antibiotic-Free. Manufactured by Next Farm Bio Sciences, New Autonagar, Vijayawada, India.</g:description>
       <g:link>https://nextfarmbiosciences.app/products/next-food-pro?size=1L</g:link>
       <g:image_link>https://nextfarmbiosciences.app/images/products/next-food-pro/shoot.png</g:image_link>
@@ -1045,9 +1185,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -1095,9 +1242,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -1145,9 +1299,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -1195,9 +1356,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -1245,9 +1413,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -1295,9 +1470,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -1345,9 +1527,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -1395,9 +1584,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -1445,9 +1641,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -1495,9 +1698,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -1545,9 +1755,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -1595,9 +1812,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -1645,9 +1869,16 @@
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>

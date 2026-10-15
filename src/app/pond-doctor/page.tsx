@@ -131,7 +131,7 @@ export default function PondDoctorPage() {
                 How to eliminate White Gut and White Feces Syndrome without banned antibiotics?
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                Top-dress Next Gut enteric probiotic @ 15–20 mL per kg feed across all daily meals for 5 consecutive days bound with Next Bind Plus, combined with water broadcasting of Next Viro Nill @ 1.0 L/Acre to neutralize water-column Vibrio reservoirs.
+                Top-dress Next Gut enteric probiotic @ 15–20 mL per kg feed across all daily meals for 5 consecutive days bound with Next Food Pro, combined with water broadcasting of Next Viro Nill @ 1.0 L/Acre to neutralize water-column Vibrio reservoirs.
               </p>
             </div>
 

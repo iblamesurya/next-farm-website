@@ -178,105 +178,125 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
             </div>
           </div>
 
-          {/* Pack Size Selector */}
-          <div className="space-y-3">
-            <div className="flex justify-between items-center">
-              <label className="font-heading font-bold text-sm text-[#002B5B] uppercase tracking-wider">
-                Select Pack Size:
-              </label>
-              <span className="text-xs text-[#004B50] font-semibold">
-                {selectedPack === '5L'
-                  ? 'Best Value Bulk Treatment'
-                  : selectedPack === '2L'
-                  ? 'Twin Field Acre Pack'
-                  : 'Starter / Precision Pack'}
-              </span>
-            </div>
+            {/* Pack Size Selector */}
+            {(() => {
+              const isDry = ['next-min', 'next-sludge', 'next-food-pro'].includes(product.slug);
+              const bulkWeight = product.slug === 'next-min' ? 10 : 5;
+              const unitRate = isDry
+                ? `Rs. ${Math.round(product.pricing.can5L / bulkWeight).toLocaleString('en-IN')} / kg`
+                : 'Rs. 1,000 / Litre';
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
-              {/* 1L Bottle Option */}
-              <button
-                type="button"
-                onClick={() => setSelectedPack('1L')}
-                className={`p-3.5 rounded-xl border-2 text-left transition-all relative ${
-                  selectedPack === '1L'
-                    ? 'border-[#004B50] bg-[#004B50]/5 ring-2 ring-[#004B50]/30'
-                    : 'border-slate-200 bg-white hover:border-slate-300'
-                }`}
-              >
-                <span className="font-heading font-bold text-sm text-[#002B5B] block">
-                  1-Liter Bottle
-                </span>
-                <span className="text-[11px] text-slate-500 block mt-0.5">
-                  {product.format1L || 'Precision Bottle'}
-                </span>
-                <span className="text-sm font-extrabold text-[#004B50] block mt-1.5">
-                  {formatInr(product.pricing.bottle1L)}
-                </span>
-                <span className="text-[10px] text-emerald-700 font-semibold block mt-0.5">
-                  Save 25%
-                </span>
-              </button>
+              const label1 = isDry
+                ? (product.slug === 'next-min' ? '2 kg Bag' : '1 kg Pouch')
+                : '1-Liter Bottle';
+              const label2 = isDry
+                ? (product.slug === 'next-min' ? '4 kg Twin Pack' : '2 kg Twin Pack')
+                : '2-Liter Pack';
+              const label5 = isDry
+                ? `${bulkWeight} kg Industrial Bag`
+                : '5-Liter Can';
 
-              {/* 2L Pack Option */}
-              <button
-                type="button"
-                onClick={() => setSelectedPack('2L')}
-                className={`p-3.5 rounded-xl border-2 text-left transition-all relative ${
-                  selectedPack === '2L'
-                    ? 'border-[#004B50] bg-[#004B50]/5 ring-2 ring-[#004B50]/30'
-                    : 'border-slate-200 bg-white hover:border-slate-300'
-                }`}
-              >
-                <div className="flex items-center justify-between">
-                  <span className="font-heading font-bold text-sm text-[#002B5B]">
-                    2-Liter Pack
-                  </span>
-                  <span className="px-1.5 py-0.5 bg-[#FFD200] text-[#002B5B] text-[9px] font-extrabold rounded">
-                    POPULAR
-                  </span>
+              return (
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center">
+                    <label className="font-heading font-bold text-sm text-[#002B5B] uppercase tracking-wider">
+                      Select Pack Size:
+                    </label>
+                    <span className="text-xs text-[#004B50] font-semibold">
+                      {selectedPack === '5L'
+                        ? 'Best Value Bulk Treatment'
+                        : selectedPack === '2L'
+                        ? (isDry ? 'Twin Field Pack' : 'Twin Field Acre Pack')
+                        : 'Starter / Precision Pack'}
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                    {/* 1L / 1kg Option */}
+                    <button
+                      type="button"
+                      onClick={() => setSelectedPack('1L')}
+                      className={`p-3.5 rounded-xl border-2 text-left transition-all relative ${
+                        selectedPack === '1L'
+                          ? 'border-[#004B50] bg-[#004B50]/5 ring-2 ring-[#004B50]/30'
+                          : 'border-slate-200 bg-white hover:border-slate-300'
+                      }`}
+                    >
+                      <span className="font-heading font-bold text-sm text-[#002B5B] block">
+                        {label1}
+                      </span>
+                      <span className="text-[11px] text-slate-500 block mt-0.5">
+                        {product.format1L || (isDry ? 'Foil Pouch' : 'Precision Bottle')}
+                      </span>
+                      <span className="text-sm font-extrabold text-[#004B50] block mt-1.5">
+                        {formatInr(product.pricing.bottle1L)}
+                      </span>
+                      <span className="text-[10px] text-emerald-700 font-semibold block mt-0.5">
+                        Save 25%
+                      </span>
+                    </button>
+
+                    {/* 2L / 2kg Option */}
+                    <button
+                      type="button"
+                      onClick={() => setSelectedPack('2L')}
+                      className={`p-3.5 rounded-xl border-2 text-left transition-all relative ${
+                        selectedPack === '2L'
+                          ? 'border-[#004B50] bg-[#004B50]/5 ring-2 ring-[#004B50]/30'
+                          : 'border-slate-200 bg-white hover:border-slate-300'
+                      }`}
+                    >
+                      <div className="flex items-center justify-between">
+                        <span className="font-heading font-bold text-sm text-[#002B5B]">
+                          {label2}
+                        </span>
+                        <span className="px-1.5 py-0.5 bg-[#FFD200] text-[#002B5B] text-[9px] font-extrabold rounded">
+                          POPULAR
+                        </span>
+                      </div>
+                      <span className="text-[11px] text-slate-500 block mt-0.5">
+                        {product.format2L || (isDry ? 'Twin Pack' : 'Twin Field Pack')}
+                      </span>
+                      <span className="text-sm font-extrabold text-[#004B50] block mt-1.5">
+                        {formatInr(product.pricing.pack2L || 2299)}
+                      </span>
+                      <span className="text-[10px] text-emerald-700 font-semibold block mt-0.5">
+                        Save 28%
+                      </span>
+                    </button>
+
+                    {/* 5L / 5kg Option */}
+                    <button
+                      type="button"
+                      onClick={() => setSelectedPack('5L')}
+                      className={`p-3.5 rounded-xl border-2 text-left transition-all relative ${
+                        selectedPack === '5L'
+                          ? 'border-[#004B50] bg-[#004B50]/5 ring-2 ring-[#004B50]/30'
+                          : 'border-slate-200 bg-white hover:border-slate-300'
+                      }`}
+                    >
+                      <div className="flex items-center justify-between">
+                        <span className="font-heading font-bold text-sm text-[#002B5B]">
+                          {label5}
+                        </span>
+                        <span className="px-1.5 py-0.5 bg-emerald-600 text-white text-[9px] font-bold rounded">
+                          BEST VALUE
+                        </span>
+                      </div>
+                      <span className="text-[11px] text-slate-500 block mt-0.5">
+                        {product.format5L || (isDry ? 'Industrial Bag' : 'Industrial Can')}
+                      </span>
+                      <span className="text-sm font-extrabold text-[#004B50] block mt-1.5">
+                        {formatInr(product.pricing.can5L)}
+                      </span>
+                      <span className="text-[10px] text-emerald-700 font-semibold block mt-0.5">
+                        {unitRate}
+                      </span>
+                    </button>
+                  </div>
                 </div>
-                <span className="text-[11px] text-slate-500 block mt-0.5">
-                  {product.format2L || 'Twin Field Pack'}
-                </span>
-                <span className="text-sm font-extrabold text-[#004B50] block mt-1.5">
-                  {formatInr(product.pricing.pack2L || 2299)}
-                </span>
-                <span className="text-[10px] text-emerald-700 font-semibold block mt-0.5">
-                  Save 28%
-                </span>
-              </button>
-
-              {/* 5L Can Option */}
-              <button
-                type="button"
-                onClick={() => setSelectedPack('5L')}
-                className={`p-3.5 rounded-xl border-2 text-left transition-all relative ${
-                  selectedPack === '5L'
-                    ? 'border-[#004B50] bg-[#004B50]/5 ring-2 ring-[#004B50]/30'
-                    : 'border-slate-200 bg-white hover:border-slate-300'
-                }`}
-              >
-                <div className="flex items-center justify-between">
-                  <span className="font-heading font-bold text-sm text-[#002B5B]">
-                    5-Liter Can
-                  </span>
-                  <span className="px-1.5 py-0.5 bg-emerald-600 text-white text-[9px] font-bold rounded">
-                    BEST VALUE
-                  </span>
-                </div>
-                <span className="text-[11px] text-slate-500 block mt-0.5">
-                  {product.format5L || 'Industrial Can'}
-                </span>
-                <span className="text-sm font-extrabold text-[#004B50] block mt-1.5">
-                  {formatInr(product.pricing.can5L)}
-                </span>
-                <span className="text-[10px] text-emerald-700 font-semibold block mt-0.5">
-                  Rs. 1,000 / Litre
-                </span>
-              </button>
-            </div>
-          </div>
+              );
+            })()}
 
           {/* Quantity Selector & Add to Cart Controls */}
           <div className="space-y-4 pt-2">

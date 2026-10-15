@@ -64,14 +64,14 @@ export const DISTRICT_GUIDES: DistrictGuide[] = [
         severity: 'Severe',
         trigger: 'Continuous unconsumed feed pellet accumulation in high-density check tray culture',
         clinicalSigns: 'Blackened pond bottom, rotten egg odor, shrimp lethargy at pond center',
-        preventativeProtocol: 'Weekly probiotic oxidation with Next Eco Bio Clean (1 L/acre) + Next Super PS'
+        preventativeProtocol: 'Weekly probiotic oxidation with Next Sludge (1 L/acre) + Next Pro'
       },
       {
         disease: 'Mineral Imbalance & Soft Shell Syndrome',
         severity: 'High',
         trigger: 'Low ionic ratio (Mg:Ca:K imbalance in groundwater bore intake)',
         clinicalSigns: 'Shrimp fail to harden post-molt, muscle cramps, cannibalism during new moon cycles',
-        preventativeProtocol: 'Fortnightly ionic balancing with Next Speed Mineral (10 kg/acre)'
+        preventativeProtocol: 'Fortnightly ionic balancing with Next-Min (10 kg/acre)'
       }
     ],
     recommendedFormulations: [
@@ -83,15 +83,15 @@ export const DISTRICT_GUIDES: DistrictGuide[] = [
         indication: 'White Gut Disease & EHP microvilli repair'
       },
       {
-        productName: 'Next Eco Bio Clean',
-        productSlug: 'next-eco-bio-clean',
+        productName: 'Next Sludge',
+        productSlug: 'next-sludge',
         dosage: '1.0 L / acre',
         timing: 'Apply every 7 days during high aeration',
         indication: 'Digestion of bottom black mud & organic matter'
       },
       {
-        productName: 'Next Speed Mineral',
-        productSlug: 'next-speed-mineral',
+        productName: 'Next-Min',
+        productSlug: 'next-min',
         dosage: '10 kg / acre',
         timing: 'Apply 24 hours prior to full moon / new moon molting peak',
         indication: 'Ionic replenishment of Ca, Mg, and K'
@@ -136,7 +136,7 @@ export const DISTRICT_GUIDES: DistrictGuide[] = [
         severity: 'Severe',
         trigger: 'High salinity reduces ammonia gas stripping efficiency, causing chemical toxicity',
         clinicalSigns: 'Shrimp swim near dyke surface, red antenna, flared gills, check tray feed cessation',
-        preventativeProtocol: 'Emergency broadcast of Next Quick Gas Nill (1.5 L/acre) with deep aeration'
+        preventativeProtocol: 'Emergency broadcast of Next Converter (1.5 L/acre) with deep aeration'
       }
     ],
     recommendedFormulations: [
@@ -148,8 +148,8 @@ export const DISTRICT_GUIDES: DistrictGuide[] = [
         indication: 'Broad-spectrum suppression of pathogenic Vibrio reservoirs'
       },
       {
-        productName: 'Next Quick Gas Nill',
-        productSlug: 'next-quick-gas-nill',
+        productName: 'Next Converter',
+        productSlug: 'next-converter',
         dosage: '1.5–2.0 L / acre',
         timing: 'Immediate application upon TAN > 1.0 ppm',
         indication: 'Rapid chemical neutralization of toxic NH3 and NO2'
@@ -171,43 +171,43 @@ export const DISTRICT_GUIDES: DistrictGuide[] = [
     name: 'Krishna & Kaikaluru Aquaculture Zone',
     district: 'Krishna',
     state: 'Andhra Pradesh',
-    teluguName: 'కృష్ణా & కైకలూరు ఆక్వా క్లినిక్ & రొయ్యల మందులు',
-    metaTitle: 'Kaikaluru Prawn Medicine & Probiotics | Krishna District Aquaculture Suppliers',
-    metaDescription: 'Certified CAA-approved prawn medicines, probiotics, and water sanitizers for Kaikaluru, Chavalipadu, Gudivada, and Krishna delta. Immediate delivery for White Gut, cyanobacteria, and mineral deficiencies.',
-    keyGeography: ['Kaikaluru', 'Chavalipadu', 'Gudivada', 'Bantumilli', 'Mudinepalli', 'Nagayalanka', 'Machilipatnam', 'Kolleru lake belt'],
+    teluguName: 'కృష్ణా & కైకలూరు ఆక్వా క్లినిక్',
+    metaTitle: 'Krishna District Prawn & Fish Medicine | Kaikaluru Aquaculture Clinic',
+    metaDescription: 'Low-salinity and freshwater shrimp & fish disease management for Kaikaluru, Gudivada, and Krishna delta. Remediation for cyanobacteria blooms and slow growth.',
+    keyGeography: ['Kaikaluru', 'Gudivada', 'Bantumilli', 'Nagayalanka', 'Machilipatnam'],
     averageSalinity: '0.5 – 6 ppt',
     salinityType: 'Freshwater / Low Saline',
-    primarySpecies: ['Litopenaeus vannamei', 'Pangasius', 'Rohu / Catla (Polyculture)', 'Macrobrachium rosenbergii (Scampi)'],
+    primarySpecies: ['Litopenaeus vannamei', 'Pangasius', 'Rohu / Catla (Polyculture)'],
     stockingDensity: '35 – 55 PL/m²',
-    primaryWaterSource: 'Krishna Eastern Delta canals, Kolleru overflow channels, borewell freshwater',
-    soilCharacteristics: 'Deep alluvial black cotton soil with high silt content and high nutrient retention',
+    primaryWaterSource: 'Krishna Eastern Delta canals, Kolleru overflow channels',
+    soilCharacteristics: 'Deep alluvial black cotton soil with high silt content',
     pathologyRisks: [
       {
         disease: 'Blue-Green Algae (Cyanobacteria / Microcystis) Pond Crash',
         severity: 'Critical',
         trigger: 'High phosphorus runoff from agriculture paired with freshwater conditions',
         clinicalSigns: 'Thick pea-soup paint scum on surface, muddy off-flavor, severe nocturnal oxygen crash',
-        preventativeProtocol: 'Biological algal competitive exclusion using Next Plankton Boom + Next Super PS'
+        preventativeProtocol: 'Biological algal competitive exclusion using Next Remedy + Next Pro'
       },
       {
         disease: 'Chronic Low-Salinity Molt Cramps & Muscle Opacity',
         severity: 'Severe',
         trigger: 'Deficiency of ionic magnesium and potassium in freshwater bore wells',
         clinicalSigns: 'Cramped shrimp bodies resembling white tail disease, inability to straighten tail',
-        preventativeProtocol: 'Constant ionic supplementation using Next Speed Mineral (15 kg/acre/month)'
+        preventativeProtocol: 'Constant ionic supplementation using Next-Min (15 kg/acre/month)'
       }
     ],
     recommendedFormulations: [
       {
-        productName: 'Next Speed Mineral',
-        productSlug: 'next-speed-mineral',
+        productName: 'Next-Min',
+        productSlug: 'next-min',
         dosage: '12–15 kg / acre',
         timing: 'Apply in split doses every 10 days',
         indication: 'Ionic replenishment in zero-salinity groundwater'
       },
       {
-        productName: 'Next Super PS',
-        productSlug: 'next-super-ps',
+        productName: 'Next Pro',
+        productSlug: 'next-pro',
         dosage: '2.0 L / acre',
         timing: 'Broadcast on bright sunny mornings (10 AM)',
         indication: 'Digestion of dead cyanobacterial algal mats'
@@ -226,13 +226,13 @@ export const DISTRICT_GUIDES: DistrictGuide[] = [
   },
   {
     slug: 'bapatla-chirala',
-    name: 'Bapatla & Cherukupalli Estuarine Aqua Belt',
+    name: 'Bapatla & Chirala Estuarine Belt',
     district: 'Bapatla',
     state: 'Andhra Pradesh',
-    teluguName: 'బాపట్ల & చేరుకుపల్లి రొయ్యల మందులు & ఆక్వా క్లినిక్',
-    metaTitle: 'Bapatla & Cherukupalli Shrimp Medicine | Aquaculture Suppliers Bapatla District',
-    metaDescription: 'Trusted prawn medicines, probiotics, and water treatment products in Bapatla, Cherukupalli, Chirala, and Nizampatnam. Effective treatment for acid sulfate soils, toxic H2S, and black gill disease.',
-    keyGeography: ['Bapatla', 'Cherukupalli', 'Chirala', 'Karlapalem', 'Vetapalem', 'Nizampatnam coastal border', 'Romperu drain belt'],
+    teluguName: 'బాపట్ల & చీరాల రొయ్యల మందులు',
+    metaTitle: 'Bapatla Aquaculture Solutions & Shrimp Medicine | Chirala & Karlapalem',
+    metaDescription: 'Clinical guidance for shrimp ponds in Bapatla and Chirala estuarine zone. Managing acid sulfate soils, toxic hydrogen sulfide, and black gill disease.',
+    keyGeography: ['Bapatla', 'Chirala', 'Karlapalem', 'Vetapalem', 'Romperu drain belt'],
     averageSalinity: '12 – 28 ppt',
     salinityType: 'Estuarine Delta',
     primarySpecies: ['Litopenaeus vannamei', 'Tiger Shrimp'],
@@ -245,27 +245,27 @@ export const DISTRICT_GUIDES: DistrictGuide[] = [
         severity: 'Critical',
         trigger: 'Heavy rainfall leaches sulfuric acid from dykes, dropping pond water pH < 6.5',
         clinicalSigns: 'Gill filaments turn brown to jet black, shrimp gasp at pond edges, high mortality',
-        preventativeProtocol: 'Agricultural liming followed by Next Eco Bio Clean and Next Oxy Fresh'
+        preventativeProtocol: 'Agricultural liming followed by Next Sludge and Next Sludge'
       },
       {
         disease: 'Hydrogen Sulfide (H2S) Toxicity',
         severity: 'Severe',
         trigger: 'Anaerobic decomposition of sulfate-rich estuarine sludge in check trays',
         clinicalSigns: 'Shrimp refuse feed, dark midgut, sudden mortality within 1 hour of aeration stoppage',
-        preventativeProtocol: 'Application of Next Quick Gas Nill (1.5 L/acre) directly over feeding lanes'
+        preventativeProtocol: 'Application of Next Converter (1.5 L/acre) directly over feeding lanes'
       }
     ],
     recommendedFormulations: [
       {
-        productName: 'Next Quick Gas Nill',
-        productSlug: 'next-quick-gas-nill',
+        productName: 'Next Converter',
+        productSlug: 'next-converter',
         dosage: '1.5 L / acre',
         timing: 'Immediate broadcast upon detecting bottom mud odor',
         indication: 'Neutralization of toxic H2S and organic gas'
       },
       {
-        productName: 'Next Oxy Fresh',
-        productSlug: 'next-oxy-fresh',
+        productName: 'Next Sludge',
+        productSlug: 'next-sludge',
         dosage: '1.0 kg / acre',
         timing: 'Emergency night application during low DO events',
         indication: 'Rapid oxygen elevation and bottom sediment oxidation'
@@ -303,7 +303,7 @@ export const DISTRICT_GUIDES: DistrictGuide[] = [
         severity: 'Severe',
         trigger: 'High organic detritus from mangrove river runoff adhering to shrimp gills',
         clinicalSigns: 'Velvety cotton-like growth on carapaces, shrimp swim lethargically along dyke',
-        preventativeProtocol: 'Targeted bio-control with Next F-Zone (1.0 L/acre) followed by water exchange'
+        preventativeProtocol: 'Targeted bio-control with Next Viro Nill (1.0 L/acre) followed by water exchange'
       },
       {
         disease: 'Running Mortality Syndrome (RMS)',
@@ -315,8 +315,8 @@ export const DISTRICT_GUIDES: DistrictGuide[] = [
     ],
     recommendedFormulations: [
       {
-        productName: 'Next F-Zone',
-        productSlug: 'next-f-zone',
+        productName: 'Next Viro Nill',
+        productSlug: 'next-viro-nill',
         dosage: '1.0 L / acre',
         timing: 'Broadcast on sunny morning after initial water exchange',
         indication: 'Eradication of fungal spores and epibiont gill parasites'
@@ -412,13 +412,13 @@ export const DISTRICT_GUIDES: DistrictGuide[] = [
         severity: 'Severe',
         trigger: 'Summer evaporation drives pond salinity above 40 ppt, exhausting shrimp osmoregulation',
         clinicalSigns: 'Shrimp become brittle, feed consumption drops by half, opaque tail muscle',
-        preventativeProtocol: 'Application of Next Speed Mineral and Next Converter to assist metabolic stabilization'
+        preventativeProtocol: 'Application of Next-Min and Next Converter to assist metabolic stabilization'
       }
     ],
     recommendedFormulations: [
       {
-        productName: 'Next Speed Mineral',
-        productSlug: 'next-speed-mineral',
+        productName: 'Next-Min',
+        productSlug: 'next-min',
         dosage: '10 kg / acre',
         timing: 'Weekly application during high evaporation cycles',
         indication: 'Osmotic regulation and shell plasticity'
@@ -463,13 +463,13 @@ export const DISTRICT_GUIDES: DistrictGuide[] = [
         severity: 'Critical',
         trigger: 'Heavy tropical monsoon downpours drop salinity from 20 ppt to 4 ppt in 12 hours',
         clinicalSigns: 'Mass molting without adequate minerals, soft carapaces, 20-30% biomass mortality',
-        preventativeProtocol: 'Pre-rain mineral broadcasting with Next Speed Mineral followed by Next Oxy Fresh'
+        preventativeProtocol: 'Pre-rain mineral broadcasting with Next-Min followed by Next Sludge'
       }
     ],
     recommendedFormulations: [
       {
-        productName: 'Next Speed Mineral',
-        productSlug: 'next-speed-mineral',
+        productName: 'Next-Min',
+        productSlug: 'next-min',
         dosage: '15 kg / acre',
         timing: 'Broadcast immediately before and after monsoon squalls',
         indication: 'Preventing soft-shell deaths during sudden salinity drop'
@@ -495,146 +495,133 @@ export const DISTRICT_GUIDES: DistrictGuide[] = [
   },
   {
     slug: 'eluru-aquaculture-zone',
-    name: 'Eluru & Kolleru Aqua Hub',
+    name: 'Eluru & West Kolleru Freshwater Belt',
     district: 'Eluru',
     state: 'Andhra Pradesh',
-    teluguName: 'ఏలూరు & కొల్లేరు రొయ్యల & చేపల సాగు మందులు',
-    metaTitle: 'Eluru Prawn Medicine & Probiotics | Aquaculture Medicine Suppliers in Eluru',
-    metaDescription: 'Top-grade shrimp & prawn medicines, pond probiotics, oxygen boosters, and water sanitizers in Eluru district, Andhra Pradesh. Rapid delivery across Eluru, Denduluru, Pedavegi, and Kolleru border.',
-    keyGeography: ['Eluru', 'Denduluru', 'Pedavegi', 'Chintalapudi', 'Sanivarapupeta', 'Sabbavarapu Vari Street zone', 'Kolleru lake border'],
-    averageSalinity: '1 – 8 ppt',
+    teluguName: 'ఏలూరు & కొల్లేరు మంచినీటి ఆక్వా క్లినిక్',
+    metaTitle: 'Eluru Prawn Medicine & Low-Salinity Probiotics | Kolleru Lake Aqua Hub',
+    metaDescription: 'Specialized clinical guide for zero-to-low salinity (0.5–3 ppt) shrimp aquaculture in Eluru, Akiveedu, and West Kolleru. Low-salinity molting, mineral balance, and White Gut management.',
+    keyGeography: ['Eluru', 'Akiveedu', 'Nidamarru', 'Ganapavaram', 'Unguturu', 'Denduluru', 'Kolleru freshwater periphery'],
+    averageSalinity: '0.5 – 3 ppt',
     salinityType: 'Freshwater / Low Saline',
-    primarySpecies: ['Litopenaeus vannamei', 'Penaeus monodon', 'Freshwater Scampi', 'Rohu / Catla'],
+    primarySpecies: ['Litopenaeus vannamei', 'Freshwater Scampi (Macrobrachium rosenbergii)'],
     stockingDensity: '40 – 60 PL/m²',
-    primaryWaterSource: 'Tammileru river, Eluru canal, Kolleru freshwater inlets',
-    soilCharacteristics: 'Alluvial clay-loam with moderate organic silt and low salinity groundwater',
+    primaryWaterSource: 'Borewells, agricultural irrigation canals, Kolleru freshwater tributaries',
+    soilCharacteristics: 'Heavy black cotton soil with high carbonate alkalinity and low natural potassium/magnesium ratios',
     pathologyRisks: [
       {
-        disease: 'White Gut & Microvilli Enteritis in Low-Saline Vannamei',
+        disease: 'Low-Salinity Osmotic Stress & Severe Cramped Tail (గుల్ల మెత్తబడటం)',
         severity: 'Critical',
-        trigger: 'High summer temperatures (>34°C) paired with low salinity osmoregulatory stress',
-        clinicalSigns: 'White fecal threads in check trays, slow growth, feed refusal, and soft carapaces',
-        preventativeProtocol: 'Feed top-dressing with Next Gut (20 ml/kg) + morning Next Viro Nill water sanitation'
+        trigger: 'Deep borewell groundwater lacking bioavailable K+ and Mg2+ (Ca:Mg:K ratio distortion)',
+        clinicalSigns: 'Cramped opaque muscle tails, incomplete molting arrest, soft exoskeleton, mortality on trays',
+        preventativeProtocol: 'Application of Next Softner conditioner + intensive Next-Min bioavailable ionic supplementation'
       },
       {
-        disease: 'Nocturnal Dissolved Oxygen (DO) Crash & Bottom Sludge',
+        disease: 'Microcystis Algae Bloom Crashes & Ammonia Spikes',
         severity: 'Severe',
-        trigger: 'Accumulation of unconsumed feed pellets and heavy benthic muck in Kolleru basin ponds',
-        clinicalSigns: 'Shrimp gasping at surface at 3:00 AM, blackened bottom soil, toxic ammonia spikes',
-        preventativeProtocol: 'Application of Next Oxy Fresh oxygen boosters + Next Eco Bio Clean sludge digester'
-      },
-      {
-        disease: 'Mineral Depletion & Poor Post-Molt Hardening',
-        severity: 'High',
-        trigger: 'Low levels of Calcium, Magnesium, and Potassium in Eluru freshwater borewells',
-        clinicalSigns: 'Soft shell lasting over 24 hours, muscle cramps, cannibalism during lunar cycles',
-        preventativeProtocol: 'Weekly replenishment with Next Speed Mineral (10–12 kg/acre)'
+        trigger: 'High agricultural phosphorus runoff causing dense blue-green algae blooms followed by sudden night DO collapse',
+        clinicalSigns: 'Pea-green scum on water surface, foul swamp odor, pre-dawn surface gasping at aerators',
+        preventativeProtocol: 'Morning broadcast of Next Remedy for bloom stabilization followed by Next Converter for ammonia oxidation'
       }
     ],
     recommendedFormulations: [
       {
+        productName: 'Next-Min',
+        productSlug: 'next-min',
+        dosage: '10 – 15 kg / acre',
+        timing: 'Broadcast every 7–10 days and 24 hours prior to new/full moon molting windows',
+        indication: 'Replenishing bioavailable K+, Mg2+, and Ca2+ in low-salinity borewell ponds'
+      },
+      {
+        productName: 'Next Softner',
+        productSlug: 'next-softner',
+        dosage: '1.5 – 2.0 L / acre',
+        timing: 'Broadcast prior to mineral application during morning aeration',
+        indication: 'Neutralizing high carbonate hardness and chelating bound heavy metals'
+      },
+      {
         productName: 'Next Gut',
         productSlug: 'next-gut',
-        dosage: '15–20 ml/kg feed',
-        timing: 'Morning and afternoon meals daily for 5 days',
-        indication: 'White Gut Disease & EHP microvilli repair'
-      },
-      {
-        productName: 'Next Oxy Fresh',
-        productSlug: 'next-oxy-fresh',
-        dosage: '1.0–1.5 kg / acre',
-        timing: 'Broadcast at 11:00 PM during low-aeration periods',
-        indication: 'Emergency oxygen elevation and bottom sludge oxidation'
-      },
-      {
-        productName: 'Next Speed Mineral',
-        productSlug: 'next-speed-mineral',
-        dosage: '10–12 kg / acre',
-        timing: 'Apply 24 hours prior to new moon / full moon',
-        indication: 'Replenishing essential ionic Ca, Mg, and K'
+        dosage: '15 ml / kg feed',
+        timing: 'Daily morning and evening feeds',
+        indication: 'Strengthening intestinal mucosal lining against low-salinity opportunistic bacteria'
       }
     ],
     localFieldAdvisory: {
-      teluguAdvisory: 'ఏలూరు మరియు కొల్లేరు పరిసరాల్లోని మంచినీటి చెరువుల్లో తెల్ల పేగు (White Gut) మరియు రాత్రి వేళల్లో ఆక్సిజన్ కొరత సాధారణం. నెక్స్ట్ గట్ ప్రొబయోటిక్ మరియు నెక్స్ట్ ఆక్సీ ఫ్రెష్ ఉపయోగించి రొయ్యలను ఆరోగ్యంగా ఉంచవచ్చు.',
-      englishSummary: 'Eluru freshwater ponds suffer from low mineral reserves and midnight DO drops. Maintaining constant dissolved oxygen and ionic balance prevents white gut outbreaks.',
+      teluguAdvisory: 'ఏలూరు మరియు కొల్లేరు పరివాహక ప్రాంతాల్లోని బోరు నీటిలో ఉప్పదనం (Salinity) 1-2 ppt మాత్రమే ఉంటుంది. మెగ్నీషియం, పొటాషియం లోపం వల్ల రొయ్యలు కుబుసం విడువలేక మెత్తబడి చనిపోతాయి. నెక్స్ట్ సాఫ్ట్నర్ తో నీటి గట్టిదనాన్ని తగ్గించి, నెక్స్ట్-మిన్ వాడటం అత్యంత ముఖ్యం.',
+      englishSummary: 'Low salinity borewells in Eluru suffer from severe Mg:K deficiency despite high carbonate hardness. Soften water with Next Softner and dose Next-Min prior to lunar molting cycles.',
       seasonalChecklist: [
-        'Check dissolved oxygen at 4:00 AM before sunrise',
-        'Verify bore water hardness (Ca & Mg) every fortnight',
-        'Inspect bottom mud odor near check trays weekly'
+        'Test borewell Ca:Mg:K ratios every 15 days using lab titration',
+        'Avoid applying unchelated raw gypsum or raw salts that precipitate onto bottom soil',
+        'Maintain water depth above 1.2m to reduce afternoon temperature spikes in freshwater ponds'
       ]
     },
     contactHelpline: '+91 8977656444'
   },
   {
     slug: 'visakhapatnam-hatchery-hub',
-    name: 'Visakhapatnam & North Coastal Hatchery & Culture Hub',
+    name: 'Visakhapatnam & Coastal Hatchery Marine Hub',
     district: 'Visakhapatnam',
     state: 'Andhra Pradesh',
-    teluguName: 'విశాఖపట్నం ఆక్వా హేచరీ & రొయ్యల సాగు మందులు',
-    metaTitle: 'Visakhapatnam Shrimp Medicine & Hatchery Probiotics | North Coastal AP',
-    metaDescription: 'Specialized SPF shrimp hatchery water treatments, nauplii biosecurity, and marine grow-out prawn medicines in Visakhapatnam, Anakapalli, and Bheemunipatnam. 100% antibiotic-free.',
-    keyGeography: ['Visakhapatnam', 'Bheemunipatnam', 'Payakaraopeta', 'Anakapalli', 'Nakkapalli', 'Vizianagaram coastal belt', 'Srikakulam border'],
-    averageSalinity: '28 – 34 ppt',
+    teluguName: 'విశాఖపట్నం మెరైన్ ఆక్వా హబ్ & హాచరీ క్లినిక్',
+    metaTitle: 'Visakhapatnam Prawn Medicine & Marine Probiotics | Nakkapalli & Bheemili Aquaculture',
+    metaDescription: 'High-salinity (28–35 ppt) marine shrimp farming and hatchery biosecurity for Visakhapatnam, Nakkapalli, Payakaraopeta, and Bheemili. Vibrio and EMS control.',
+    keyGeography: ['Visakhapatnam', 'Nakkapalli', 'Payakaraopeta', 'S. Rayavaram', 'Bheemunipatnam', 'Rambilli'],
+    averageSalinity: '28 – 35 ppt',
     salinityType: 'Hypersaline Marine',
-    primarySpecies: ['Litopenaeus vannamei (SPF Broodstock & Seed)', 'Penaeus monodon', 'Marine Finfish'],
-    stockingDensity: '60 – 100 PL/m²',
-    primaryWaterSource: 'Direct Bay of Bengal deep sea seawater intake, coastal creeks',
-    soilCharacteristics: 'Sandy marine loam with high percolation and low organic sediment',
+    primarySpecies: ['Litopenaeus vannamei', 'Specific Pathogen Free (SPF) Broodstock & Seed'],
+    stockingDensity: '60 – 100 PL/m² (Intensive Marine & Nursery)',
+    primaryWaterSource: 'Direct Bay of Bengal deep sea marine water, high-salinity coastal creeks',
+    soilCharacteristics: 'Sandy marine loam with high percolation rates and low organic buffer capacity',
     pathologyRisks: [
       {
-        disease: 'Virulent Luminescent Vibriosis & Hatchery Zoea/Mysis Mortality',
+        disease: 'Luminescent Vibriosis (Vibrio harveyi) & Green Colony Bloom',
         severity: 'Critical',
-        trigger: 'High marine salinity paired with organic larval rearing broth',
-        clinicalSigns: 'Zoea and Mysis larvae glowing in the dark, necrosis of appendages, sudden hatchery tank crashes',
-        preventativeProtocol: 'Water biosecurity shield with Next Viro Nill (1.5 L/acre or 5 ml/ton hatchery tank)'
+        trigger: 'High marine temperatures and salinity >30 ppt triggering rapid Vibrio quorum sensing and toxin secretion',
+        clinicalSigns: 'Luminescent glowing shrimp at night, necrosis in appendages, black spots on carapace, sudden mortality',
+        preventativeProtocol: 'Water sanitation with Next Viro Nill followed by competitive exclusion using Next Vibriosis'
       },
       {
-        disease: 'Seed Transportation Stress & Post-Stocking Mortality',
-        severity: 'Severe',
-        trigger: 'Osmotic shock and temperature stress during PL transportation and pond acclimatization',
-        clinicalSigns: 'PL swimming erratically along pond banks, opaque muscle, 15-25% initial stocking loss',
-        preventativeProtocol: 'Electrolyte immersion using Next Speed Mineral in nursery conditioning tanks'
-      },
-      {
-        disease: 'Hepatopancreatic Necrosis & Epibiont Ciliate Fouling',
-        severity: 'High',
-        trigger: 'High organic loading and protozoan infestation in coastal nursery ponds',
-        clinicalSigns: 'Shrimp fail to molt cleanly, flared gill covers, reduced feed intake in check trays',
-        preventativeProtocol: 'Application of Next Gut feed probiotic + Next Eco Bio Clean'
+        disease: 'Early Mortality Syndrome (EMS / AHPND) & Hepatopancreatic Sloughing',
+        severity: 'Critical',
+        trigger: 'PIR-A/PIR-B toxin-producing Vibrio parahaemolyticus strains in post-larvae nursery phase (DOC 10–35)',
+        clinicalSigns: 'Pale, atrophied hepatopancreas, empty gut, sudden die-off on nursery bottom within 48 hours',
+        preventativeProtocol: 'Nursery tank conditioning with Next Vibriosis + feed top-dressing with Next Gut and Next Food Pro'
       }
     ],
     recommendedFormulations: [
       {
-        productName: 'Next Viro Nill',
-        productSlug: 'next-viro-nill',
-        dosage: '1.5 L / acre (or 5–8 ml / m³ hatchery water)',
-        timing: 'Morning broad dispersal with full aeration',
-        indication: 'Broad-spectrum suppression of luminescent Vibrio harveyi'
+        productName: 'Next Vibriosis',
+        productSlug: 'next-vibriosis',
+        dosage: '1.0 – 1.5 L / acre',
+        timing: 'Broadcast during peak sunshine hours with all aerators running',
+        indication: 'Targeted suppression of virulent green and luminous Vibrio colonies in marine water'
       },
       {
-        productName: 'Next Speed Mineral',
-        productSlug: 'next-speed-mineral',
-        dosage: '10 kg / acre',
-        timing: 'Broadcast 2 hours before PL stocking',
-        indication: 'Osmotic buffering and rapid shell hardening'
+        productName: 'Next Viro Nill',
+        productSlug: 'next-viro-nill',
+        dosage: '1.0 L / acre',
+        timing: 'Apply every 7 days as routine marine biosecurity sanitizer',
+        indication: 'Broad-spectrum biological control without gill lamellae irritation'
       },
       {
         productName: 'Next Gut',
         productSlug: 'next-gut',
-        dosage: '15–20 ml / kg feed',
-        timing: 'Daily during early grow-out DOC 1-45',
-        indication: 'Hepatopancreas immune stimulation and microvilli growth'
+        dosage: '15 – 20 ml / kg feed co-applied with Next Food Pro (10 g / kg)',
+        timing: 'All daily meals during nursery and grow-out',
+        indication: 'Protecting hepatopancreatic microvilli from bacterial toxin penetration'
       }
     ],
     localFieldAdvisory: {
-      teluguAdvisory: 'విశాఖపట్నం మరియు ఉత్తర కోస్తా ప్రాంతాల్లో రొయ్యల హేచరీలు మరియు సముద్రపు నీటి చెరువుల్లో విబ్రియో వెలుగు బ్యాక్టీరియా మరియు సీడ్ స్టాకింగ్ ఒత్తిడి ప్రధానం. నెక్స్ట్ విరో నిల్ మరియు నెక్స్ట్ స్పీడ్ మినరల్ ద్వారా నాణ్యమైన సీడ్ సర్వైవల్ సాధించవచ్చు.',
-      englishSummary: 'Visakhapatnam hatchery operators and marine farmers must prioritize Vibrio suppression and post-larvae electrolyte conditioning to ensure high nursery survival.',
+      teluguAdvisory: 'విశాఖపట్నం మరియు నక్కపల్లి తీర ప్రాంతాల్లో అధిక ఉప్పదనం (28–35 ppt) వల్ల విబ్రియో బాక్టీరియా మరియు మెరుపు తెగులు (Luminescent Vibriosis) చాలా వేగంగా వ్యాపిస్తాయి. నెక్స్ట్ వైబ్రోసిస్ మరియు నెక్స్ట్ వైరొ నిల్ ఉపయోగించి నీటిలోని బాక్టీరియాను నియంత్రించడం అత్యవసరం.',
+      englishSummary: 'Hypersaline conditions in Vizag accelerate virulent Vibrio growth. Maintain strict biosecurity using Next Viro Nill and suppress green Vibrio colonies with Next Vibriosis.',
       seasonalChecklist: [
-        'Test green vs yellow Vibrio colonies on TCBS agar plates every 48 hours',
-        'Acclimatize PL gradually by matching salinity and temperature over 2 hours',
-        'Inspect larval digestive tracts under 100x magnification daily'
+        'Plate water and hemolymph samples weekly on TCBS agar to monitor yellow vs green colony ratios',
+        'Maintain water exchange filtration through 100-micron mesh to exclude wild crustacean carriers',
+        'Keep dissolved oxygen consistently above 5.0 ppm to reduce marine Vibrio virulence expression'
       ]
     },
     contactHelpline: '+91 8977656444'
   }
+
 ];

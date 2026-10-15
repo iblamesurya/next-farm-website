@@ -376,7 +376,7 @@ export function Footer() {
           <div className="flex flex-col sm:flex-row justify-between items-center gap-2 pt-2">
             <p>&copy; {new Date().getFullYear()} Next Farm Bio Sciences. All rights reserved.</p>
             <div className="flex items-center gap-4 text-xs">
-              <Link href="/refund-policy" className="text-slate-300 hover:text-[#FFD200] underline">
+              <Link href="/shipping-and-returns" className="text-slate-300 hover:text-[#FFD200] underline">
                 Return &amp; Refund Policy
               </Link>
               <Link href="/shrimp-medicine" className="text-slate-300 hover:text-[#FFD200] underline">

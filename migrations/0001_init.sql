@@ -69,3 +69,49 @@ CREATE INDEX IF NOT EXISTS idx_orders_display_id ON orders(display_order_id);
 CREATE INDEX IF NOT EXISTS idx_orders_razorpay_order_id ON orders(razorpay_order_id);
 CREATE INDEX IF NOT EXISTS idx_orders_payment_status ON orders(payment_status);
 CREATE INDEX IF NOT EXISTS idx_order_items_order_id ON order_items(order_id);
+
+-- 6. Canonical 11 Formulations Catalog & Unit Measure Enforcement
+CREATE TABLE IF NOT EXISTS products (
+    id TEXT PRIMARY KEY,
+    slug TEXT UNIQUE NOT NULL,
+    name TEXT NOT NULL,
+    physical_form TEXT NOT NULL CHECK (physical_form IN ('liquid', 'powder', 'granule')),
+    unit_measure TEXT NOT NULL CHECK (unit_measure IN ('Litre', 'kg')),
+    potency_cfu TEXT,
+    salinity_min_ppt REAL DEFAULT 0.5,
+    salinity_max_ppt REAL DEFAULT 35.0,
+    caa_compliant INTEGER DEFAULT 1,
+    price_small INTEGER NOT NULL DEFAULT 1199,
+    price_medium INTEGER NOT NULL DEFAULT 2299,
+    price_bulk INTEGER NOT NULL DEFAULT 5000,
+    in_stock INTEGER NOT NULL DEFAULT 1,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS b2b_orders (
+    order_id TEXT PRIMARY KEY,
+    razorpay_order_id TEXT,
+    customer_name TEXT NOT NULL,
+    customer_phone TEXT NOT NULL,
+    mandal_district TEXT NOT NULL,
+    customer_gstin TEXT,
+    pond_acreage REAL,
+    payment_method TEXT CHECK (payment_method IN ('RAZORPAY_ONLINE', 'NEFT_RTGS_PROFORMA')),
+    subtotal_inr INTEGER NOT NULL,
+    status TEXT NOT NULL DEFAULT 'PENDING',
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Seed canonical 11 official formulations
+INSERT OR REPLACE INTO products (id, slug, name, physical_form, unit_measure, potency_cfu) VALUES
+  ('NF-01', 'next-viro-nill', 'Next Viro Nill', 'liquid', 'Litre', 'Broad-Spectrum Virucidal Bio-Shield'),
+  ('NF-02', 'next-gut', 'Next Gut', 'liquid', 'Litre', '1.0 x 10^10 CFU/ml'),
+  ('NF-03', 'next-converter', 'Next Converter', 'liquid', 'Litre', '1.0 x 10^10 CFU/ml'),
+  ('NF-04', 'next-sludge', 'Next Sludge', 'powder', 'kg', '1.5 x 10^10 CFU/g + Multi-Enzyme'),
+  ('NF-05', 'next-vibriosis', 'Next Vibriosis', 'liquid', 'Litre', '1.0 x 10^10 CFU/ml'),
+  ('NF-06', 'next-min', 'Next-Min', 'powder', 'kg', 'Chelated Ca:Mg:K Ionic Matrix'),
+  ('NF-07', 'next-food-pro', 'Next Food Pro', 'powder', 'kg', 'Enzymatic & Vitamin Feed Fortifier'),
+  ('NF-08', 'next-softner', 'Next Softner', 'liquid', 'Litre', 'EDTA Chelation & Hardness Conditioner'),
+  ('NF-09', 'next-remedy', 'Next Remedy', 'liquid', 'Litre', 'Cyanobacteria & Bloom Stabilizer'),
+  ('NF-10', 'next-pro-plus', 'Next Pro Plus', 'liquid', 'Litre', '1.5 x 10^10 CFU/ml'),
+  ('NF-11', 'next-pro', 'Next Pro', 'liquid', 'Litre', '1.0 x 10^10 CFU/ml');

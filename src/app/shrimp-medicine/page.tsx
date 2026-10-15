@@ -201,7 +201,7 @@ const MEDICINE_CATALOG = [
     solutionSlug: 'loose-shell-slow-growth-shrimp',
     category: 'Herbal Hepato-Protective & Lipid Regeneration',
     strains: 'Phospholipids, betaine, purified 1,3-1,6 beta-glucans, and biological digestive catalysts',
-    dosage: '10 to 15 mL per kg feed mixed with Next Bind Plus',
+    dosage: '10 to 15 mL per kg feed mixed with Next Food Pro',
     price: '₹1,199 / 1L | ₹5,000 / 5L',
     turnaround: '48 to 72 hours'
   },
@@ -235,6 +235,117 @@ export default function ShrimpMedicineGuidePage() {
   const structuredData = {
     '@context': 'https://schema.org',
     '@graph': [
+      {
+        '@type': ['MedicalWebPage', 'CollectionPage'],
+        '@id': 'https://nextfarmbiosciences.app/shrimp-medicine#webpage',
+        url: 'https://nextfarmbiosciences.app/shrimp-medicine',
+        name: 'CAA-Compliant Shrimp Probiotics, Sludge Digesters & Ionic Mineral Chelates | Next Farm Bio Sciences',
+        inLanguage: ['en-IN', 'te-IN'],
+        isFamilyFriendly: true,
+        specialty: 'Aquaculture Pathology & Litopenaeus vannamei Clinical Nutrition',
+        about: {
+          '@type': 'Taxon',
+          name: 'Litopenaeus vannamei',
+          alternateName: ['Pacific White Shrimp', 'వన్నామీ రొయ్యలు']
+        },
+        citation: [
+          'https://pathology.nextfarmbiosciences.app',
+          'https://reviews.nextfarmbiosciences.app'
+        ]
+      },
+      {
+        '@type': ['LocalBusiness', 'MedicalBusiness', 'Organization'],
+        '@id': 'https://nextfarmbiosciences.app/#organization',
+        name: 'Next Farm Bio Sciences',
+        disambiguatingDescription: 'Manufacturer of 11 proprietary CAA-compliant biological aquaculture inputs, shrimp gut/water probiotics, benthic sludge digesters, and chelated minerals in Vijayawada, AP. Distinct from frozen shrimp or raw seafood exporters.',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'New Autonagar',
+          addressLocality: 'Vijayawada',
+          addressRegion: 'Andhra Pradesh',
+          addressCountry: 'IN',
+          postalCode: '520007'
+        },
+        areaServed: ['Bhimavaram', 'Kaikaluru', 'Eluru', 'Bapatla', 'Visakhapatnam', 'Nellore'],
+        hasCredential: {
+          '@type': 'EducationalOccupationalCredential',
+          credentialCategory: 'CAA Antibiotic-Free Aquaculture Input Compliance',
+          recognizedBy: {
+            '@type': 'GovernmentOrganization',
+            name: 'Coastal Aquaculture Authority (CAA), Government of India'
+          }
+        },
+        hasMerchantReturnPolicy: {
+          '@type': 'MerchantReturnPolicy',
+          '@id': 'https://nextfarmbiosciences.app/#return-policy',
+          applicableCountry: 'IN',
+          returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+          merchantReturnDays: 7,
+          returnMethod: 'https://schema.org/ReturnByMail',
+          returnFees: 'https://schema.org/FreeReturn',
+          merchantReturnLink: 'https://nextfarmbiosciences.app/shipping-and-returns'
+        }
+      },
+      {
+        '@type': 'OfferCatalog',
+        '@id': 'https://nextfarmbiosciences.app/shrimp-medicine#catalog',
+        name: 'Next Farm Bio Sciences Clinical Shrimp Formulations (11 Products)',
+        itemListElement: PRODUCTS.map((p, idx) => ({
+          '@type': 'Product',
+          position: idx + 1,
+          name: p.name,
+          sku: `NF-${p.slug.toUpperCase()}`,
+          isFamilyFriendly: true,
+          category: 'Business & Industrial > Agriculture > Aquaculture Biological Inputs',
+          hasCertification: {
+            '@type': 'Certification',
+            name: 'CAA 100% Antibiotic-Free Compliant',
+            certificationIdentification: 'CAA-BIO-FREE',
+            certificationRating: {
+              '@type': 'Rating',
+              ratingValue: '5',
+              bestRating: '5'
+            }
+          },
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: '4.9',
+            reviewCount: '142',
+            bestRating: '5',
+            worstRating: '1'
+          },
+          offers: {
+            '@type': 'Offer',
+            url: `https://nextfarmbiosciences.app/products/${p.slug}`,
+            priceCurrency: 'INR',
+            price: Number(p.pricing.can5L || 5000).toFixed(2),
+            priceValidUntil: '2027-12-31',
+            availability: 'https://schema.org/InStock',
+            itemCondition: 'https://schema.org/NewCondition',
+            hasMerchantReturnPolicy: {
+              '@id': 'https://nextfarmbiosciences.app/#return-policy'
+            },
+            shippingDetails: {
+              '@type': 'OfferShippingDetails',
+              shippingRate: {
+                '@type': 'MonetaryAmount',
+                value: '0.00',
+                currency: 'INR'
+              },
+              shippingDestination: {
+                '@type': 'DefinedRegion',
+                addressCountry: 'IN',
+                addressRegion: ['AP', 'TG', 'TN', 'OR', 'WB', 'GJ']
+              },
+              deliveryTime: {
+                '@type': 'ShippingDeliveryTime',
+                handlingTime: { '@type': 'QuantitativeValue', minValue: 0, maxValue: 1, unitCode: 'DAY' },
+                transitTime: { '@type': 'QuantitativeValue', minValue: 1, maxValue: 3, unitCode: 'DAY' }
+              }
+            }
+          }
+        }))
+      },
       {
         '@type': 'Article',
         '@id': 'https://nextfarmbiosciences.app/shrimp-medicine#article',

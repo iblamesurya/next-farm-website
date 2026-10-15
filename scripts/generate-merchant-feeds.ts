@@ -25,26 +25,49 @@ for (const product of PRODUCTS) {
 
   const fullDescription = `${product.overview} Potency: ${product.cfuCount}. Microbial Consortium: ${product.strains.join(', ')}. Primary Indications: ${product.indications.join('; ')}. CAA-Approved, ISO 9001:2015 Certified, 100% Antibiotic-Free. Manufactured by Next Farm Bio Sciences, New Autonagar, Vijayawada, India.`;
 
-  const variants = [
-    {
-      code: '5L',
-      sizeLabel: product.format5L || '5-Liter HDPE Industrial Canister',
-      priceAmount: (product.pricing.can5L || 5000).toFixed(2),
-      weightKg: '5.0 kg'
-    },
-    {
-      code: '2L',
-      sizeLabel: product.format2L || '2-Liter Twin Field Pack',
-      priceAmount: (product.pricing.pack2L || 2299).toFixed(2),
-      weightKg: '2.0 kg'
-    },
-    {
-      code: '1L',
-      sizeLabel: product.format1L || '1-Liter Precision Bottle',
-      priceAmount: (product.pricing.bottle1L || 1199).toFixed(2),
-      weightKg: '1.0 kg'
-    }
-  ];
+  const isDryWeight = ['next-min', 'next-sludge', 'next-food-pro'].includes(product.slug);
+
+  const variants = isDryWeight
+    ? [
+        {
+          code: '5L',
+          sizeLabel: product.format5L || (product.slug === 'next-min' ? '10 kg Heavy-Duty Multi-Wall Bag' : '5 kg Master Industrial Pouch'),
+          priceAmount: (product.pricing.can5L || 5000).toFixed(2),
+          weightKg: product.slug === 'next-min' ? '10.0 kg' : '5.0 kg'
+        },
+        {
+          code: '2L',
+          sizeLabel: product.format2L || (product.slug === 'next-min' ? '4 kg Twin Field Pack' : '2 kg Twin Field Pack'),
+          priceAmount: (product.pricing.pack2L || 2299).toFixed(2),
+          weightKg: product.slug === 'next-min' ? '4.0 kg' : '2.0 kg'
+        },
+        {
+          code: '1L',
+          sizeLabel: product.format1L || (product.slug === 'next-min' ? '2 kg Precision Bag' : '1 kg Stand-Up Foil Pouch'),
+          priceAmount: (product.pricing.bottle1L || 1199).toFixed(2),
+          weightKg: product.slug === 'next-min' ? '2.0 kg' : '1.0 kg'
+        }
+      ]
+    : [
+        {
+          code: '5L',
+          sizeLabel: product.format5L || '5-Liter HDPE Industrial Canister',
+          priceAmount: (product.pricing.can5L || 5000).toFixed(2),
+          weightKg: '5.0 kg'
+        },
+        {
+          code: '2L',
+          sizeLabel: product.format2L || '2-Liter Twin Field Pack',
+          priceAmount: (product.pricing.pack2L || 2299).toFixed(2),
+          weightKg: '2.0 kg'
+        },
+        {
+          code: '1L',
+          sizeLabel: product.format1L || '1-Liter Precision Bottle',
+          priceAmount: (product.pricing.bottle1L || 1199).toFixed(2),
+          weightKg: '1.0 kg'
+        }
+      ];
 
   for (const v of variants) {
     const additionalImgTags = additionalImages
@@ -100,7 +123,7 @@ ${additionalImgTags}
       <g:product_detail>
         <g:section_name>Technical Specifications</g:section_name>
         <g:attribute_name>Formulation Type</g:attribute_name>
-        <g:attribute_value>${escapeXml(product.categoryDisplay || 'Liquid Probiotic Consortium')}</g:attribute_value>
+        <g:attribute_value>${escapeXml(product.categoryDisplay || (isDryWeight ? 'Dry Powder / Micro-Granule' : 'Liquid Probiotic Consortium'))}</g:attribute_value>
       </g:product_detail>
       <g:product_detail>
         <g:section_name>Storage &amp; Compliance</g:section_name>
@@ -113,9 +136,16 @@ ${additionalImgTags}
         <g:attribute_value>24 Months (Store in cool, dry place)</g:attribute_value>
       </g:product_detail>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:return_policy_label>default_7day_sealed_biological</g:return_policy_label>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Express Aquaculture Dispatch</g:service>
+        <g:region>AP</g:region>
+        <g:service>AP Aqua Belt Express (Bhimavaram/Kaikaluru/Nellore/Bapatla)</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard National Surface Cargo</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>`);

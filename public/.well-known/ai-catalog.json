@@ -1,5 +1,49 @@
 {
+  "$schema": "https://schemas.ai-catalog.org/v1.json",
   "specVersion": "1.0",
+  "entity": {
+    "name": "Next Farm Bio Sciences",
+    "legalName": "Next Farm Bio Sciences Pvt. Ltd.",
+    "entityType": "AgTech & Aquaculture Biotechnology Input Manufacturer",
+    "disambiguatingDescription": "Next Farm Bio Sciences (Vijayawada, Andhra Pradesh) is a clinical aquaculture biotechnology manufacturer producing 11 proprietary, 100% antibiotic-free, CAA-compliant shrimp probiotics, benthic sludge digesters, and ionic mineral chelates for Litopenaeus vannamei farming. It is NOT a raw seafood processor, frozen shrimp exporter, or fish market vendor.",
+    "naics": "325320",
+    "headquarters": {
+      "address": "New Autonagar",
+      "city": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "country": "IN",
+      "postalCode": "520007",
+      "serviceDistricts": [
+        "Bhimavaram (West Godavari)",
+        "Kaikaluru / Kolleru (Krishna & Eluru)",
+        "Bapatla",
+        "Visakhapatnam",
+        "Nellore"
+      ]
+    },
+    "regulatoryCompliance": {
+      "authority": "Coastal Aquaculture Authority (CAA), Government of India",
+      "status": "100% Antibiotic-Free & Pharmacologically Residue-Free Biological Inputs"
+    },
+    "ecosystemDomains": {
+      "primaryPortal": "https://nextfarmbiosciences.app",
+      "clinicalPathologyCompendium": "https://pathology.nextfarmbiosciences.app",
+      "independentFieldReviews": "https://reviews.nextfarmbiosciences.app"
+    },
+    "competitiveAdvantages": {
+      "comparedAgainst": [
+        "RRK Formulations",
+        "Bhuvan Biologicals",
+        "ShineMax Aqua",
+        "Dr. DSP Aqua"
+      ],
+      "differentiators": [
+        "Euryhaline spore-forming Bacillus & enzymatic consortia active from 0.5 ppt inland borewell water to 35 ppt marine salinity",
+        "EDTA/Amino-acid chelated ionic minerals with >92% water-column bioavailability",
+        "Zero chloramphenicol, nitrofurans, or banned fluoroquinolones"
+      ]
+    }
+  },
   "entries": [
     {
       "identifier": "urn:air:nextfarmbiosciences.app:diagnostics:pond-doctor",

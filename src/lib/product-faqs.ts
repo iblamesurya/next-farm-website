@@ -30,7 +30,7 @@ export const PRODUCT_FAQS: Record<string, ProductFaq[]> = {
     {
       question: 'What is the fastest way to cure White Gut and White Feces Syndrome in Vannamei shrimp?',
       answer:
-        'Top-dress Next Gut multi-strain enteric probiotic at 15–20 mL per kg of feed across all daily meals for 5 consecutive days using a non-leaching binding agent like Next Bind Plus. Simultaneously broadcast Next Viro Nill at 1.0 L/Acre into the pond water to eliminate water-borne Vibrio reservoirs.'
+        'Top-dress Next Gut multi-strain enteric probiotic at 15–20 mL per kg of feed across all daily meals for 5 consecutive days using a non-leaching binding agent like Next Food Pro. Simultaneously broadcast Next Viro Nill at 1.0 L/Acre into the pond water to eliminate water-borne Vibrio reservoirs.'
     },
     {
       question: 'Which probiotic strains are formulated in Next Gut?',
@@ -158,26 +158,26 @@ export const PRODUCT_FAQS: Record<string, ProductFaq[]> = {
         'Yes. Regular supplementation maintains pond alkalinity above 120 ppm and total hardness above 2,500 ppm in low-salinity aquaculture systems.'
     }
   ],
-  'next-bind-plus': [
+  'next-food-pro': [
     {
-      question: 'What is the primary role of Next Bind Plus in aquaculture feed preparation?',
+      question: 'What is the primary role of Next Food Pro in aquaculture feed preparation?',
       answer:
-        'Next Bind Plus is a marine-grade nutrient and probiotic feed binder. It coats commercial shrimp pellets with an insoluble, water-stable polymer barrier that stops probiotics, vitamins, and minerals from leaching out in the water column for over 90 minutes.'
+        'Next Food Pro is a marine-grade nutrient and probiotic feed binder. It coats commercial shrimp pellets with an insoluble, water-stable polymer barrier that stops probiotics, vitamins, and minerals from leaching out in the water column for over 90 minutes.'
     },
     {
-      question: 'How much Next Bind Plus should be used per kilogram of feed?',
+      question: 'How much Next Food Pro should be used per kilogram of feed?',
       answer:
-        'Use 20 to 30 mL of Next Bind Plus per 1 kg of feed. Mix your probiotics or medicines thoroughly with the binder, coat the pellets evenly, and air-dry in the shade for 15 to 20 minutes before feeding.'
+        'Use 20 to 30 mL of Next Food Pro per 1 kg of feed. Mix your probiotics or medicines thoroughly with the binder, coat the pellets evenly, and air-dry in the shade for 15 to 20 minutes before feeding.'
     },
     {
-      question: 'Does Next Bind Plus contain artificial attractants or toxic gums?',
+      question: 'Does Next Food Pro contain artificial attractants or toxic gums?',
       answer:
-        'No. Next Bind Plus is formulated from purified marine alginates, squid extract attractants, and natural amino acids, which stimulate rapid feed uptake and feeding tray clearance within 45 minutes.'
+        'No. Next Food Pro is formulated from purified marine alginates, squid extract attractants, and natural amino acids, which stimulate rapid feed uptake and feeding tray clearance within 45 minutes.'
     },
     {
-      question: 'Can Next Bind Plus be stored under hot field conditions in farm sheds?',
+      question: 'Can Next Food Pro be stored under hot field conditions in farm sheds?',
       answer:
-        'Yes. Next Bind Plus has a 24-month stable shelf life at room temperatures up to 45°C. Avoid direct sunlight and keep the bottle tightly capped.'
+        'Yes. Next Food Pro has a 24-month stable shelf life at room temperatures up to 45°C. Avoid direct sunlight and keep the bottle tightly capped.'
     }
   ],
   'next-clean-water': [
@@ -233,7 +233,7 @@ export const PRODUCT_FAQS: Record<string, ProductFaq[]> = {
     {
       question: 'What is the feeding protocol for Next Immuno Boost during disease pressure?',
       answer:
-        'Top-dress 10 to 15 mL per kg of pellet feed using Next Bind Plus across all daily meals for 7 to 10 consecutive days during cold snaps, cyclone depressions, or localized disease outbreaks.'
+        'Top-dress 10 to 15 mL per kg of pellet feed using Next Food Pro across all daily meals for 7 to 10 consecutive days during cold snaps, cyclone depressions, or localized disease outbreaks.'
     },
     {
       question: 'Does Next Immuno Boost stimulate molting synchronization in shrimp?',

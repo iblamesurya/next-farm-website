@@ -471,7 +471,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'prod-007',
     slug: 'next-food-pro',
-    name: 'next food pro',
+    name: 'Next Food Pro',
     tagline: 'High-Potency Nutritional Probiotic: Fortify Feed for Immunity, Growth & Digestibility',
     headline: 'High-Potency Nutritional Probiotic: Fortify Feed for Immunity, Growth & Digestibility',
     overview: 'Next Food Pro is a premium, feed-grade probiotic supplement engineered to fortify standard aquaculture feed pellets with bioactive digestive enzymes, essential vitamins, and heat-resistant spore-forming bacteria. Designed to withstand pelleted feed processing, it ensures active spores reach the shrimp gut intact.',
